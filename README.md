@@ -28,11 +28,19 @@ Live page: https://prathamesh75.github.io/hermes-base/
 - **Reviewers at the gate:** everyone who commented or reviewed in the battle-log window.
 - Hover or tap a building to see what that agent has worked on, what it is addressing and
   what is in review. Click to pin the dossier.
+- **Needs attention:** open PRs that conflict with main, fail checks, have changes requested or
+  where a reviewer spoke last. Automated "for reference" AI reviews are shown as lower-priority
+  AI notes. Merge states come from GitHub's `mergeable_state` at refresh time.
+- **Ledger:** click a column header to sort; the Status column shows the merge state of open PRs.
+- **Shareable views:** the pinned agent, ledger filter, search, sort and log filter are kept in the
+  URL hash, for example `#ledger=action&sort=-updated`.
+- A banner appears when the snapshot is more than 3 hours old, which means the refresh
+  workflow is failing.
 
 ## Refreshing the data
 
 The workflow runs every hour at :17. It runs `refresh_snapshot.py` with the workflow's own
-token (about 320 API calls, roughly 4 minutes), commits `data/` when it changed, and deploys
+token (about 400 API calls, roughly 5 minutes, retrying transient errors), commits `data/` when it changed, and deploys
 the site. Trigger it by hand from the Actions tab with **Run workflow**. A failed refresh keeps
 the last committed data and still deploys.
 

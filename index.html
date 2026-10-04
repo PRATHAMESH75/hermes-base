@@ -149,6 +149,24 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .t-notplanned{background:#e6dcf2; color:#4a2f6b}
 .t-risk{background:#fde2d9; color:#8a2c19}
 .t-decide{background:#fff0bf; color:#6e4b00}
+.m-dirty{background:#f6d6cf; color:#8a2c19}
+.m-unstable{background:#fde2c4; color:#7a3d00}
+.m-behind{background:#fff0bf; color:#6e4b00}
+.m-blocked{background:#e4e1dc; color:#4b4540}
+.m-clean{background:#d7f0cf; color:#24601a}
+.m-draft, .m-unknown{background:#e4e1dc; color:#6b6f76}
+.aq{display:grid; gap:8px}
+.aq-row{display:grid; grid-template-columns:auto 1fr auto; gap:4px 10px; align-items:center; background:var(--parch); color:var(--ink); border:2px solid var(--wood-edge); border-radius:12px; padding:8px 11px}
+.aq-row .why{grid-column:2 / -1; font-size:12.5px; color:var(--ink-2)}
+.aq-row a{font-weight:800; color:var(--ink); text-decoration:none; font-size:13.5px}
+.aq-row a:hover{text-decoration:underline}
+.aq-sum{display:flex; flex-wrap:wrap; gap:6px; margin:0 4px 10px}
+.aq-empty{background:rgba(0,0,0,.22); border:2px solid rgba(0,0,0,.35); border-radius:12px; padding:10px 12px; color:var(--text-dim)}
+th button{all:unset; cursor:pointer; display:inline-flex; gap:4px; align-items:center}
+th button:focus-visible{outline:3px solid var(--gold); outline-offset:2px; border-radius:4px}
+th[aria-sort] button::after{content:"▾"; font-size:11px}
+th[aria-sort="ascending"] button::after{content:"▴"}
+.banner a{color:var(--gold); font-weight:800}
 .mono{font-family:var(--mono); font-size:11.5px}
 
 /* ---------- lower ---------- */
@@ -166,6 +184,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .ev .txt{font-size:13.5px; margin-top:2px}
 .ev .on{font-size:12px; margin-top:4px; color:var(--ink-2)}
 .ev .on a{font-weight:800; color:var(--ink)}
+.ev > div, .pr > *, .aq-row > *{min-width:0; overflow-wrap:anywhere}
 .bot{font-size:10px; font-weight:800; letter-spacing:.05em; text-transform:uppercase; background:var(--ink); color:var(--parch); border-radius:5px; padding:0 5px}
 
 .report{display:grid; gap:10px}
@@ -183,7 +202,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, [tabindex]:focus-vis
 .chart .legend span{display:inline-flex; align-items:center; gap:5px}
 .chart svg{width:100%; height:auto; display:block}
 
-/* ---------- ledger ---------- */
+/* ---------- ledger table ---------- */
 .ledger-tools{display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:0 4px 10px}
 .ledger-tools input{font:inherit; font-size:13.5px; color:var(--ink); background:var(--parch); border:2px solid var(--wood-edge); border-radius:10px; padding:6px 10px; min-width:0; flex:1 1 220px}
 .table-scroll{overflow:auto; max-height:620px; border-radius:12px; border:2px solid var(--wood-edge)}
@@ -224,6 +243,12 @@ td a:hover{text-decoration:underline}
   </header>
 
   <div id="banner" class="banner" hidden></div>
+
+  <section class="panel" id="queuePanel">
+    <h2>Needs attention <small id="queueNote">open PRs that need a push or a reply</small></h2>
+    <div class="aq-sum" id="queueSum"></div>
+    <div class="aq" id="queue"></div>
+  </section>
 
   <section class="board">
     <div class="panel">
@@ -273,15 +298,15 @@ const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
 /* ---------- agents ---------- */
 const AGENTS = [
   { id:"core",    name:"Core Sage",      spec:"Agent loop, providers, compression, streaming", color:"#8e5bd8", dark:"#5b3596", item:"staff",
-    scopes:["agent","streaming","compression","vision","anthropic","codex","copilot","copilot-acp","acp","local-models","memory","providers","delegate","openrouter","gemini"], comps:["agent","acp"] },
+    scopes:["agent","streaming","compression","vision","anthropic","codex","copilot","copilot-acp","acp","local-models","memory","providers","delegate","openrouter","gemini","bedrock","models","state","session","checkpoint","runtime"], comps:["agent","acp"] },
   { id:"gateway", name:"Gateway Herald", spec:"Messaging gateway and platform adapters", color:"#3b82c4", dark:"#23568a", item:"horn",
-    scopes:["gateway","telegram","discord","slack","whatsapp","wecom","feishu","webhook","signal","matrix"], comps:["gateway","plugins"] },
+    scopes:["gateway","telegram","discord","slack","whatsapp","wecom","feishu","webhook","signal","matrix","google_chat","weixin"], comps:["gateway","plugins"] },
   { id:"desktop", name:"Desktop Artisan", spec:"Desktop app, TUI, dashboard, builds", color:"#e07a4f", dark:"#a24a26", item:"brush",
-    scopes:["desktop","tui","dashboard","build","pm","electron"], comps:["desktop","tui","dashboard"] },
+    scopes:["desktop","tui","dashboard","dashboard-auth","build","pm","electron"], comps:["desktop","tui","dashboard"] },
   { id:"cli",     name:"CLI Smith",      spec:"CLI, config, install and update", color:"#c98a2b", dark:"#8a5a12", item:"hammer",
-    scopes:["cli","config","install","update","backup","doctor","bootstrap","time","portal","docs","ci","windows","setup"], comps:["cli"] },
+    scopes:["cli","config","install","update","backup","doctor","bootstrap","time","portal","docs","ci","windows","setup","deps","lint","test","tests","release"], comps:["cli"] },
   { id:"tools",   name:"Tool Tinkerer",  spec:"Tools, terminal, files, skills, MCP", color:"#2e9e7e", dark:"#1a6a53", item:"wrench",
-    scopes:["tools","terminal","file-safety","approval","plugin-guard","tts","web","toolsets","skills","mcp","computer-use","browser","file"], comps:["tools"] },
+    scopes:["tools","terminal","file-safety","approval","plugin-guard","tts","web","toolsets","skills","mcp","computer-use","browser","file","plugins","stt","lsp","docker"], comps:["tools"] },
   { id:"cron",    name:"Cron Keeper",    spec:"Scheduler, kanban, background work", color:"#c2455b", dark:"#86263a", item:"hourglass",
     scopes:["cron","kanban","scheduler"], comps:["cron"] },
 ];
@@ -290,7 +315,7 @@ const scopeMap = {};
 AGENTS.forEach(a => a.scopes.forEach(s => scopeMap[s] = a.id));
 
 function agentOf(pr){
-  const m = /^[a-z]+\(([^)]+)\)/i.exec(pr.title || "");
+  const m = /^\s*[a-z]+\(([^)]+)\)/i.exec(pr.title || "");
   if (m){
     const sc = m[1].toLowerCase().split(/[,/ ]/)[0];
     if (scopeMap[sc]) return scopeMap[sc];
@@ -324,6 +349,32 @@ function outcome(pr){
 const OUT_LABEL = { open:"Open", merged:"Merged", salvaged:"Salvaged", superseded:"Superseded", duplicate:"Duplicate", withdrawn:"Withdrawn", notplanned:"Not planned", closed:"Closed" };
 const OUT_COLOR = { open:"#b65ae3", merged:"#f3bb2d", salvaged:"#2bb3a3", superseded:"#8a8f98", duplicate:"#d9533b", withdrawn:"#8a8f98", notplanned:"#6b4f8a", closed:"#8a8f98" };
 const tag = o => `<span class="tag t-${o}">${OUT_LABEL[o]}</span>`;
+const MERGE = {
+  dirty:    { label:"Conflicting",     rank:0, why:"Conflicts with main; rebase it." },
+  unstable: { label:"Checks failing",  rank:1, why:"A check is red; fix or explain it." },
+  behind:   { label:"Behind main",     rank:3, why:"Behind main; update the branch if the repo requires it." },
+  blocked:  { label:"Awaiting review", rank:5 },
+  clean:    { label:"Ready",           rank:6 },
+  draft:    { label:"Draft",           rank:7 },
+  unknown:  { label:"Unknown",         rank:8 },
+};
+const mergeTag = m => m ? `<span class="tag m-${MERGE[m] ? m : "unknown"}">${(MERGE[m] || MERGE.unknown).label}</span>` : "";
+function ago(s){
+  if (!s) return "—";
+  const h = (Date.now() - new Date(s)) / 36e5;
+  if (h < 1) return Math.max(1, Math.round(h * 60)) + "m ago";
+  if (h < 48) return Math.round(h) + "h ago";
+  return Math.round(h / 24) + "d ago";
+}
+/* Open PRs whose newest thread event is a reviewer's, keyed by PR number. */
+function awaitingReply(){
+  const last = {};
+  [...FEED].sort((a, b) => a.at.localeCompare(b.at)).forEach(e => last[e.pr] = e);
+  const open = new Set(SNAP.prs.filter(p => p.state === "open").map(p => p.n));
+  const out = {};
+  Object.values(last).forEach(e => { if (e.who !== SNAP.author && ["review","comment","changes"].includes(e.kind) && open.has(e.pr)) out[e.pr] = e; });
+  return out;
+}
 function initials(n){ const p = n.replace(/[^A-Za-z0-9]+/g, " ").trim().split(" "); return (p[0][0] + (p[1] ? p[1][0] : (p[0][1] || ""))).toUpperCase(); }
 function hue(n){ let h = 0; for (const c of n) h = (h * 31 + c.charCodeAt(0)) % 360; return `hsl(${h} 45% 42%)`; }
 
@@ -508,7 +559,7 @@ function drawScene(){
     const id = g.dataset.agent;
     g.addEventListener("mouseenter", () => { showTip(id); if (!pinned) select(id, false); });
     g.addEventListener("mouseleave", hideTip);
-    g.addEventListener("click", () => { pinned = (selected !== id) || !pinned; select(id, true); showTip(id); });
+    g.addEventListener("click", () => { pinned = (selected !== id) || !pinned; select(id, true); showTip(id); saveHash(); });
     g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " "){ e.preventDefault(); pinned = true; select(id, true); } });
     g.addEventListener("focus", () => { if (!pinned) select(id, false); });
   });
@@ -677,7 +728,9 @@ function renderHeader(){
     elixir:`<svg width="26" height="26" viewBox="0 0 26 26"><path d="M13 2 C19 10 21 13 21 17 A8 8 0 0 1 5 17 C5 13 7 10 13 2 Z" fill="#b65ae3" stroke="#2c1b10" stroke-width="2"/><circle cx="10" cy="15" r="2" fill="#f2d6ff"/></svg>`,
     stone:`<svg width="26" height="26" viewBox="0 0 26 26"><path d="M4 18 L7 8 L15 5 L22 10 L21 19 L12 22 Z" fill="#8b95a1" stroke="#2c1b10" stroke-width="2"/><path d="M7 8 L13 12 L22 10 M13 12 L12 22" stroke="#646e7a" stroke-width="1.5" fill="none"/></svg>` };
   $("resources").innerHTML = res.map(r => `<div class="res ${r.cls}">${icon[r.cls]}<div class="bar"><div class="fill" style="width:${Math.max(6, r.n / t.all * 100)}%"></div><div class="num">${r.n}</div></div><div class="lbl">${esc(r.lbl)}</div></div>`).join("");
-  $("subline").innerHTML = `${t.all} PRs by <b>${esc(SNAP.author)}</b> on <b>${esc(SNAP.repo)}</b> · snapshot ${fmtStamp(SNAP.generatedAt)}`;
+  $("subline").innerHTML = `${t.all} PRs by <b>${esc(SNAP.author)}</b> on <b>${esc(SNAP.repo)}</b> · updated <span title="${esc(fmtStamp(SNAP.generatedAt))}">${ago(SNAP.generatedAt)}</span>`;
+  const hours = (Date.now() - new Date(SNAP.generatedAt)) / 36e5;
+  if (hours > 3) showBanner(`This snapshot is ${Math.round(hours)} hours old; the hourly refresh should keep it under one. <a href="https://github.com/PRATHAMESH75/hermes-base/actions" target="_blank" rel="noopener">Check the refresh workflow</a>.`, true);
 }
 
 /* ---------- reviewers ---------- */
@@ -708,7 +761,7 @@ const KIND = {
 const LOG_FILTERS = [["all","All"],["people","Reviewer comments"],["changes","Changes requested"],["wins","Merges & salvages"],["close","Closures"],["bot","Autoresolver moves"]];
 function renderLogFilters(){
   $("logFilters").innerHTML = LOG_FILTERS.map(([k, l]) => `<button class="btn" data-f="${k}" aria-pressed="${logFilter === k}">${l}</button>`).join("");
-  $("logFilters").querySelectorAll("button").forEach(b => b.onclick = () => { logFilter = b.dataset.f; logLimit = 120; renderLogFilters(); renderLog(); });
+  $("logFilters").querySelectorAll("button").forEach(b => b.onclick = () => { logFilter = b.dataset.f; logLimit = 120; renderLogFilters(); renderLog(); saveHash(); });
 }
 function renderLog(){
   const titleOf = {}; SNAP.prs.forEach(p => { if (p.n) titleOf[p.n] = p; });
@@ -782,9 +835,7 @@ function renderReport(){
     { cls:"warn", badge: decide.length, h:"Waiting on a maintainer decision",
       p:`${decide.length} open PRs carry <b>needs-decision</b>${decide.length ? ": " + decide.slice(0, 3).map(p => esc(p.title.replace(/^\w+\([^)]*\):\s*/, ""))).join("; ") : ""}. More pushes won't move these; a short question on the issue might.` },
     (() => {
-      const last = {};
-      [...FEED].sort((a, b) => a.at.localeCompare(b.at)).forEach(e => last[e.pr] = e);
-      const waiting = Object.values(last).filter(e => e.who !== SNAP.author && ["review","comment","changes"].includes(e.kind) && prs.find(p => p.n === e.pr && p.state === "open"));
+      const waiting = Object.values(awaitingReply());
       const threads = new Set(FEED.filter(e => e.who !== SNAP.author && ["comment","review","approve","changes"].includes(e.kind)).map(e => e.pr)).size;
       return { cls: waiting.length ? "bad" : "good", badge: waiting.length, h: waiting.length ? "Reviewers waiting on a reply" : "Every reviewer has a reply",
         p: `${revs.length} reviewers commented across ${threads} threads${revs.length ? `, led by <b>${esc(revs[0].who)}</b>` : ""}. ` +
@@ -794,6 +845,16 @@ function renderReport(){
       const top = [...risky].sort((a, b) => (b.comments || 0) - (a.comments || 0))[0];
       return { cls:"warn", badge: risky.length, h:"Security-boundary changes in flight",
         p:`${risky.length} open PRs are tagged <b>risk: security boundary</b>.${top ? ` They draw the longest reviews: ${top.n ? "#" + top.n : esc(top.title)} has ${top.comments} thread entries.` : ""} Keep them small and link the exact reproduction.` };
+    })(),
+    (() => {
+      const days = arr => arr.map(p => (new Date(p.closed) - new Date(p.created)) / 864e5).filter(d => d >= 0).sort((a, b) => a - b);
+      const med = a => a.length ? (a.length % 2 ? a[(a.length - 1) / 2] : (a[a.length / 2 - 1] + a[a.length / 2]) / 2) : null;
+      const fmt = d => d === null ? "—" : d < 1 ? "under a day" : Math.round(d) + (Math.round(d) === 1 ? " day" : " days");
+      const land = days(prs.filter(p => p.closed && (p.state === "merged" || p.closeKind === "salvaged")));
+      const lost = days(prs.filter(p => p.closed && p.state === "closed" && p.closeKind !== "salvaged"));
+      const m = med(land);
+      return { cls: m !== null && m <= 14 ? "good" : "warn", badge: m === null ? "—" : Math.round(m) + "d", h:"Time to land",
+        p:`Half of the <b>${land.length}</b> landed PRs reached main within <b>${fmt(m)}</b> of opening (slowest: ${fmt(land.length ? land[land.length - 1] : null)}). PRs closed without landing took a median <b>${fmt(med(lost))}</b> to be closed.` };
     })(),
     { cls:"warn", badge: quiet.length, h:"Untouched PRs",
       p:`${quiet.length} open PRs have one or no thread entries. <b>${esc(busiest.a.name)}</b> holds the most open work (${busiest.n}); that is where reviewer attention is thinnest.` },
@@ -831,14 +892,65 @@ function weeklyChart(){
     <div class="legend"><span><i class="dot" style="background:#f3bb2d"></i>Landed</span><span><i class="dot" style="background:#b65ae3"></i>Still open</span><span><i class="dot" style="background:#8a8f98"></i>Closed</span><span>${prs.length} of ${SNAP.totals.all} PRs in this snapshot</span></div></div>`;
 }
 
+/* ---------- needs attention ---------- */
+function attentionItems(){
+  const waiting = awaitingReply();
+  const items = [];
+  SNAP.prs.filter(p => p.state === "open").forEach(p => {
+    const reasons = [];
+    const m = MERGE[p.merge];
+    if (m && m.why && m.rank < 5) reasons.push({ rank: m.rank, tag: mergeTag(p.merge), why: m.why });
+    const w = waiting[p.n];
+    // Automated "for reference" reviews are optional reading, not a reply the author owes.
+    const aiNote = w && w.kind !== "changes" && /^(?:AI code review|\*?This was generated by AI)/i.test(w.text || "");
+    if (w) reasons.push({ rank: w.kind === "changes" ? 0.5 : aiNote ? 4 : 2,
+      tag: `<span class="tag ${w.kind === "changes" ? "m-dirty" : aiNote ? "m-blocked" : "m-unstable"}">${w.kind === "changes" ? "Changes requested" : aiNote ? "AI note" : "Reply owed"}</span>`,
+      why: `${esc(w.who)} ${w.kind === "changes" ? "requested changes" : "spoke last"} ${ago(w.at)}: “${esc((w.text || "").slice(0, 140))}${(w.text || "").length > 140 ? "…" : ""}”` });
+    if (reasons.length){ reasons.sort((a, b) => a.rank - b.rank); items.push({ p, reasons, rank: reasons[0].rank }); }
+  });
+  return items.sort((a, b) => a.rank - b.rank || (b.p.updated || "").localeCompare(a.p.updated || ""));
+}
+function renderQueue(){
+  const items = attentionItems();
+  const open = SNAP.prs.filter(p => p.state === "open");
+  const count = k => open.filter(p => p.merge === k).length;
+  const known = open.some(p => p.merge);
+  $("queueSum").innerHTML = known ? ["dirty","unstable","behind","blocked","clean","draft","unknown"].filter(k => count(k))
+    .map(k => `<span class="chip" style="padding-left:10px"><span class="tag m-${k}">${MERGE[k].label}</span><span class="n">${count(k)}</span></span>`).join("")
+    : `<span class="chip" style="padding-left:10px">Merge states arrive with the next refresh</span>`;
+  $("queueNote").textContent = items.length ? `${items.length} of ${open.length} open PRs need a push or a reply` : "open PRs that need a push or a reply";
+  const shown = items.slice(0, 12);
+  $("queue").innerHTML = items.length ? shown.map(({ p, reasons }) => `<div class="aq-row">
+      <span class="mono">#${p.n}</span>
+      <a href="${prUrl(p)}" target="_blank" rel="noopener">${esc(p.title)}</a>
+      <span style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${reasons.map(r => r.tag).join("")}</span>
+      <div class="why">${reasons.map(r => r.why).join(" ")} · updated ${ago(p.updated)}</div></div>`).join("")
+      + (items.length > shown.length ? `<button class="btn" id="queueAll" style="justify-self:start">Show all ${items.length} in the ledger</button>` : "")
+    : `<div class="aq-empty">Nothing needs action: no open PR conflicts, fails checks or waits on a reply.</div>`;
+  const b = $("queueAll");
+  if (b) b.onclick = () => { ledgerFilter = "action"; renderLedgerFilters(); renderLedger(); saveHash(); $("ledger").scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" }); };
+}
+
 /* ---------- ledger ---------- */
-const LEDGER_F = [["all","All"],["open","Open"],["landed","Landed"],["closed","Closed"]];
+const LEDGER_F = [["all","All"],["action","Needs attention"],["open","Open"],["landed","Landed"],["closed","Closed"]];
+const LEDGER_COLS = [
+  ["n","PR", p => p.n || 0],
+  ["title","Title", p => p.title.toLowerCase()],
+  ["agent","Agent", p => AG[p._agent].name],
+  ["created","Opened", p => p.created || ""],
+  ["updated","Last activity", p => p.updated || p.closed || p.created || ""],
+  ["comments","Thread", p => p.comments || 0],
+  ["status","Status", p => p._out + "|" + ((MERGE[p.merge] || {}).rank ?? 9)],
+];
+let ledgerSort = { key:"created", dir:-1 };
 function renderLedgerFilters(){
   $("ledgerFilters").innerHTML = LEDGER_F.map(([k, l]) => `<button class="btn" data-f="${k}" aria-pressed="${ledgerFilter === k}">${l}</button>`).join("");
-  $("ledgerFilters").querySelectorAll("button").forEach(b => b.onclick = () => { ledgerFilter = b.dataset.f; renderLedgerFilters(); renderLedger(); });
+  $("ledgerFilters").querySelectorAll("button").forEach(b => b.onclick = () => { ledgerFilter = b.dataset.f; renderLedgerFilters(); renderLedger(); saveHash(); });
 }
 function renderLedger(){
-  let rows = [...SNAP.prs].sort((a, b) => b.created.localeCompare(a.created));
+  const col = LEDGER_COLS.find(c => c[0] === ledgerSort.key) || LEDGER_COLS[3];
+  let rows = [...SNAP.prs].sort((a, b) => { const x = col[2](a), y = col[2](b); return (x < y ? -1 : x > y ? 1 : 0) * ledgerSort.dir || (b.n || 0) - (a.n || 0); });
+  if (ledgerFilter === "action"){ const need = new Set(attentionItems().map(i => i.p.n)); rows = rows.filter(p => need.has(p.n)); }
   if (ledgerFilter === "open") rows = rows.filter(p => p._out === "open");
   if (ledgerFilter === "landed") rows = rows.filter(p => p._out === "merged" || p._out === "salvaged");
   if (ledgerFilter === "closed") rows = rows.filter(p => !["open","merged","salvaged"].includes(p._out));
@@ -846,16 +958,46 @@ function renderLedger(){
   if (q.startsWith("agent:")) rows = rows.filter(p => p._agent === q.slice(6));
   else if (q) rows = rows.filter(p => (p.title + " " + (p.issue || "") + " " + (p.n || "") + " " + (p.labels || []).join(" ")).toLowerCase().includes(q));
   $("ledgerNote").textContent = `${rows.length} shown · ${SNAP.prs.length} of ${SNAP.totals.all} in snapshot`;
-  $("ledger").innerHTML = `<thead><tr><th>PR</th><th>Title</th><th>Agent</th><th>Opened</th><th>Thread</th><th>Status</th></tr></thead><tbody>` +
+  const head = LEDGER_COLS.map(([k, l]) => `<th${k === ledgerSort.key ? ` aria-sort="${ledgerSort.dir > 0 ? "ascending" : "descending"}"` : ""}><button data-k="${k}">${l}</button></th>`).join("");
+  $("ledger").innerHTML = `<thead><tr>${head}</tr></thead><tbody>` +
     rows.map(p => { const a = AG[p._agent]; return `<tr>
       <td class="num">${p.n ? "#" + p.n : "—"}</td>
       <td><a href="${prUrl(p)}" target="_blank" rel="noopener">${esc(p.title)}</a>${p.issue ? ` <span class="mono" style="color:var(--ink-2)">· issue #${p.issue}</span>` : ""}</td>
       <td><span class="agentchip"><i class="dot" style="background:${a.color}"></i>${esc(a.name)}</span></td>
       <td class="num">${fmtDate(p.created)}</td>
+      <td class="num" title="${esc(p.updated || "")}">${p.state === "open" ? ago(p.updated) : fmtDate(p.closed)}</td>
       <td class="num">${p.comments ?? 0}</td>
-      <td>${tag(p._out)}</td></tr>`; }).join("") + `</tbody>`;
+      <td>${tag(p._out)} ${p.state === "open" ? mergeTag(p.merge) : ""}</td></tr>`; }).join("") + `</tbody>`;
+  $("ledger").querySelectorAll("th button").forEach(b => b.onclick = () => {
+    const k = b.dataset.k;
+    ledgerSort = ledgerSort.key === k ? { key:k, dir:-ledgerSort.dir } : { key:k, dir: ["title","agent"].includes(k) ? 1 : -1 };
+    renderLedger(); saveHash();
+  });
 }
-$("ledgerSearch").addEventListener("input", e => { ledgerQuery = e.target.value; renderLedger(); });
+$("ledgerSearch").addEventListener("input", e => { ledgerQuery = e.target.value; renderLedger(); saveHash(); });
+
+/* ---------- shareable view state (URL hash) ---------- */
+function saveHash(){
+  const q = new URLSearchParams();
+  if (pinned) q.set("agent", selected);
+  if (ledgerFilter !== "all") q.set("ledger", ledgerFilter);
+  if (ledgerQuery) q.set("q", ledgerQuery);
+  if (logFilter !== "all") q.set("log", logFilter);
+  if (ledgerSort.key !== "created" || ledgerSort.dir !== -1) q.set("sort", (ledgerSort.dir > 0 ? "" : "-") + ledgerSort.key);
+  const h = q.toString();
+  try { history.replaceState(null, "", h ? "#" + h : location.pathname + location.search); } catch {}
+}
+function loadHash(){
+  const q = new URLSearchParams(location.hash.slice(1));
+  if (AG[q.get("agent")]){ selected = q.get("agent"); pinned = true; }
+  if (LEDGER_F.some(f => f[0] === q.get("ledger"))) ledgerFilter = q.get("ledger");
+  if (q.get("q")){ ledgerQuery = q.get("q"); $("ledgerSearch").value = ledgerQuery; }
+  if (LOG_FILTERS.some(f => f[0] === q.get("log"))) logFilter = q.get("log");
+  const sort = q.get("sort") || "";
+  const key = sort.replace(/^-/, "");
+  if (LEDGER_COLS.some(c => c[0] === key)) ledgerSort = { key, dir: sort.startsWith("-") ? -1 : 1 };
+}
+loadHash();
 
 /* ---------- boot ---------- */
 function renderAll(){
@@ -864,11 +1006,11 @@ function renderAll(){
     const best = AGENTS.map(a => ({ id: a.id, n: stats[a.id].review.length * 3 + stats[a.id].open.length })).sort((x, y) => y.n - x.n)[0];
     selected = best.id;
   }
-  renderHeader(); drawScene(); renderDossier(); renderGate(); renderLogFilters(); renderLog(); renderReport(); renderLedgerFilters(); renderLedger();
+  renderHeader(); renderQueue(); drawScene(); renderDossier(); renderGate(); renderLogFilters(); renderLog(); renderReport(); renderLedgerFilters(); renderLedger();
   $("foot").innerHTML = SNAP.complete ? `Snapshot ${fmtStamp(SNAP.generatedAt)} from ${esc(SNAP.source)}.`
     : `Snapshot ${fmtStamp(SNAP.generatedAt)} from ${esc(SNAP.source)}. Totals are exact; the lists hold ${SNAP.prs.length} of ${SNAP.totals.all} PRs and the review threads read so far. Run <code>refresh_snapshot.py</code> to load everything.`;
 }
-function showBanner(msg){ const b = $("banner"); b.textContent = msg; b.hidden = false; }
+function showBanner(msg, html){ const b = $("banner"); if (html) b.innerHTML = msg; else b.textContent = msg; b.hidden = false; }
 
 drawScene(); renderDossier();
 const getJSON = path => fetch(path, { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(path + " returned " + r.status); return r.json(); });

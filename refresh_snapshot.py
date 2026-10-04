@@ -29,6 +29,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 from datetime import datetime, timedelta, timezone
 
 # A maintainer saying this PR's own work reached main.
@@ -51,10 +52,15 @@ def gh(path: str, **params) -> object:
     cmd = ["gh", "api", "-X", "GET", path]
     for k, v in params.items():
         cmd += ["-f", f"{k}={v}"]
-    res = subprocess.run(cmd, capture_output=True, text=True)
-    if res.returncode != 0:
-        raise RuntimeError(f"gh api {path} failed: {res.stderr.strip()}")
-    return json.loads(res.stdout or "null")
+    # Retry transient failures (timeouts, 5xx, secondary rate limits) so one blip doesn't sink the run.
+    for attempt in range(4):
+        res = subprocess.run(cmd, capture_output=True, text=True)
+        if res.returncode == 0:
+            return json.loads(res.stdout or "null")
+        if "HTTP 404" in res.stderr or "HTTP 422" in res.stderr:
+            break
+        time.sleep(2 ** attempt * 3)
+    raise RuntimeError(f"gh api {path} failed: {res.stderr.strip()}")
 
 
 def clean(body: str | None, limit: int = 240) -> str:
@@ -263,12 +269,22 @@ def main() -> int:
         merged_at = (it.get("pull_request") or {}).get("merged_at")
         state = "merged" if merged_at else it["state"]
         pr = {"n": it["number"], "title": title, "issue": issue, "state": state,
-              "created": it["created_at"], "comments": it.get("comments", 0),
+              "created": it["created_at"], "updated": it["updated_at"], "comments": it.get("comments", 0),
               "labels": [l["name"] for l in it.get("labels", [])]}
         if it.get("closed_at"):
             pr["closed"] = merged_at or it["closed_at"]
         prs.append(pr)
         updated[pr["n"]] = it["updated_at"]
+
+    # Merge state for open PRs (dirty = conflicting, unstable = failing checks, blocked = awaiting
+    # review). GitHub computes it lazily, so a first read can say "unknown"; the next refresh fills it.
+    for p in prs:
+        if p["state"] == "open":
+            try:
+                pull = gh(f"repos/{args.repo}/pulls/{p['n']}")
+                p["merge"] = "draft" if pull.get("draft") else (pull.get("mergeable_state") or "unknown")
+            except RuntimeError:
+                p["merge"] = "unknown"
 
     prior = load_prior(args.prior)
     closed = [p for p in prs if p["state"] == "closed"]
