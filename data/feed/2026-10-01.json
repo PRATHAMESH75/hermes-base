@@ -1,12 +1,1 @@
-{
-  "day": "2026-10-01",
-  "events": [
-    {
-      "at": "2026-10-01T03:59:05Z",
-      "kind": "merge",
-      "pr": 84290,
-      "text": "Merged into main.",
-      "who": "OutThisLife"
-    }
-  ]
-}
+{"day": "2026-10-01", "events": [{"at": "2026-10-01T03:59:05Z", "who": "OutThisLife", "pr": 84290, "kind": "merge", "text": "Merged into main."}]}

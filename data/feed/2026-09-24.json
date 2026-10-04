@@ -1,12 +1,1 @@
-{
-  "day": "2026-09-24",
-  "events": [
-    {
-      "at": "2026-09-24T00:55:29Z",
-      "kind": "close",
-      "pr": 62267,
-      "text": "Labelled duplicate on GitHub: another PR already covered this issue.",
-      "who": "PRATHAMESH75"
-    }
-  ]
-}
+{"day": "2026-09-24", "events": [{"at": "2026-09-24T00:55:29Z", "who": "PRATHAMESH75", "pr": 62267, "kind": "close", "text": "Labelled duplicate on GitHub: another PR already covered this issue."}, {"at": "2026-09-24T11:13:15Z", "who": "adevwithpurpose", "pr": 120332, "kind": "comment", "text": "One scope-source nit on the launch-profile branch, then this looks right to me (the async-yield-dependency reasoning for sync handlers matches what I see: kanban's specify/decompose/estimate handlers are sync def, run in the threadpool,\u2026"}]}
