@@ -1,0 +1,124 @@
+{
+  "day": "2026-09-25",
+  "events": [
+    {
+      "at": "2026-09-25T11:22:33Z",
+      "kind": "push",
+      "pr": 105926,
+      "text": "test(agent): isolate runtime-main state in auxiliary vision tests (#105888)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:25:26Z",
+      "kind": "push",
+      "pr": 69274,
+      "text": "fix(cron): build failure reason from metadata, not the agent's final_response (#69224)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:29:33Z",
+      "kind": "push",
+      "pr": 85403,
+      "text": "fix(whatsapp): route the pairing wizard through the reader's resolver and reject empty/truncated creds (#85391)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:33:12Z",
+      "kind": "push",
+      "pr": 85996,
+      "text": "feat(toolsets): add file_readonly toolset (read_file + search_files only)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:33:13Z",
+      "kind": "push",
+      "pr": 85996,
+      "text": "fix(setup): keep read-only subset toolsets out of blank-slate disabled_toolsets",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:35:51Z",
+      "kind": "push",
+      "pr": 103422,
+      "text": "fix(local-models): resume ranged model downloads per-worker instead of restarting from zero (#103416)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:55:09Z",
+      "kind": "push",
+      "pr": 89142,
+      "text": "fix(doctor): spell out diverging pip names in Required Packages hints",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:04:54Z",
+      "kind": "push",
+      "pr": 68953,
+      "text": "fix(desktop): open macOS PDFs via Preview when the default handler is broken (#68937)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:09:24Z",
+      "kind": "push",
+      "pr": 68180,
+      "text": "fix(bootstrap): reject truncated install-script downloads via Content-Length (#68163)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:20:04Z",
+      "kind": "push",
+      "pr": 67250,
+      "text": "fix(feishu): repair Windows system SOCKS proxy for WS event channel",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:22:50Z",
+      "kind": "push",
+      "pr": 67250,
+      "text": "fix(feishu): log only proxy scheme, never the full URL, on WS SOCKS rewrite",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:58:13Z",
+      "kind": "open",
+      "pr": 122636,
+      "text": "Opened: fix(build): skip macOS Finder metadata in build freshness hashing (fixes #122632)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T13:12:53Z",
+      "kind": "open",
+      "pr": 122652,
+      "text": "Opened: feat(skills): exclude .stversions and _archive from skill discovery (fixes #122613)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T14:02:34Z",
+      "kind": "push",
+      "pr": 85365,
+      "text": "fix(gateway): propagate HERMES_BUNDLED_ into launchd/systemd service units (#85357)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T14:10:16Z",
+      "kind": "open",
+      "pr": 122704,
+      "text": "Opened: fix(acp): archive dropped rows on non-owning-agent persist instead of hard-deleting (fixes #122699)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T14:47:34Z",
+      "kind": "push",
+      "pr": 122636,
+      "text": "test(build): seed assets/ input before the junk-write assertion (#122632)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T14:53:42Z",
+      "kind": "close",
+      "pr": 122652,
+      "text": "Labelled duplicate on GitHub: another PR already covered this issue.",
+      "who": "PRATHAMESH75"
+    }
+  ]
+}

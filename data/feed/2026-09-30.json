@@ -1,0 +1,19 @@
+{
+  "day": "2026-09-30",
+  "events": [
+    {
+      "at": "2026-09-30T02:18:48Z",
+      "kind": "comment",
+      "pr": 65887,
+      "text": "Superseded by https://github.com/NousResearch/hermes-agent/pull/128569, which fixes the same root cause on current main and credits this PR's work (authorship or Co-authored-by kept where your code carried over). Closing this one so…",
+      "who": "OutThisLife"
+    },
+    {
+      "at": "2026-09-30T02:18:49Z",
+      "kind": "close",
+      "pr": 65887,
+      "text": "Superseded by #128569, which fixes the same root cause on current main.",
+      "who": "OutThisLife"
+    }
+  ]
+}

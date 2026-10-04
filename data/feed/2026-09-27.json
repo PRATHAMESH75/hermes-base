@@ -1,0 +1,180 @@
+{
+  "day": "2026-09-27",
+  "events": [
+    {
+      "at": "2026-09-27T04:37:44Z",
+      "kind": "push",
+      "pr": 94965,
+      "text": "docs(windows): correct gateway Scheduled Task name and launch mechanism (#94941)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:38:25Z",
+      "kind": "push",
+      "pr": 94965,
+      "text": "docs(windows): correct the Startup-folder fallback and clarify the spawn-flags scope",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:41:32Z",
+      "kind": "push",
+      "pr": 63898,
+      "text": "fix(tools): escalate repeated malformed patch calls instead of looping",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:44:00Z",
+      "kind": "push",
+      "pr": 107163,
+      "text": "fix(tools): heal a stale local session-cwd record instead of bricking the terminal (#107156)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:46:56Z",
+      "kind": "push",
+      "pr": 106088,
+      "text": "fix(tui): run quick-command skill aliases via command.dispatch on desktop/TUI",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T05:59:56Z",
+      "kind": "open",
+      "pr": 124851,
+      "text": "Opened: fix(copilot-acp): reap the launcher's native descendant on teardown (fixes #124835)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T06:04:25Z",
+      "kind": "open",
+      "pr": 124855,
+      "text": "Opened: fix(cron): stop an adopted external worker from re-exec'ing and losing its payload (fixes #124827)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T06:52:03Z",
+      "kind": "open",
+      "pr": 124891,
+      "text": "Opened: fix(agent): log the native cause before a refusal/invalid-response fallback (fixes #124874)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T07:54:34Z",
+      "kind": "push",
+      "pr": 123791,
+      "text": "fix(computer-use): make a UTF-16 BOM decisive when reading the autostart task (#123774)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T07:55:05Z",
+      "kind": "comment",
+      "pr": 123791,
+      "text": "Thanks @triplemc97 — verified and fixed at 0b9aa48d. You're right that the genuine UTF-16-with-BOM payload was a second, separate failure shape: _decode_schtasks_output tries UTF-8 then the single-byte console code pages, so a real UTF-16…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T08:41:58Z",
+      "kind": "push",
+      "pr": 105864,
+      "text": "fix(update): degrade past repo-scoped HTTP 429 with bounded retry (#105857)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:43:20Z",
+      "kind": "push",
+      "pr": 123952,
+      "text": "fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install (#123943)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:49:50Z",
+      "kind": "open",
+      "pr": 125246,
+      "text": "Opened: fix(backup): exclude the win-arm64 build-tools vcpkg cache from HERMES_HOME backups (fixes #125237)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T13:54:10Z",
+      "kind": "push",
+      "pr": 123950,
+      "text": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune (#123935)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T13:54:54Z",
+      "kind": "comment",
+      "pr": 123950,
+      "text": "Rebased onto upstream/main and re-implemented onto the refactored _prune_old_tool_results. Since this PR was opened, upstream reworked the prune passes: Pass 3 (tool-call argument truncation via _truncate_tool_call_args_at) was removed —…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T14:15:52Z",
+      "kind": "open",
+      "pr": 125331,
+      "text": "Opened: fix(agent): decode sentinel-encoded multimodal turns before the alternation repair (fixes #125299)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:06:32Z",
+      "kind": "push",
+      "pr": 123378,
+      "text": "fix(desktop): list root-level personalities in the Settings dropdown (#123297)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:06:33Z",
+      "kind": "push",
+      "pr": 123378,
+      "text": "test(desktop): cover personalityOptions' root read and pin GUI ordering",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:58:15Z",
+      "kind": "push",
+      "pr": 123378,
+      "text": "style(desktop): satisfy curly + import-sort lint on personality folding",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T17:08:29Z",
+      "kind": "push",
+      "pr": 58201,
+      "text": "fix(bedrock): include apac. inference-profile prefix in picker dedup (#58185)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T17:59:35Z",
+      "kind": "merge",
+      "pr": 123378,
+      "text": "Merged into main.",
+      "who": "maintainer"
+    },
+    {
+      "at": "2026-09-27T18:50:41Z",
+      "kind": "open",
+      "pr": 125594,
+      "text": "Opened: fix(cli): keep an explicit custom-provider pin over an inferred vendor prefix at startup (fixes #125578)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T19:43:34Z",
+      "kind": "comment",
+      "pr": 123749,
+      "text": "AI code review — automated follow-up for reference; not a maintainer. Different angle from the existing thread: not whether the guard covers the list variants (it does — _cmd_list is a single entry point), but which path the guard tests.…",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-27T21:49:16Z",
+      "kind": "comment",
+      "pr": 123950,
+      "text": "AI code review — automated follow-up for reference; not a maintainer. Adding protect_head_count to _prune_old_tool_results and passing _protect_head_size(messages) at both call sites (agent/context_compressor.py:3351, :5438) so the…",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-27T23:40:31Z",
+      "kind": "comment",
+      "pr": 125331,
+      "text": "AI code review — automated follow-up for reference; not a maintainer. Review of a7ec9293. The decode is right in substance — _JSON_CONTENT_SENTINEL (:624) matches SessionDB._CONTENT_JSON_PREFIX (hermes_state.py:1604) exactly, and…",
+      "who": "Enough1122"
+    }
+  ]
+}

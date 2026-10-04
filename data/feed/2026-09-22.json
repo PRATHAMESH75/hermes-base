@@ -1,0 +1,117 @@
+{
+  "day": "2026-09-22",
+  "events": [
+    {
+      "at": "2026-09-22T06:33:48Z",
+      "kind": "close",
+      "pr": 88465,
+      "text": "Main surfaces the quoted providers mapping in doctor and startup via #118843 instead.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T06:39:43Z",
+      "kind": "salvage",
+      "pr": 67611,
+      "text": "Landed on main as a slim redo that re-applied the mechanism at the current seam (#118842).",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T07:59:05Z",
+      "kind": "salvage",
+      "pr": 72026,
+      "text": "Cherry-picked onto main by teknium1 on Sep 22, with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T17:31:33Z",
+      "kind": "salvage",
+      "pr": 105891,
+      "text": "Cherry-picked onto main by teknium1 on Sep 20, with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T17:34:22Z",
+      "kind": "close",
+      "pr": 117517,
+      "text": "Closed by the autoresolver: main fixed #116221 first via #116875 with a pattern-level carve-out.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T17:35:53Z",
+      "kind": "close",
+      "pr": 87571,
+      "text": "Closed by the autoresolver: main fixed it in 92e6cc189b by removing stash@{N} selectors.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T17:36:47Z",
+      "kind": "push",
+      "pr": 87714,
+      "text": "fix(cli): resolve bracket-style list indices in config set/get/unset (#87689)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T17:38:17Z",
+      "kind": "push",
+      "pr": 87570,
+      "text": "fix(agent): canonicalize ALIASES providers in credential-pool mismatch guard (#87526)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T17:39:12Z",
+      "kind": "push",
+      "pr": 99445,
+      "text": "fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions (#99436)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:01:35Z",
+      "kind": "push",
+      "pr": 58201,
+      "text": "fix(bedrock): dedup profile-covered bare model IDs in /model picker",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:03:53Z",
+      "kind": "push",
+      "pr": 73482,
+      "text": "fix(tts): fall back to mp3 when an OpenAI-compatible backend rejects response_format (#73470)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:05:12Z",
+      "kind": "push",
+      "pr": 71816,
+      "text": "fix(tools): inject items into array schemas so Gemini accepts tool declarations",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:06:09Z",
+      "kind": "push",
+      "pr": 71816,
+      "text": "fix(tools): inject items into synthesized multi-type anyOf array branches",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:07:52Z",
+      "kind": "push",
+      "pr": 68059,
+      "text": "fix(config): skip symlinked HERMES_HOME subdirs in _secure_dir",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:16:49Z",
+      "kind": "push",
+      "pr": 69215,
+      "text": "fix(agent): checkpoint every terminal call, not just regex-matched ones",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:25:11Z",
+      "kind": "open",
+      "pr": 119402,
+      "text": "Opened: fix(streaming): retry unrepairable tool args on a terminal finish_reason (fixes #119389)",
+      "who": "PRATHAMESH75"
+    }
+  ]
+}

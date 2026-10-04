@@ -1,0 +1,2507 @@
+{
+  "events": [
+    {
+      "at": "2026-08-01T12:00:01Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 72787,
+      "text": "Merged via #75968 with authorship preserved, adding a git common-dir identity gate.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-01T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68953,
+      "text": "Now calls openPath first, with the Preview fallback only on a non-empty error.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T01:08:47Z",
+      "kind": "open",
+      "pr": 76496,
+      "text": "Opened: fix(agent): drop client web_search on OpenRouter xAI :online requests (fixes #76481)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T08:20:44Z",
+      "kind": "open",
+      "pr": 76680,
+      "text": "Opened: fix(dashboard): scope Provider Logins OAuth to the active management profile (fixes #76674)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T10:53:35Z",
+      "kind": "open",
+      "pr": 76734,
+      "text": "Opened: fix(test): guard write_runtime_status against clobbering the real gateway_state.json (fixes #76728)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T11:01:40Z",
+      "kind": "open",
+      "pr": 76735,
+      "text": "Opened: fix(desktop): count calendar days for the relative next-run label (fixes #76725)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T11:44:51Z",
+      "kind": "push",
+      "pr": 73357,
+      "text": "fix(desktop): confirm before clearing the entire Enabled Toolsets list (#73319)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T11:57:22Z",
+      "kind": "push",
+      "pr": 76734,
+      "text": "fix(test): guard write_runtime_status against clobbering the real gateway_state.json (#76728)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 76735,
+      "text": "\"Focused regression fix\" for calendar-day rounding; suggested reusing the startOfLocalDay helper.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-02T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 76735,
+      "text": "Reused startOfLocalDay and removed the duplication.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:03Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 76734,
+      "text": "The named-profile bypass doesn't reproduce and the wrapper isn't reload-safe; needs a concrete path or test.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-02T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 76734,
+      "text": "Kept point 1 as defense in depth; point 2 needs a maintainer decision on reload-proofing.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:05Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 76734,
+      "text": "The guard misses direct and late imports; hook the write/path seam instead.",
+      "who": "pestoura"
+    },
+    {
+      "at": "2026-08-02T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 76734,
+      "text": "Closed: the autouse fixture already re-pins HERMES_HOME per test, so the clobber path is unreachable.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:07Z",
+      "day": true,
+      "kind": "review",
+      "pr": 76680,
+      "text": "Confirms the gap in PROFILE_SCOPED_PREFIXES; the backend is already profile-aware and the patch applies cleanly.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-02T12:00:08Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 76496,
+      "text": "Coverage gap: no assertion for the empty-result branch when web_search is the only tool.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-02T12:00:09Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 76496,
+      "text": "Added a test that the tools key is omitted entirely rather than sent as an empty list.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:10Z",
+      "day": true,
+      "kind": "close",
+      "pr": 75524,
+      "text": "Closed in favour of #75527, the complete bidirectional fix.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:11Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 74212,
+      "text": "Added TestScrapeSDKBoundary with a fake client asserting header forwarding.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 74193,
+      "text": "Switched to a non-closing \"Refs\" and added a Scope section.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:13Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 73357,
+      "text": "Tightened the predicate in b0f2508c5 to require an explicit empty array.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:14Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 73102,
+      "text": "Trimmed the tests to the single regression test (+55 lines instead of +330).",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:15Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 73076,
+      "text": "Applied the suggestion and rebased onto main.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:16Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71965,
+      "text": "Extended the carve-out to detectable shell commands in execute_code scripts and updated docs.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:17Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71958,
+      "text": "Switched to per-capability registry enumeration with invariant tests.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:18Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71947,
+      "text": "Narrowed to exact Kanban keys and restored markers after sourcing.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:19Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69490,
+      "text": "Added irm and invoke-restmethod to the PowerShell RCE rule with new tests.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:20Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68829,
+      "text": "Fixed in 372837170 using per-provider canonical sets from _PROVIDER_ALIASES.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:21Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68823,
+      "text": "Added a real-runner test covering pairing-code generation and delivery.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:22Z",
+      "day": true,
+      "kind": "close",
+      "pr": 68319,
+      "text": "Withdrawn: the import and definition were introduced together, so no supported path shows the error.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:23Z",
+      "day": true,
+      "kind": "close",
+      "pr": 68162,
+      "text": "Closed as superseded by 3572d4bca, a broader discovery wait with a 15s timeout.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:24Z",
+      "day": true,
+      "kind": "close",
+      "pr": 67926,
+      "text": "Closed as superseded: #67893 fixes metadata destruction in the save path directly.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:25Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63899,
+      "text": "Populated toolsets on every synthetic entry and extended tests to interrupted, timeout and error.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-02T12:00:26Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63084,
+      "text": "Added a timeout test for exit 124.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-03T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 77729,
+      "text": "Related: #77383 covers broader lifecycle-guard parsing; consider both together.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-03T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 77729,
+      "text": "Production impact confirmed on a macOS gateway: a 973-second outage before /stop released it.",
+      "who": "tachyon-r"
+    },
+    {
+      "at": "2026-08-03T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 77729,
+      "text": "\"Adding only defensive ValueError handling did not close the path\"; binaries must be rejected.",
+      "who": "imadal1n"
+    },
+    {
+      "at": "2026-08-03T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 76735,
+      "text": "AI triage summary: picks this PR as the \"best fix\" and #76935 as the duplicate.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 76680,
+      "text": "Three PRs target this issue; #76680 is the best fix.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 76496,
+      "text": "AI triage: a narrowly scoped filter in both kwargs builders, with a focused regression test.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 75702,
+      "text": "Summary of seven related PRs with a consolidation plan.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 75549,
+      "text": "Consolidation summary: keep #75549 as the best fix.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:09Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 74212,
+      "text": "Triage picks this PR as the best fix, with sanitisation and proper tests.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:10Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 74193,
+      "text": "Merged via #77516 with the commit cherry-picked, kwargs checked against faster-whisper.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-08-03T12:00:11Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 74184,
+      "text": "Six PRs target this issue (four historical, two current); suggests consolidating.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 74184,
+      "text": "Added a filter and eager flag in a follow-up commit to prevent the collision.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-03T12:00:13Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 73357,
+      "text": "The contributor resolved the keep_open objection on this destructive transition.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:14Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 73127,
+      "text": "Rebase onto main and resolve the locale conflicts, keeping the Undo callback and test.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:15Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71965,
+      "text": "Triage: a targeted self-disruption exception across shell and execute_code; keep open.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:16Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71958,
+      "text": "Triage: fixes the issue, but the tests still freeze the exact built-in provider sets.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:17Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71947,
+      "text": "AI triage: consolidates three PRs' behaviour; marked as the best fix.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:18Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71816,
+      "text": "Eight PRs target the missing-array-items failure; #71816 has the broadest tested coverage.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:19Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71816,
+      "text": "Closed the remaining multi-type array gap; synthesised anyOf branches are sanitised.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-03T12:00:20Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69274,
+      "text": "Uses an unverified producer; establish the contract and test the Ollama diagnostic path.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:21Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69159,
+      "text": "Triage picks #69159 as the best fix; recommends closing the duplicate #69166.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:22Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69068,
+      "text": "A focused salvage path for bug 1; keeps #69031 open for the follow-up.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:23Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68967,
+      "text": "The only PR for #68963: replaces reconnect-dependent exits with an in-connection retry loop.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:24Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68953,
+      "text": "Triage: keeps a focused helper, preserves working handlers, right fallback order.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:25Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68823,
+      "text": "Triage: addresses #68794 with boolean-matrix and real-runner tests.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:26Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68796,
+      "text": "Triage: keep open with a salvage path for the write-set/stage-set contract.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:27Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68407,
+      "text": "Triage: #68407 is the best fix; #68584 is a duplicate with an unsupported sanitizer.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:28Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68405,
+      "text": "Triage: adds the missing desktop_contract to the lazy activate fallback, with a regression test.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:29Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68271,
+      "text": "Three PRs target this; #68271 is best for normal turns, #73758 is a broader lifecycle alternative.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:30Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 68228,
+      "text": "Consolidated with 5 other OpenViking fixes into one coherent integration.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-08-03T12:00:31Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68180,
+      "text": "Keep open; add a local-server test asserting dest_path isn't replaced.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:32Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68151,
+      "text": "Two PRs target #68081; this one lacks included-versus-additive semantics.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:33Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68059,
+      "text": "Keep open; add production call-path coverage for symlinked skills.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:34Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67947,
+      "text": "Two PRs cover stale credentials: #67843 rebuilds the primary client, #67947 fixes auxiliary paths.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:35Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67944,
+      "text": "Triage of six related PRs picks this as the best fix for #67936.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:36Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67611,
+      "text": "Three duplicate PRs; #67611 is the best fix with full coverage.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:37Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67593,
+      "text": "Triage: #67593 is the best fix; #67613 is a narrower duplicate with gaps.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:38Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67471,
+      "text": "Three competing PRs; #67476 is best, with TERMINAL_CWD restoration.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:39Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67373,
+      "text": "Three duplicate PRs for #67362; #67373 is best, with test coverage.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:40Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 67350,
+      "text": "Salvaged as #77627, measuring a 2.4x-11x speedup; INDEXED BY crashed read-only opens.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-08-03T12:00:41Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67336,
+      "text": "Assessed #67336 as the best fix; #67462 duplicates the same recovery ladder.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:42Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67250,
+      "text": "#67250 repairs the bare socks:// alias selectively; #67701 disables the proxy unconditionally.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:43Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67011,
+      "text": "16 competing PRs; #67011 rated the best fix for the npm-install issue.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:44Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 66828,
+      "text": "Six PRs target this; keep #66828's regression and install-flow tests.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:45Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 65887,
+      "text": "Triage: fixes the main-process update skew; the renderer SIGTRAP is still open.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:46Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 64344,
+      "text": "Best fix for #64304, but needs re-porting to the current TypeScript.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:47Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63899,
+      "text": "Triage: #63899 is the best fix; asks for an end-to-end restricted-child regression.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T12:00:48Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63898,
+      "text": "Triage: #63898 is the best fix for the malformed patch-call loop.",
+      "who": "GottZ"
+    },
+    {
+      "at": "2026-08-03T13:04:37Z",
+      "kind": "push",
+      "pr": 68228,
+      "text": "fix(memory): read non-secret provider config from config.yaml for OpenViking and RetainDB",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-03T13:32:00Z",
+      "kind": "open",
+      "pr": 77729,
+      "text": "Opened: fix(terminal): skip binary content on the referenced-script remote-read fallback (fixes #77703)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-03T14:45:10Z",
+      "kind": "push",
+      "pr": 74184,
+      "text": "fix(cli): bind alt voice.record_key as an escape sequence so startup doesn't crash (#74169)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-03T14:48:21Z",
+      "kind": "push",
+      "pr": 74184,
+      "text": "fix(cli): gate the voice PTT chord so it doesn't collide with sibling Alt bindings (#74169)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 78491,
+      "text": "The consuming-punctuation regex breaks the split() path; suggests a zero-width alternative.",
+      "who": "frankzzziii"
+    },
+    {
+      "at": "2026-08-04T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78491,
+      "text": "Agreed; switched to a zero-width lookbehind with a negative lookahead.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 73482,
+      "text": "Verified end to end with live probes against backends that reject opus.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-08-04T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68319,
+      "text": "Traced the issue to their own non-atomic deploy; the current install is in sync.",
+      "who": "John-Kmiec"
+    },
+    {
+      "at": "2026-08-04T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 51849,
+      "text": "Mostly addressed upstream: the extracted model-catalog-menu.tsx already shows effort.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T12:46:37Z",
+      "kind": "push",
+      "pr": 76680,
+      "text": "fix(dashboard): scope Provider Logins OAuth to the active management profile (#76674)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T12:54:43Z",
+      "kind": "push",
+      "pr": 62868,
+      "text": "fix(tools): lazily bring up sandbox for vision_analyze reads",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T13:18:40Z",
+      "kind": "open",
+      "pr": 78491,
+      "text": "Opened: fix(tts): split streaming sentences on CJK terminators (。！？…) (fixes #78477)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T13:21:52Z",
+      "kind": "open",
+      "pr": 78495,
+      "text": "Opened: fix(discord): accept relay-lane kwargs in native rename_thread (fixes #78487)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T13:44:24Z",
+      "kind": "open",
+      "pr": 78504,
+      "text": "Opened: fix(gateway): tolerate sub-2s start-time drift in PID-reuse liveness guard (fixes #78498)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T15:45:55Z",
+      "kind": "open",
+      "pr": 78588,
+      "text": "Opened: test(stt): de-flake command-STT idle-timeout stderr-progress test",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T15:46:26Z",
+      "kind": "open",
+      "pr": 78590,
+      "text": "Opened: fix(install): surface aborted gateway restart during hermes update (fixes #78574)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-04T15:55:38Z",
+      "kind": "open",
+      "pr": 78594,
+      "text": "Opened: fix(agent): treat max-iteration nudge as synthetic during compaction (fixes #78580)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-05T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 77729,
+      "text": "Local binary detection could skip wasted remote round-trips on SSH backends.",
+      "who": "ifantx"
+    },
+    {
+      "at": "2026-08-05T12:00:02Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 77729,
+      "text": "Merged via #79454 with commits cherry-picked and authorship preserved.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-08-06T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 78590,
+      "text": "The exception path sets the incomplete flag, prints the recovery command and exits non-zero on Linux.",
+      "who": "monerostar"
+    },
+    {
+      "at": "2026-08-07T16:12:16Z",
+      "kind": "salvage",
+      "pr": 62868,
+      "text": "Cherry-picked onto main by teknium1 on Aug 7, with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-08T12:00:01Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 78594,
+      "text": "Salvaged via #81608 with the commit cherry-picked; the fix covers every consumer.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-08-10T12:00:01Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 68405,
+      "text": "Merged via #83060 with authorship preserved.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-11T12:00:01Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 78590,
+      "text": "An empty survivor probe after stop/drain can't tell safe from unsafe; record the pre-restart state.",
+      "who": "egilewski"
+    },
+    {
+      "at": "2026-08-12T03:56:31Z",
+      "kind": "push",
+      "pr": 76735,
+      "text": "fix(desktop): count calendar days for the relative next-run label (#76725)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-12T04:08:11Z",
+      "kind": "open",
+      "pr": 84286,
+      "text": "Opened: fix(tools): route config credential-file mounts through the master-store deny-list (fixes #84270)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-12T04:16:59Z",
+      "kind": "open",
+      "pr": 84290,
+      "text": "Opened: fix(desktop): drive the pet from any working session, not just the foreground one (fixes #84282)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-12T04:21:52Z",
+      "kind": "open",
+      "pr": 84292,
+      "text": "Opened: fix(desktop): reassert UI zoom on display-metrics-changed so RDP reconnects keep the saved level (fixes #84274)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-12T04:43:20Z",
+      "kind": "open",
+      "pr": 84301,
+      "text": "Opened: fix(state): stop /resume from following /new /reset boundary children (fixes #84284)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-12T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84292,
+      "text": "Duplicate of #76908, which implements the same Electron screen-event and debounced zoom.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-12T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71947,
+      "text": "Rebased to also exclude the AI_AGENT and HERMES_AGENT attribution markers.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85449,
+      "text": "Independently verified: pinning the path at acquire time fixes it without a profile registry.",
+      "who": "kh-mitya"
+    },
+    {
+      "at": "2026-08-13T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85447,
+      "text": "Duplicate of #85444: the same one-hour requested_at expiry for orphan drain markers.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-13T12:00:03Z",
+      "day": true,
+      "kind": "close",
+      "pr": 85447,
+      "text": "Closed as superseded: main landed an identical maintainer fix in 88557667.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85403,
+      "text": "The wizard still gates on a bare creds.json, so a 0-byte file passes as paired.",
+      "who": "spfcraze"
+    },
+    {
+      "at": "2026-08-13T12:00:05Z",
+      "day": true,
+      "kind": "review",
+      "pr": 85365,
+      "text": "Verified on Ubuntu 26.04 with the variables both set and unset.",
+      "who": "monerostar"
+    },
+    {
+      "at": "2026-08-13T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84301,
+      "text": "Upstream landed a competing fix with a different mechanism; this PR now conflicts.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:07Z",
+      "day": true,
+      "kind": "close",
+      "pr": 84292,
+      "text": "Closed as a duplicate: #76908 is earlier and more complete.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78590,
+      "text": "The logic fails closed on inconclusive signals; discovery uncertainty belongs in a separate hardening PR.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:09Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 78590,
+      "text": "Treat inconclusive discovery as unknown and fail closed unless no gateway is proven to remain.",
+      "who": "egilewski"
+    },
+    {
+      "at": "2026-08-13T12:00:10Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78590,
+      "text": "That behaviour is pre-existing in find_gateway_pids; the cross-cutting change deserves its own review.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:11Z",
+      "day": true,
+      "kind": "review",
+      "pr": 78590,
+      "text": "All five decision cases tested on Windows; stopped-without-replacement now fails closed.",
+      "who": "monerostar"
+    },
+    {
+      "at": "2026-08-13T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71947,
+      "text": "The red check is an unrelated flake in test_pending_drain_race.py.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:13Z",
+      "day": true,
+      "kind": "close",
+      "pr": 67944,
+      "text": "Closed as superseded: 52c9aee3b moved the blocking work off the event loop.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T12:00:14Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67471,
+      "text": "Marked as a duplicate of #67476.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-13T12:00:15Z",
+      "day": true,
+      "kind": "close",
+      "pr": 51849,
+      "text": "Closed as superseded: the picker became a reusable primitive that already shows effort.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T14:46:08Z",
+      "kind": "open",
+      "pr": 85365,
+      "text": "Opened: fix(gateway): propagate HERMES_BUNDLED_* into launchd/systemd units",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T15:10:07Z",
+      "kind": "push",
+      "pr": 63084,
+      "text": "fix(tools): don't report interrupted read_file as File not found",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T15:11:56Z",
+      "kind": "push",
+      "pr": 63084,
+      "text": "test(tools): cover read_file_raw stat-probe timeout (exit 124)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T15:40:13Z",
+      "kind": "open",
+      "pr": 85398,
+      "text": "Opened: fix(telegram): anchor fenced-code regex so inline triple backticks aren't mangled",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T15:50:08Z",
+      "kind": "open",
+      "pr": 85403,
+      "text": "Opened: fix(whatsapp): pair into the session dir the gateway reads, and reject empty creds",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T16:57:55Z",
+      "kind": "open",
+      "pr": 85447,
+      "text": "Opened: fix(gateway): expire same-epoch orphaned drain markers past a max-age (fixes #85433)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-13T17:01:36Z",
+      "kind": "open",
+      "pr": 85449,
+      "text": "Opened: fix(gateway): pin active-session lease to its acquire-time registry (fixes #85431)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T06:25:34Z",
+      "kind": "open",
+      "pr": 85871,
+      "text": "Opened: fix(install): name the failing stage in hermes update instead of always \"Git update failed\"",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T06:49:00Z",
+      "kind": "open",
+      "pr": 85881,
+      "text": "Opened: fix(agent): skip the automatic background review inside delegation subagents",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T10:02:43Z",
+      "kind": "open",
+      "pr": 85996,
+      "text": "Opened: feat(toolsets): add file_readonly toolset (read_file + search_files only)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86456,
+      "text": "Duplicate of #63896: both fix Windows npm shim vs .cmd wrapper selection (WinError 193).",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-14T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86456,
+      "text": "Diagnosis verified on Windows 11; the staging step has a gap in relative path resolution after copy.",
+      "who": "Hotragn"
+    },
+    {
+      "at": "2026-08-14T12:00:03Z",
+      "day": true,
+      "kind": "close",
+      "pr": 86456,
+      "text": "Closed in favour of #63896, the earlier and broader fix.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T12:00:04Z",
+      "day": true,
+      "kind": "review",
+      "pr": 86344,
+      "text": "A teardown worker can be registered after shutdown begins and escape the final drain.",
+      "who": "coderabbitai"
+    },
+    {
+      "at": "2026-08-14T12:00:05Z",
+      "day": true,
+      "kind": "review",
+      "pr": 86308,
+      "text": "Integration gap: the tests mock the seams; exercise the real event handler and PairingStore.",
+      "who": "QuarkAssistant"
+    },
+    {
+      "at": "2026-08-14T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86308,
+      "text": "Added real-dispatch tests; a resolver exception now fails closed.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T12:00:07Z",
+      "day": true,
+      "kind": "review",
+      "pr": 86308,
+      "text": "Secondary multiplex adapters never register the callback resolver.",
+      "who": "coderabbitai"
+    },
+    {
+      "at": "2026-08-14T12:00:08Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 86308,
+      "text": "Secondary adapters don't get the resolver, and the test stays green if registration is deleted.",
+      "who": "QuarkAssistant"
+    },
+    {
+      "at": "2026-08-14T12:00:09Z",
+      "day": true,
+      "kind": "close",
+      "pr": 86293,
+      "text": "Closed as a duplicate: #86100 fixes the same defect differently.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T12:00:10Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86293,
+      "text": "Part of a set of competing repairs for the Windows desktop gateway-reap regression.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-14T12:00:11Z",
+      "day": true,
+      "kind": "review",
+      "pr": 86285,
+      "text": "Add regression coverage for the media delivery path and validate thread_ts as ASCII digits.",
+      "who": "coderabbitai"
+    },
+    {
+      "at": "2026-08-14T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85403,
+      "text": "Moved the validator to a shared module so the adapter and wizard both use has_valid_whatsapp_creds.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T12:00:13Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85398,
+      "text": "Reproduced a broader failure and opened #86283 with a variable-length fence parser.",
+      "who": "ropu"
+    },
+    {
+      "at": "2026-08-14T12:00:14Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85398,
+      "text": "Kept this as the minimal fix; happy for maintainers to choose between the two PRs.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T12:00:15Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 85398,
+      "text": "\"Support CRLF closing fence lines\", with a proposed regex fix.",
+      "who": "coderabbitai"
+    },
+    {
+      "at": "2026-08-14T12:00:16Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85398,
+      "text": "Implemented the CRLF fix and explained why the opening and closing anchors differ.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T12:00:17Z",
+      "day": true,
+      "kind": "close",
+      "pr": 84301,
+      "text": "Closed as superseded: 91c7a67f4 already fixes #84284.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T19:12:13Z",
+      "kind": "open",
+      "pr": 86285,
+      "text": "Opened: fix(slack): drop non-Slack thread ids in standalone delivery instead of failing (fixes #86264)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T19:30:25Z",
+      "kind": "open",
+      "pr": 86293,
+      "text": "Opened: fix(desktop): spare detached/supervised gateways from the startup orphan reap (fixes #86287)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T19:58:33Z",
+      "kind": "open",
+      "pr": 86308,
+      "text": "Opened: fix(telegram): route inline-callback auth through the profile-aware runner path (fixes #86296)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T20:53:26Z",
+      "kind": "open",
+      "pr": 86344,
+      "text": "Opened: fix(docker): retain container-teardown threads across registry detachment (fixes #86317)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-14T22:58:40Z",
+      "kind": "open",
+      "pr": 86456,
+      "text": "Opened: fix(lsp): probe Windows wrapper suffixes before the extension-less shim (fixes #86445)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T00:51:37Z",
+      "kind": "open",
+      "pr": 86563,
+      "text": "Opened: fix(gateway): don't crash on a foreign XDG_RUNTIME_DIR in user-systemd preflight (fixes #86558)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T01:38:45Z",
+      "kind": "push",
+      "pr": 85449,
+      "text": "fix(gateway): pin active-session lease to its acquire-time registry",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T01:40:08Z",
+      "kind": "push",
+      "pr": 78590,
+      "text": "fix(install): surface aborted gateway restart during hermes update",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T01:40:09Z",
+      "kind": "push",
+      "pr": 78590,
+      "text": "fix(install): fail closed when a stopped gateway leaves an empty survivor probe",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87143,
+      "text": "The env gate runs before the callback; suggested consulting the callback first so an explicit deny wins.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:02Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87135,
+      "text": "Near-duplicate of #87137 for the same issue; the authors should coordinate.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86344,
+      "text": "Already addressed by the PR's second commit, 24e60b67.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-08-15T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85881,
+      "text": "Confirmed this fixes #86632: the synchronous delegate_task fallback no longer wedges.",
+      "who": "webtecnica"
+    },
+    {
+      "at": "2026-08-15T12:00:05Z",
+      "day": true,
+      "kind": "review",
+      "pr": 85871,
+      "text": "String-form cmd is misclassified, the heuristic has false positives, and error output is duplicated.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 85449,
+      "text": "Closed as superseded by maintainer commit 94ce8396e, which fixes the same root cause.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T12:00:07Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 78590,
+      "text": "Both commits cherry-picked into a consolidated update-honesty PR, authorship preserved.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-15T12:00:08Z",
+      "day": true,
+      "kind": "close",
+      "pr": 74184,
+      "text": "Superseded by a merged fix that converts Alt shortcuts to prompt_toolkit sequence tuples.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T12:00:09Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 73357,
+      "text": "Salvaged into #86759 and merged.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-15T12:00:10Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69215,
+      "text": "Checkpoint failures are swallowed silently; suggests logging, and discusses snapshot cost and cwd keying.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:11Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69088,
+      "text": "AI review: undefined targetSha handling, malformed record parsing, and fetching full history.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69088,
+      "text": "Upstream reworked the update-check subsystem; the feature is still needed but must be re-grafted.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T12:00:13Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68271,
+      "text": "The contextvar fallback still misroutes outside turn-bound contexts and lacks an interleaving test.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:14Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 67947,
+      "text": "The dotenv cache is keyed by path/mtime/size and the lazy import can raise; the intent is clear.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:15Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67593,
+      "text": "Three wiring concerns: silent omission, dedup test gaps, non-streamed completion.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:16Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67011,
+      "text": "Independent validation passes; combining with #66638 duplicates the workspace selection policy.",
+      "who": "enzo-adami"
+    },
+    {
+      "at": "2026-08-15T12:00:17Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 65887,
+      "text": "Three concerns: brittle string matching, a permanent warn-once latch, dropped kwargs.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:18Z",
+      "day": true,
+      "kind": "review",
+      "pr": 63899,
+      "text": "Duplicate assignments at six sites, empty vs unknown ambiguity, and a flaky sleep in the test.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T12:00:19Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 55781,
+      "text": "Three points: the single-word edge case, unconditional flag clearing, and tests for other verbs.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-15T15:58:09Z",
+      "kind": "push",
+      "pr": 85871,
+      "text": "fix(install): name the failing stage in hermes update, not always \"Git update failed\"",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T17:00:16Z",
+      "kind": "open",
+      "pr": 87135,
+      "text": "Opened: fix(mcp): prefer server-native tool over generated utility on name collision (fixes #87112)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T17:06:42Z",
+      "kind": "open",
+      "pr": 87143,
+      "text": "Opened: fix(telegram): honor group_allowed_chats in early auth under multiplex profiles (fixes #87132)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T21:01:07Z",
+      "kind": "open",
+      "pr": 87263,
+      "text": "Opened: fix(providers): fail closed on malformed base URL in get_hostname",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-15T21:17:54Z",
+      "kind": "open",
+      "pr": 87275,
+      "text": "Opened: fix(install): fail hard on an unfetchable --commit pin instead of silently installing unpinned main (fixes #87268)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T08:47:44Z",
+      "kind": "open",
+      "pr": 87570,
+      "text": "Opened: fix(agent): canonicalize ALIASES providers in credential-pool mismatch guard (fixes #87526)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T08:52:27Z",
+      "kind": "merge",
+      "pr": 87135,
+      "text": "Merged into main.",
+      "who": "maintainer"
+    },
+    {
+      "at": "2026-08-16T08:54:24Z",
+      "kind": "open",
+      "pr": 87571,
+      "text": "Opened: fix(update,plugins): stop MSYS stripping braces from stash@{N} selectors on Windows (fixes #87542)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T08:57:40Z",
+      "kind": "open",
+      "pr": 87573,
+      "text": "Opened: fix(plugins): clearer bare-name install error when the community index is unreachable (fixes #87565)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T09:01:16Z",
+      "kind": "merge",
+      "pr": 86563,
+      "text": "Merged into main.",
+      "who": "maintainer"
+    },
+    {
+      "at": "2026-08-16T09:03:02Z",
+      "kind": "merge",
+      "pr": 87143,
+      "text": "Merged into main.",
+      "who": "maintainer"
+    },
+    {
+      "at": "2026-08-16T09:14:26Z",
+      "kind": "open",
+      "pr": 87588,
+      "text": "Opened: fix(desktop): translate the Voice \"Echo Transcripts\" field into zh-CN (fixes #87580)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T09:16:37Z",
+      "kind": "open",
+      "pr": 87589,
+      "text": "Opened: fix(desktop): localize the Kanban sidebar nav and \"Open board\" labels (fixes #87577)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T09:41:38Z",
+      "kind": "push",
+      "pr": 69088,
+      "text": "fix(desktop): render the real changelog for official-SSH update checks (#69081)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87589,
+      "text": "ctx.i18n.t lookup verified, but labels captured at registration won't follow runtime locale switches.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:02Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87588,
+      "text": "Straightforward zh-CN translation; consider checking ja.ts and zh-hant.ts too.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:03Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87573,
+      "text": "The seed branch now tells the truth instead of a misleading \"not found in community index\".",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:04Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87571,
+      "text": "Diagnosis correct: noglob stops the argv re-parse; a good centralised fix.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:05Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87570,
+      "text": "Three concerns: a bare exception handler masks errors, a per-call deferred import, and a missing failure test.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 87275,
+      "text": "Closed as superseded: an upstream fix on main already fixes this exact bug.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87263,
+      "text": "\"ValueError is swallowed silently\"; suggested logging, catching TypeError and pinning the contract in tests.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86344,
+      "text": "One slow worker can consume the whole drain budget, making drain return False for its siblings.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:09Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86308,
+      "text": "Added a fully wired regression test with a real PairingStore, checked by mutation testing.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T12:00:10Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86308,
+      "text": "Notes on re-entrancy, concurrency and SessionSource lifetime; no blockers.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:11Z",
+      "day": true,
+      "kind": "review",
+      "pr": 86308,
+      "text": "The test installs the resolver by hand, so production wiring is never exercised; needs a rebase.",
+      "who": "QuarkAssistant"
+    },
+    {
+      "at": "2026-08-16T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86308,
+      "text": "Rebased to keep #83791's concurrent startup and extracted a _wire_primary_adapter_handlers choke point.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T12:00:13Z",
+      "day": true,
+      "kind": "approve",
+      "pr": 86308,
+      "text": "The current head keeps the concurrent abort-aware path; all checks pass.",
+      "who": "QuarkAssistant"
+    },
+    {
+      "at": "2026-08-16T12:00:14Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86285,
+      "text": "Added ASCII validation and media-path tests for the upload and caption-fallback branches.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T12:00:15Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86285,
+      "text": "Coverage is limited to the standalone path; unbounded digit counts may fail; possible log spam.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:16Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85996,
+      "text": "file_readonly isn't in CONFIGURABLE_TOOLSETS, resolve_toolset errors are swallowed, and the exact-set assertion is fragile.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:17Z",
+      "day": true,
+      "kind": "review",
+      "pr": 85881,
+      "text": "Guard placement is correct; log skips and audit every spawn site that uses skip_memory=True.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:18Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85403,
+      "text": "Four code-quality notes: key type validation, dependency direction, test robustness, file read efficiency.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:19Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85398,
+      "text": "Notes four behaviour changes: indentation exclusion, whitespace stripping, inline handling, test vectors.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:20Z",
+      "day": true,
+      "kind": "review",
+      "pr": 85365,
+      "text": "XML escaping and systemd quoting in the generated units are untested.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:21Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85365,
+      "text": "Hardened rendering with XML escaping and systemd percent/quote/backslash escaping.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T12:00:22Z",
+      "day": true,
+      "kind": "review",
+      "pr": 84290,
+      "text": "Good minimal fix with deterministic tests; setPetActivity merges partial state correctly.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:23Z",
+      "day": true,
+      "kind": "review",
+      "pr": 84286,
+      "text": "Clean consolidation behind one admission policy; flags a pre-existing asymmetry in container paths.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T12:00:24Z",
+      "day": true,
+      "kind": "review",
+      "pr": 67011,
+      "text": "Four notes: hoisted deps, environment variance, a standalone fallback test, malformed locks.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-16T13:34:28Z",
+      "kind": "open",
+      "pr": 87714,
+      "text": "Opened: fix(cli): resolve bracket-style list indices in config set/get/unset (fixes #87689)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T17:07:25Z",
+      "kind": "salvage",
+      "pr": 85881,
+      "text": "Cherry-picked onto main by teknium1 on Aug 15, with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-16T17:45:16Z",
+      "kind": "open",
+      "pr": 87864,
+      "text": "Opened: fix(gateway): honor API_SERVER_ENABLED=false as an off switch (fixes #87856)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-16T17:52:24Z",
+      "kind": "open",
+      "pr": 87871,
+      "text": "Opened: fix(desktop): dedupe duplicate toolCallId parts at the runtime boundary (fixes #87857)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T00:28:35Z",
+      "kind": "push",
+      "pr": 66828,
+      "text": "fix(cli): skip unreachable support files instead of aborting URL skill install",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T01:03:11Z",
+      "kind": "push",
+      "pr": 66828,
+      "text": "test(cli): add install-flow E2E for skipped unreachable URL support file (#66760)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 88465,
+      "text": "Three follow-ups: the managed overlay isn't covered, the warning repeats every call, and whitespace handling.",
+      "who": "jackulau"
+    },
+    {
+      "at": "2026-08-17T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 88465,
+      "text": "Implemented all three follow-ups in 2a34bdc.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 88465,
+      "text": "Windows verification passed; one edge case remains: json.loads(\"null\").",
+      "who": "jackulau"
+    },
+    {
+      "at": "2026-08-17T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87871,
+      "text": "Confirmed the crash on Windows 10 with Hermes Agent v0.20.2.",
+      "who": "linfeng961"
+    },
+    {
+      "at": "2026-08-17T12:00:05Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87714,
+      "text": "Three edge cases: negative indices, whitespace in brackets, and no escape hatch for real bracket keys.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-17T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 66828,
+      "text": "Rebased and adapted the tests to the SSRF-safe HTTP helpers.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63187,
+      "text": "Rebased into the refactored _run_post_turn_hooks method.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T13:48:53Z",
+      "kind": "push",
+      "pr": 73102,
+      "text": "fix(skills): resolve audit trust from provenance for official skills (#73099)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T14:47:23Z",
+      "kind": "open",
+      "pr": 88465,
+      "text": "Opened: fix(config): decode JSON-string-typed providers at load time (fixes #88451)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-17T16:52:17Z",
+      "kind": "open",
+      "pr": 88526,
+      "text": "Opened: fix(compression): disable Codex 85% autoraise above the verified window (fixes #88511)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-18T03:54:10Z",
+      "kind": "open",
+      "pr": 88894,
+      "text": "Opened: fix(desktop): stop the composite scope key leaking into remote --profile (fixes #88625)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-18T11:42:08Z",
+      "kind": "open",
+      "pr": 89140,
+      "text": "Opened: fix(cli): accept singular 'plugin' as an alias for the plugins command (fixes #89120)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-18T11:47:42Z",
+      "kind": "open",
+      "pr": 89142,
+      "text": "Opened: fix(doctor): show install command for not-installed optional packages (fixes #89121)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-18T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89142,
+      "text": "Related: #89130 maps import modules to their real pip package names.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-18T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89142,
+      "text": "Fixed the test to locate the discord hint line explicitly after a CI failure.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-18T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89140,
+      "text": "Duplicate of #89125: both add the same plugin alias to the plugins subparser.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-18T12:00:04Z",
+      "day": true,
+      "kind": "close",
+      "pr": 88894,
+      "text": "Closed as superseded: main resolves the remote profile via resolveRemoteSshDashboardProfile.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-18T12:00:05Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 84286,
+      "text": "Blocking: the process-global cache crosses profile boundaries; key it by home or use a ContextVar.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-08-18T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 75549,
+      "text": "Rebased onto the new slash_commands_status.py module; all tests pass.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-18T12:00:13Z",
+      "kind": "open",
+      "pr": 89148,
+      "text": "Opened: fix(gateway): allow persisted DM /resume across a flipped user_id namespace (fixes #89123)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-19T12:00:01Z",
+      "day": true,
+      "kind": "close",
+      "pr": 89140,
+      "text": "Closed in favour of #89125, opened first with an identical change.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-19T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 88465,
+      "text": "Added a _JSON_DECODE_FAILED sentinel and clearer warnings for each decode failure mode.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-21T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 89148,
+      "text": "\"Correctly scoped authorization fix\": the escape hatch fires only when both DM chat_ids are non-blank and equal.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-21T12:00:02Z",
+      "day": true,
+      "kind": "review",
+      "pr": 89142,
+      "text": "Three issues: title consistency, required-vs-optional hint symmetry, and test coverage.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-21T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89140,
+      "text": "Well factored, no blockers; a nit about the auto-reset implementation drifting.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-21T12:00:04Z",
+      "day": true,
+      "kind": "review",
+      "pr": 88526,
+      "text": "Careful implementation that preserves historical behaviour; no blocking issues.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-22T12:00:01Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 87871,
+      "text": "Merged via #92392 with authorship preserved and extra layers added.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-22T12:00:02Z",
+      "day": true,
+      "kind": "review",
+      "pr": 87864,
+      "text": "Tri-state reading of API_SERVER_ENABLED makes an explicit false win over key-based enabling.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-22T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87570,
+      "text": "Separate issue #92250: a /model switch before the first turn drops the credential pool entirely.",
+      "who": "seppegadeyne"
+    },
+    {
+      "at": "2026-08-22T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 73102,
+      "text": "Verified: with the patch, the unchanged installed bundle audits as official/builtin.",
+      "who": "yuzilongleif-collab"
+    },
+    {
+      "at": "2026-08-23T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87571,
+      "text": "Verified on native Windows 11: bundled git 2.54 already accepts stash@{0}, so noglob is defense in depth.",
+      "who": "monerostar"
+    },
+    {
+      "at": "2026-08-23T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78495,
+      "text": "Independently reproduced and confirmed the fix on v0.20.5 against the Discord API.",
+      "who": "MAPE-sub-zero"
+    },
+    {
+      "at": "2026-08-23T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78495,
+      "text": "\"The failure is invisible at default log level\"; suggests logging at warning with exc_info.",
+      "who": "MAPE-sub-zero"
+    },
+    {
+      "at": "2026-08-23T12:00:04Z",
+      "day": true,
+      "kind": "close",
+      "pr": 64344,
+      "text": "Closed as implemented by a backend-side orphan reaper in dashboard_procs.py.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-24T00:34:52Z",
+      "kind": "close",
+      "pr": 54645,
+      "text": "Fixed in #93036 along with the Inbox card's leading-none overrides and a shared rowLabel.",
+      "who": "OutThisLife"
+    },
+    {
+      "at": "2026-08-24T12:00:01Z",
+      "day": true,
+      "kind": "close",
+      "pr": 88526,
+      "text": "Closed as superseded: upstream changes made the fix inert, and base slugs now resolve to 272K.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-24T12:00:02Z",
+      "day": true,
+      "kind": "close",
+      "pr": 85871,
+      "text": "Closed as superseded by eac3f645ef, which classifies stages identically.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-24T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69490,
+      "text": "Rebased and adopted the _CMDPOS anchoring convention for format-volume and diskpart.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-24T16:57:04Z",
+      "kind": "push",
+      "pr": 69490,
+      "text": "fix(approval): also gate irm|Invoke-RestMethod piped to iex",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-24T16:57:04Z",
+      "kind": "push",
+      "pr": 69490,
+      "text": "fix(approval): gate Windows destructive-verb analogues (iwr|iex, format-volume, icacls, taskkill) (#69472)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 94957,
+      "text": "Duplicate of #94954: both set the shipped pre_update_backup template value to quick.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-25T12:00:02Z",
+      "day": true,
+      "kind": "close",
+      "pr": 94957,
+      "text": "Closed in favour of #94954 by @liuhao1024, opened first with the same fix.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 94955,
+      "text": "Duplicate of #92489, the earlier open implementation of the same fix.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-25T12:00:04Z",
+      "day": true,
+      "kind": "close",
+      "pr": 94955,
+      "text": "Closed in favour of #92489 by @qdivan, deferring to the earlier author.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 94939,
+      "text": "#94937 fixes the same issue with selectors.DefaultSelector; the two compete.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-25T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 94939,
+      "text": "Closed in favour of #94937, the more complete implementation.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89142,
+      "text": "Addressed all review points; required packages now use pip names.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84286,
+      "text": "Keyed the cache per home and added profile-isolation and refresh regressions.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T12:00:09Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 84286,
+      "text": "Blocking: the cache key is the lexical path, not the canonical one, so a retargeted alias still leaks credentials.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-08-25T12:00:10Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78495,
+      "text": "Added a signature-level contract test across the native and relay adapters.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T17:00:42Z",
+      "kind": "push",
+      "pr": 54688,
+      "text": "feat(gateway): /platform reload — apply config platform changes without restart",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T17:34:15Z",
+      "kind": "push",
+      "pr": 67471,
+      "text": "fix(cli): run -w/--worktree in one-shot mode instead of silently ignoring it (#67458)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T18:06:22Z",
+      "kind": "open",
+      "pr": 94939,
+      "text": "Opened: fix(terminal): drain stdout with poll() so output survives pipe fds &gt;= FD_SETSIZE (fixes #94928)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T18:33:49Z",
+      "kind": "open",
+      "pr": 94955,
+      "text": "Opened: fix(time): resolve the timezone per profile instead of freezing one per process (fixes #94945)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T18:40:39Z",
+      "kind": "open",
+      "pr": 94957,
+      "text": "Opened: fix(install): ship pre_update_backup: quick in the config template (fixes #94944)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-25T18:53:47Z",
+      "kind": "open",
+      "pr": 94965,
+      "text": "Opened: docs(windows): correct gateway Scheduled Task name and launch mechanism (fixes #94941)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T03:02:37Z",
+      "kind": "push",
+      "pr": 58177,
+      "text": "fix(cli): run git gc --auto after update to bound .git growth",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T06:36:02Z",
+      "kind": "push",
+      "pr": 86308,
+      "text": "fix(telegram): route inline-callback auth through the profile-aware runner path",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T06:36:03Z",
+      "kind": "push",
+      "pr": 86308,
+      "text": "test(telegram): fully wire callback-auth regression through a real PairingStore",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T06:36:03Z",
+      "kind": "push",
+      "pr": 86308,
+      "text": "fix(telegram): fail closed when the callback auth resolver errors",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T06:36:51Z",
+      "kind": "push",
+      "pr": 86308,
+      "text": "test(gateway): drive callback-auth resolver through the production wiring",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T06:50:26Z",
+      "kind": "open",
+      "pr": 95330,
+      "text": "Opened: fix(cli): reference in-scope desktop-presence flag in macOS update TCC notice (fixes #95309)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T07:24:29Z",
+      "kind": "close",
+      "pr": 95330,
+      "text": "An alternative fix, #95353, was merged instead.",
+      "who": "ethernet8023"
+    },
+    {
+      "at": "2026-08-26T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 94965,
+      "text": "Two consistency questions: spawn-flags scope and how clear the Startup-folder fallback is.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-26T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 94965,
+      "text": "Fixed both consistency points in 2ae12b30a9.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 94965,
+      "text": "Verified on native Windows 11: the old docs command finds nothing and the new task name is correct.",
+      "who": "monerostar"
+    },
+    {
+      "at": "2026-08-26T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89142,
+      "text": "Verified the commit catches the wrong-distribution-name bug.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-26T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87571,
+      "text": "2.54 being a no-op confirms the design; 2.55 needs the guard. Honest gap: unverified on official 2.55.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87570,
+      "text": "Confirmed scope: this fixes canonicalisation at the guard; #92250 is the missing rebind at the switch site.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85996,
+      "text": "Registered it in CONFIGURABLE_TOOLSETS; left logging for a separate PR and kept the exact assertion.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85996,
+      "text": "All three points settled; the exact-set assertion suits a read-only contract.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-08-26T12:00:09Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84286,
+      "text": "Switched to hermes_home_key() and added an alias-retarget regression test.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T12:00:10Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 84286,
+      "text": "Blocking: the key and config snapshot still aren't atomic; an alias can retarget mid-load.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-08-26T12:00:11Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84286,
+      "text": "Pinned the canonical home once and held HERMES_HOME for the whole read-and-admit loop.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T12:00:12Z",
+      "day": true,
+      "kind": "approve",
+      "pr": 84286,
+      "text": "\"Boundary closed\", no code blocker; merge once exact-head CI, Docker and Nix are green.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-08-26T12:00:13Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 74212,
+      "text": "Rebased onto the TTL cache and keyless failover; all tests pass.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-26T12:00:14Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 58177,
+      "text": "Rebased and moved the fix to hermes_cli/update_cmd.py.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-27T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 55781,
+      "text": "Needs a generation boundary; the tile cancel path doesn't clear state and the title helper is incomplete.",
+      "who": "donovan-yohan"
+    },
+    {
+      "at": "2026-08-28T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68829,
+      "text": "Also affects the desktop picker; verified the excluded rows disappear with the fix.",
+      "who": "dokterdok"
+    },
+    {
+      "at": "2026-08-30T12:00:01Z",
+      "day": true,
+      "kind": "close",
+      "pr": 76680,
+      "text": "Closed as superseded: main already includes the fix via 0099f250c2.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67336,
+      "text": "Rebased after upstream merged a generic incomplete_retries nudge; now uses both signals.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T12:00:03Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 66828,
+      "text": "Merged via #98318 with both commits cherry-picked; thanked for the fix and E2E coverage.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-08-30T18:32:37Z",
+      "kind": "push",
+      "pr": 67336,
+      "text": "fix(agent): recover Codex reasoning-only stalls with a nudge + fallback ladder",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:32:59Z",
+      "kind": "push",
+      "pr": 67336,
+      "text": "docs(agent): explain why the reasoning-only grace call is bounded to one",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:32:59Z",
+      "kind": "push",
+      "pr": 67336,
+      "text": "fix(agent): strip Codex continuation nudge on cross-protocol fallback wire",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:37:51Z",
+      "kind": "push",
+      "pr": 62258,
+      "text": "test(models): cover fast sibling via desktop payload + generic contract",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:37:51Z",
+      "kind": "push",
+      "pr": 62258,
+      "text": "fix(models): surface Opus 4.8 fast variant in the Anthropic catalog",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:39:02Z",
+      "kind": "push",
+      "pr": 67593,
+      "text": "test(gateway): stop mutating the compression-closed source in follow-tip test",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:39:02Z",
+      "kind": "push",
+      "pr": 67593,
+      "text": "feat(gateway): forward Codex commentary to /v1/responses stream + document event",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:39:02Z",
+      "kind": "push",
+      "pr": 67593,
+      "text": "fix(gateway): forward Codex commentary to API Server streaming clients (#67580)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:41:21Z",
+      "kind": "push",
+      "pr": 67593,
+      "text": "fix(gateway): enqueue Codex commentary via put_threadsafe on the async stream queue",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:41:38Z",
+      "kind": "push",
+      "pr": 54367,
+      "text": "fix(checkpoint): share a logical workdir key across Docker bind-mount checkpoint create/rollback (#54356)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-30T18:45:00Z",
+      "kind": "push",
+      "pr": 54367,
+      "text": "test(checkpoint): stub checkpoint_dir_for_file in the guardrail-runtime fake",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-08-31T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 99445,
+      "text": "Duplicate of #99444; both add review lifecycle kinds to the TUI kanban poller.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-31T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78495,
+      "text": "Hits Windows v0.20.6 auto-threads too: \"applied this PR adapter-tolerance fix locally; it works\".",
+      "who": "ElliotDrel"
+    },
+    {
+      "at": "2026-08-31T12:00:03Z",
+      "day": true,
+      "kind": "review",
+      "pr": 78495,
+      "text": "Raised priority from P3 to P1: \"major feature broken, no workaround\".",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-08-31T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71947,
+      "text": "Sibling issue: the permanent strip removes the parent worker's authority on later commands.",
+      "who": "marioGusmao"
+    },
+    {
+      "at": "2026-08-31T14:23:03Z",
+      "kind": "open",
+      "pr": 99445,
+      "text": "Opened: fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions (fixes #99436)",
+      "who": "PRATHAMESH75"
+    }
+  ],
+  "month": "2026-08"
+}

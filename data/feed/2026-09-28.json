@@ -1,0 +1,215 @@
+{
+  "day": "2026-09-28",
+  "events": [
+    {
+      "at": "2026-09-28T02:36:20Z",
+      "kind": "comment",
+      "pr": 123950,
+      "text": "Confirmed and fixed in f9d9f8b9. You're right: the head shield only covered Pass 2, and _dedupe_tool_results walks newest-first, so a protected-head tool result byte-identical to a later one is the older copy that gets replaced by the…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T02:58:46Z",
+      "kind": "open",
+      "pr": 125943,
+      "text": "Opened: fix(plugins): let `plugins update --force` accept a caution scan verdict (fixes #125928)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T03:05:30Z",
+      "kind": "review",
+      "pr": 125943,
+      "text": "Confirmed the RCA and your git-pull fix independently (I'd claimed the issue a few minutes before your PR landed and had the same thread-through ready) — and ran your change for real on Python 3.14, which your local venv couldn't:…",
+      "who": "kokhlo"
+    },
+    {
+      "at": "2026-09-28T03:21:59Z",
+      "kind": "open",
+      "pr": 125957,
+      "text": "Opened: fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix (fixes #125940)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T03:30:44Z",
+      "kind": "comment",
+      "pr": 123791,
+      "text": "AI code review — automated follow-up for reference; not a maintainer. Confirmed all four CUA-reader payload shapes match on head 0b9aa48d. Different angle from the existing thread: the other reader of the same schtasks /Query /XML output,…",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-28T03:50:33Z",
+      "kind": "comment",
+      "pr": 123950,
+      "text": "AI code review — automated follow-up for reference; not a maintainer. Re-verified at head f9d9f8b9. Closed: the docstring claim at agent/context_compressor.py:3204-3210 is now accurate, and head_bound really is threaded into Pass 1 — if h…",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-28T03:56:13Z",
+      "kind": "open",
+      "pr": 125977,
+      "text": "Opened: fix(desktop): scope approval-mode reads/writes to the viewed profile (fixes #125969)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T04:02:38Z",
+      "kind": "review",
+      "pr": 125977,
+      "text": "Verdict: APPROVE Fixes a real bug: config.get/config.set are @_profile_scoped, so unscoped calls target the launch profile regardless of which profile the UI is showing. The fix adds scopeToProfile and applies it to both read and write…",
+      "who": "arkheioncorp"
+    },
+    {
+      "at": "2026-09-28T05:20:54Z",
+      "kind": "review",
+      "pr": 125331,
+      "text": "Reviewed at a7ec9293. Decoding before the merge passes is the right direction, and all 61 existing tests in test_message_sequence_repair.py pass. One persistence edge still needs fixing before this is safe to merge.",
+      "who": "ehz0ah"
+    },
+    {
+      "at": "2026-09-28T07:14:57Z",
+      "kind": "comment",
+      "pr": 124891,
+      "text": "AI code review — automated follow-up for reference; not a maintainer. This PR logs the native cause on two fallback paths that return early, and labels the content-policy failover with FailoverReason.content_policy_blocked. Intent is…",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-28T13:29:46Z",
+      "kind": "comment",
+      "pr": 125957,
+      "text": "?",
+      "who": "eabase"
+    },
+    {
+      "at": "2026-09-28T15:04:13Z",
+      "kind": "comment",
+      "pr": 123749,
+      "text": "Good catch @Enough1122 — both points are right and both are now fixed at ed5a87d9. 1. Guard now fences on kanban_db_path(), matching _is_delegated_child_cli_mutation. You're correct that the connection (connect/write_txn) fences on…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T15:13:03Z",
+      "kind": "comment",
+      "pr": 124891,
+      "text": "Thanks @Enough1122 — confirmed the two False branches are reachable with a non-empty chain (switch_deferred_by_reset at chat_completion_helpers.py:2076, and every candidate going to _unavailable_fallback_keys then exhausting the loop at…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T15:26:07Z",
+      "kind": "push",
+      "pr": 125957,
+      "text": "fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix (#125940)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T15:30:18Z",
+      "kind": "comment",
+      "pr": 125977,
+      "text": "Closing as superseded: this fix has already landed on main. Commit ef6039cc77 (\"fix(desktop): scope approval-mode reads/writes to the viewed profile (#125969)\") carries the same change — the profileKey / scopeToProfile helpers in…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T15:30:19Z",
+      "kind": "salvage",
+      "pr": 125977,
+      "text": "Cherry-picked onto main by teknium1 on Sep 28 (ef6039cc77), with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-28T15:36:44Z",
+      "kind": "comment",
+      "pr": 120332,
+      "text": "Closing as superseded — this has landed on main. Commit 5c6ff927f5 (\"fix(dashboard): plugin API routes run in the request profile's scope (#120310, salvage #120332)\") carries this fix: _plugin_route_secret_scope in…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T15:36:45Z",
+      "kind": "salvage",
+      "pr": 120332,
+      "text": "Cherry-picked onto main by teknium1 on Sep 28 (5c6ff927f5), with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-28T15:49:41Z",
+      "kind": "open",
+      "pr": 126640,
+      "text": "Opened: fix(gateway): stop the Windows uninstall UAC prompt from hanging an unattended update (fixes #126624)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T16:18:40Z",
+      "kind": "comment",
+      "pr": 105864,
+      "text": "Re-salvaged onto current upstream/main (ca762f6). The apply-path fetch was refactored upstream to run through fetch_with_partial_clone_recovery (#124272), so the retry no longer wraps a bare _git_run — it now drops in as that helper's…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T16:32:08Z",
+      "kind": "comment",
+      "pr": 125331,
+      "text": "Thanks @ehz0ah — you're right, and the durable-marker convention (agent/context_compressor.py:238) says exactly this: code that mutates a loaded/flushed row's content in place must pop _db_persisted (and invalidate _db_flush_scan_prefix…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T16:35:02Z",
+      "kind": "comment",
+      "pr": 123950,
+      "text": "Thanks @Enough1122 — the Pass-4 reachability is right: in the Phase-1 compression path (protect_tail_tokens=self.tail_token_budget), when the protected tail alone exceeds the soft ceiling, _pressure_demote_tail walks range(max(0,…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T16:43:15Z",
+      "kind": "review",
+      "pr": 125331,
+      "text": "Reviewed updated head baf8d746. The sentinel decode still fixes the model-facing failure, and the new code now follows the general marker-invalidating pattern. All 75 focused repair and persistence tests passed locally. However, this…",
+      "who": "ehz0ah"
+    },
+    {
+      "at": "2026-09-28T16:52:36Z",
+      "kind": "push",
+      "pr": 65887,
+      "text": "fix(agent): survive context-files kwarg skew instead of crashing the backend (#65868)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T17:01:51Z",
+      "kind": "review",
+      "pr": 123950,
+      "text": "Reviewed exact head f9d9f8b959c40314cde624e865ab7697871954f7 against issue #123935 and current main at 792e0e639bca90819d0a90cd64f6597f863cbc04. The bug is real. Both compression call sites used to prune from the start of the transcript…",
+      "who": "ehz0ah"
+    },
+    {
+      "at": "2026-09-28T17:54:33Z",
+      "kind": "push",
+      "pr": 125331,
+      "text": "fix(agent): keep the durable marker on a storage-equivalent sentinel decode (#125331)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T17:56:49Z",
+      "kind": "comment",
+      "pr": 125331,
+      "text": "Thanks @ehz0ah — you're right, and thanks for the empirical repro at the exact head. Addressed at a2617d68. Blocking: keep the durable marker (representation-only decode). Agreed. The decode is storage-equivalent —…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T17:57:53Z",
+      "kind": "comment",
+      "pr": 125943,
+      "text": "Thanks @kokhlo — confirmed your finding independently. cmd_update calls catalog.cmd_update_catalog(name, target, sidecar, console, interactive=interactive) at plugins_cmd_update.py:84, and cmd_update_catalog (plugins_cmd_catalog.py:636)…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T21:46:33Z",
+      "kind": "comment",
+      "pr": 106034,
+      "text": "Thanks @PRATHAMESH75. Closing as superseded: https://github.com/NousResearch/hermes-agent/commit/c6f964f6d4 fixed #106012 on the consumer side (context discovery reads the profile-scoped terminal.cwd for launch-artifact sessions), so the…",
+      "who": "OutThisLife"
+    },
+    {
+      "at": "2026-09-28T21:46:35Z",
+      "kind": "close",
+      "pr": 106034,
+      "text": "Superseded by c6f964f6d4: context discovery now reads the profile-scoped terminal.cwd for launch-artifact sessions.",
+      "who": "OutThisLife"
+    }
+  ]
+}

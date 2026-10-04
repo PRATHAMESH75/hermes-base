@@ -1,0 +1,47 @@
+{
+  "day": "2026-10-03",
+  "events": [
+    {
+      "at": "2026-10-03T01:18:56Z",
+      "kind": "push",
+      "pr": 85398,
+      "text": "fix(telegram): anchor fenced-code regex so inline triple backticks aren't mangled",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-10-03T17:21:06Z",
+      "kind": "comment",
+      "pr": 126640,
+      "text": "AI code review — automated review for reference; please use your judgment. 结论 修对了一半，但没修完它自己声称要修的那个 hang：同一次 hermes update --yes 自动迁移里， 紧挨着被放行的 uninstall 腿之后的 install 腿仍会 prompt_yes_no，在完全相同的隐藏 Scheduled Task 控制台上照样永久阻塞。 阻断：install 腿没有闸…",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-10-03T17:47:17Z",
+      "kind": "push",
+      "pr": 126640,
+      "text": "fix(gateway): gate the install-side UAC offer on an answerable console too (#126624)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-10-03T17:47:34Z",
+      "kind": "comment",
+      "pr": 126640,
+      "text": "Thanks @Enough1122 — confirmed and fixed in 851d02b6. - Install leg ungated (implemented): correct — the migration's _restart_default falls through to install(start_now=True, start_on_login=True) when the default profile has no service of…",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-10-03T23:07:27Z",
+      "kind": "comment",
+      "pr": 125331,
+      "text": "Both commits of this PR have landed on main via cherry-pick (9d7b78f0c6, 790d6eaf39), so the branch now only conflicts against itself. Closing as landed — thanks for picking it up.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-10-03T23:07:28Z",
+      "kind": "salvage",
+      "pr": 125331,
+      "text": "Cherry-picked onto main by kshitijk4poor on Oct 3 (790d6eaf39), with you kept as the commit author.",
+      "who": "kshitijk4poor"
+    }
+  ]
+}

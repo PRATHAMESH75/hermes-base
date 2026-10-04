@@ -1,0 +1,2508 @@
+{
+  "events": [
+    {
+      "at": "2026-09-01T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68829,
+      "text": "Independent reproduction: 54 rows before the fix, 52 after.",
+      "who": "LordMelkor"
+    },
+    {
+      "at": "2026-09-02T12:00:01Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 86308,
+      "text": "Fixed via #101250, which covers all affected paths; credited via Co-authored-by.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-03T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87714,
+      "text": "Reworked into the _split_key_path seam so all three call sites share list navigation.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-04T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89142,
+      "text": "Rebased onto main and ported the fix to the refactored structure.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-04T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84286,
+      "text": "Re-implemented minimally on the upstream refactor; verified the bug still exists.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-04T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78504,
+      "text": "Measured _get_process_start_time as perfectly stable on macOS over 2000 reads.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-04T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 76496,
+      "text": "Rebased; re-ported the fix into the new _base_kwargs helper so one chokepoint covers both paths.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-04T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 62826,
+      "text": "Superseded by #103272, a comprehensive fix across dispatcher, webhooks and cron, with you credited as co-author.",
+      "who": "JoaoMarcos44"
+    },
+    {
+      "at": "2026-09-04T18:47:40Z",
+      "kind": "push",
+      "pr": 86344,
+      "text": "fix(docker): re-scan outstanding cleanups so mid-drain teardowns are joined",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-04T18:47:40Z",
+      "kind": "push",
+      "pr": 86344,
+      "text": "fix(docker): retain container-teardown threads across registry detachment (#86317)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-04T19:08:55Z",
+      "kind": "push",
+      "pr": 76496,
+      "text": "fix(agent): drop client web_search on OpenRouter xAI :online requests",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:08:47Z",
+      "kind": "push",
+      "pr": 89148,
+      "text": "fix(gateway): allow persisted DM /resume across a flipped user_id namespace (#89123)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:26:01Z",
+      "kind": "push",
+      "pr": 78504,
+      "text": "fix(gateway): tolerate sub-2s start-time drift in PID-reuse liveness guard (#78498)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:30:16Z",
+      "kind": "push",
+      "pr": 86285,
+      "text": "test(slack): cover thread_ts coercion on media-upload and caption-fallback paths",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:30:16Z",
+      "kind": "push",
+      "pr": 86285,
+      "text": "fix(slack): validate thread_ts against ASCII digits only",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:30:16Z",
+      "kind": "push",
+      "pr": 86285,
+      "text": "fix(slack): drop non-Slack thread ids in standalone delivery instead of failing",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:32:11Z",
+      "kind": "push",
+      "pr": 87864,
+      "text": "fix(gateway): honor API_SERVER_ENABLED=false as an off switch (#87856)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:33:39Z",
+      "kind": "push",
+      "pr": 75702,
+      "text": "fix(copilot): don't warn on classic PATs in shared GitHub env vars",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:51:22Z",
+      "kind": "push",
+      "pr": 88465,
+      "text": "fix(config): decode JSON-string-typed providers at load time (#88451)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:55:08Z",
+      "kind": "push",
+      "pr": 87573,
+      "text": "fix(plugins): clearer bare-name install error when the community index is unreachable (#87565)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:56:53Z",
+      "kind": "push",
+      "pr": 78495,
+      "text": "test(discord): pin rename_thread signature parity across both lanes",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:56:53Z",
+      "kind": "push",
+      "pr": 78495,
+      "text": "fix(discord): accept relay-lane kwargs in native rename_thread (#78487)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:58:49Z",
+      "kind": "push",
+      "pr": 85398,
+      "text": "fix(telegram): match CRLF-terminated closing fences",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:58:49Z",
+      "kind": "push",
+      "pr": 85398,
+      "text": "test(conformance): regenerate telegram vectors for anchored fenced-code regex",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T03:58:49Z",
+      "kind": "push",
+      "pr": 85398,
+      "text": "fix(telegram): anchor fenced-code regex so inline triple backticks aren't mangled",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T04:48:48Z",
+      "kind": "open",
+      "pr": 103422,
+      "text": "Opened: fix(local-models): resume ranged model downloads per-worker instead of restarting from zero (fixes #103416)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T06:59:09Z",
+      "kind": "open",
+      "pr": 103480,
+      "text": "Opened: fix(desktop): pass HERMES_HOME for named-profile SSH serves so DB isolation holds (fixes #103467)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T11:36:56Z",
+      "kind": "push",
+      "pr": 62826,
+      "text": "fix(cli): treat bool handler results as exit 0, not status 1 (#62810)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T11:38:27Z",
+      "kind": "push",
+      "pr": 68151,
+      "text": "fix(agent): price reasoning tokens in estimate_usage_cost (#68081)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T11:41:19Z",
+      "kind": "push",
+      "pr": 69068,
+      "text": "fix(agent): strip inherited Authorization header in Gemini native client",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T11:49:51Z",
+      "kind": "push",
+      "pr": 68823,
+      "text": "test(telegram): cover real-runner unauthorized-DM pairing under ALLOW_ALL=false (#68794)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T11:49:51Z",
+      "kind": "push",
+      "pr": 68823,
+      "text": "fix(telegram): parse ALLOW_ALL_USERS as boolean so an explicit false unblocks DM pairing",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 103480,
+      "text": "Fixed the JS & TS checks job; assertions now check quote-free spans that survive nesting.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87571,
+      "text": "Rebased onto main after the stash logic moved to a new module; re-implemented, 41 tests pass.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:03Z",
+      "day": true,
+      "kind": "close",
+      "pr": 86344,
+      "text": "Closed as superseded: the fix landed on main in 84b70e4.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 86285,
+      "text": "Rebased; _standalone_send is now the single entry point and the full suite passes.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85403,
+      "text": "Re-implemented on main after the WhatsApp wizard extraction and preflight refactor.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84286,
+      "text": "The config cache still crosses profiles: an A-to-B probe returns A's token for B.",
+      "who": "egilewski"
+    },
+    {
+      "at": "2026-09-05T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84286,
+      "text": "Fixed with a profile-keyed cache and an A-to-B multiplex regression test.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78504,
+      "text": "Rebased and re-implemented on the refactored structure.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:09Z",
+      "day": true,
+      "kind": "review",
+      "pr": 75549,
+      "text": "DRY concerns: reuse the canonical parser, extract a shared helper, add a negative-path test.",
+      "who": "oppih"
+    },
+    {
+      "at": "2026-09-05T12:00:10Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 75549,
+      "text": "Reused the canonical parser and locked the negative path where no snapshot exists.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:11Z",
+      "day": true,
+      "kind": "close",
+      "pr": 73102,
+      "text": "Closed in favour of #53507, the canonical fix by Kinkoolino-Hermes.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-05T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71947,
+      "text": "Pushed back: parent authority flows through the process env, not the bash snapshot.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T06:42:49Z",
+      "kind": "push",
+      "pr": 71947,
+      "text": "fix(terminal): don't persist delegate_task lineage marker in the shared snapshot (#71941)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T06:56:24Z",
+      "kind": "push",
+      "pr": 71965,
+      "text": "fix(approval): keep self-termination gated under the container-backend bypass (#71957)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 104554,
+      "text": "Duplicate of #104545; both fix #104538 by persisting the traceback into the Error section.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-06T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85365,
+      "text": "Fixed silent regeneration dropping the pointers with a carry-forward merge.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T12:00:03Z",
+      "day": true,
+      "kind": "close",
+      "pr": 69490,
+      "text": "Closed as superseded: main now gates all of these via tools/approval_detection.py.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68829,
+      "text": "Prefers this over #103431 because alias expansion keeps surfaces in parity.",
+      "who": "rodrigogs"
+    },
+    {
+      "at": "2026-09-06T12:00:05Z",
+      "day": true,
+      "kind": "close",
+      "pr": 58177,
+      "text": "Withdrawn: gc --auto doesn't bound growth because of sampling; a full gc cadence needs design.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T16:57:26Z",
+      "kind": "push",
+      "pr": 67373,
+      "text": "fix(tools): don't block on stdout.close() while Windows drain thread is live",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T16:58:28Z",
+      "kind": "push",
+      "pr": 67373,
+      "text": "test(tools): unit-cover the Windows drain-thread stdout-close guard",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T17:16:22Z",
+      "kind": "open",
+      "pr": 104459,
+      "text": "Opened: fix(gateway): carry an active /goal across idle/daily session reset (fixes #104445)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T17:23:43Z",
+      "kind": "push",
+      "pr": 73076,
+      "text": "fix(gateway): cancel the whole queue on /stop and /new, not just the head",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T18:22:53Z",
+      "kind": "push",
+      "pr": 69159,
+      "text": "fix(gateway): declare webhook sessions stateless so background delegations run inline (#69145)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T18:25:55Z",
+      "kind": "push",
+      "pr": 68271,
+      "text": "fix(gateway): route TUI skill secret prompts to the owning session",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T18:28:02Z",
+      "kind": "push",
+      "pr": 67947,
+      "text": "fix(agent): resolve custom-provider key_env preferring .env over stale os.environ (#67935)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T18:29:51Z",
+      "kind": "push",
+      "pr": 67611,
+      "text": "fix(cli): set plugin manager _cli_ref in query mode so dispatch_tool wires parent_agent",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T18:29:52Z",
+      "kind": "push",
+      "pr": 67611,
+      "text": "test(cli): replace AST _cli_ref test with a behavioral query-mode test",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T19:40:14Z",
+      "kind": "open",
+      "pr": 104546,
+      "text": "Opened: fix(cron): skip short-circuit status stubs when selecting context_from output (fixes #104541)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-06T19:46:53Z",
+      "kind": "open",
+      "pr": 104554,
+      "text": "Opened: fix(cron): persist the full traceback in a failed run's output doc (fixes #104538)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-07T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 104546,
+      "text": "_is_real_run_output correctly filters monitor and no-agent stub docs by their Status line.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-07T12:00:02Z",
+      "day": true,
+      "kind": "review",
+      "pr": 104459,
+      "text": "\"Sound design with the right guardrails\", with one non-blocking staleness edge case.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-07T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 72026,
+      "text": "Memory prefetch is also gated on isinstance(str), so multimodal turns are skipped silently.",
+      "who": "albert748"
+    },
+    {
+      "at": "2026-09-07T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68059,
+      "text": "#105002 guards the init call sites, but a direct _secure_dir(link) still clamps 0750 to 0700.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-07T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63899,
+      "text": "Refactored to a single child stash that covers every entry path.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-07T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 62258,
+      "text": "Closed as superseded: main now uses a speed=fast override.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-07T14:07:19Z",
+      "kind": "push",
+      "pr": 63899,
+      "text": "fix(delegate): surface a child's resolved toolsets in async-delegation completion (#63887)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106088,
+      "text": "Related: #86508 also reroutes TUI quick-command aliases through command.dispatch.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-08T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106088,
+      "text": "#86508 only covers aliases to registry commands; this PR covers the alias-to-skill case.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106082,
+      "text": "Duplicate of #106081: same fix for #106066, differing only in a bounded unwrap loop.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-08T12:00:04Z",
+      "day": true,
+      "kind": "close",
+      "pr": 106082,
+      "text": "Closed in favour of #106081, the cleaner canonical fix.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106029,
+      "text": "\"Duplicate of #100098 (open since 2026-09-01) -- identical core change.\"",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-08T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 106029,
+      "text": "Closed in favour of #100098, the canonical fix with extra glyph improvements.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 105933,
+      "text": "\"The red Python tests / Run tests check is a flaky false-negative, not a regression.\"",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 105933,
+      "text": "\"I can confirm the approach matches the suggested fix and resolves the issue in practice.\"",
+      "who": "raydebra"
+    },
+    {
+      "at": "2026-09-08T12:00:09Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 105882,
+      "text": "Part of a cluster of ownership-loss overwrites; compare with #100965's approach.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-08T12:00:10Z",
+      "day": true,
+      "kind": "changes",
+      "pr": 105864,
+      "text": "The blobless fallback is unsafe; prove the ordinary-checkout recovery path end to end.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-09-08T12:00:11Z",
+      "day": true,
+      "kind": "review",
+      "pr": 105864,
+      "text": "hermes update --check still exits on the first 429; the retry wrapper needs to cover both paths.",
+      "who": "gaoanze888"
+    },
+    {
+      "at": "2026-09-08T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 105864,
+      "text": "Dropped the blobless fallback, kept bounded retry, fixed the --check path; declined Retry-After parsing as fragile.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T12:00:13Z",
+      "day": true,
+      "kind": "close",
+      "pr": 104554,
+      "text": "Superseded: main's e1a161538a added format_run_error() with the full traceback plus redaction.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T15:24:52Z",
+      "kind": "push",
+      "pr": 68796,
+      "text": "fix(release): stage the desktop package.json bump so it lands in the release commit",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T15:39:53Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 104546,
+      "text": "Landed as a slim redo of #104546 and #104551 (b94edfe).",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-08T15:56:18Z",
+      "kind": "open",
+      "pr": 105864,
+      "text": "Opened: fix(update): degrade past repo-scoped HTTP 429 with bounded retry (fixes #105857)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T16:55:51Z",
+      "kind": "open",
+      "pr": 105882,
+      "text": "Opened: fix(cron): keep a delivered run's success through a transient post-delivery claim blip (fixes #105861)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T17:03:42Z",
+      "kind": "open",
+      "pr": 105891,
+      "text": "Opened: fix(desktop): roster age reflects the last worker run, not only the last chat (fixes #105874)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T17:46:52Z",
+      "kind": "open",
+      "pr": 105926,
+      "text": "Opened: test(agent): isolate runtime-main state in auxiliary vision tests (fixes #105888)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T17:53:12Z",
+      "kind": "open",
+      "pr": 105933,
+      "text": "Opened: fix(wecom): give media uploads a generous, tunable timeout (fixes #105900)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T20:36:25Z",
+      "kind": "push",
+      "pr": 105933,
+      "text": "fix(wecom): give media uploads a generous, tunable timeout (#105900)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T20:55:03Z",
+      "kind": "open",
+      "pr": 106028,
+      "text": "Opened: fix(cli): bind --create-if-missing sessions to the launch cwd (fixes #106016)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T21:05:17Z",
+      "kind": "open",
+      "pr": 106029,
+      "text": "Opened: fix(desktop): keep the active gateway default reachable in the fleet condensed profile dropdown (fixes #106017)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T21:11:21Z",
+      "kind": "open",
+      "pr": 106034,
+      "text": "Opened: fix(gateway): treat a configured local terminal.cwd as a context workspace, not a launch artifact (fixes #106012)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T21:50:47Z",
+      "kind": "open",
+      "pr": 106082,
+      "text": "Opened: fix(whatsapp): unwrap ephemeral/view-once envelopes when reading quoted text",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T21:59:11Z",
+      "kind": "open",
+      "pr": 106088,
+      "text": "Opened: fix(tui): run quick-command skill aliases via command.dispatch on desktop/TUI",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T22:38:35Z",
+      "kind": "push",
+      "pr": 106029,
+      "text": "fix(desktop): keep the active gateway default reachable in the fleet condensed profile dropdown (#106017)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-08T22:42:48Z",
+      "kind": "open",
+      "pr": 106111,
+      "text": "Opened: ci(lint): bound the advisory public-surface step so it can't time out the blocking footguns job (fixes #106103)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-09T12:00:01Z",
+      "day": true,
+      "kind": "review",
+      "pr": 106111,
+      "text": "AI review: timeout sizing is reasonable; a non-blocking, trivially safe change.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-09T12:00:02Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 106111,
+      "text": "Landed on main via #106565 with commits cherry-picked and authorship preserved.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-09T12:00:03Z",
+      "day": true,
+      "kind": "review",
+      "pr": 106034,
+      "text": "Safe to merge; small I/O overhead from per-call isdir checks, but all four cases are covered.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-09T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106034,
+      "text": "A process-scoped gate with a session-scoped resolver leaves a gap on multi-profile gateways; asked for a session-scoped fix.",
+      "who": "arbayzid"
+    },
+    {
+      "at": "2026-09-09T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106034,
+      "text": "Added the multiplexing fix via a profile_home branch plus bound-profile tests, per arbayzid.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-09T12:00:06Z",
+      "day": true,
+      "kind": "review",
+      "pr": 106028,
+      "text": "Non-blocking tiny fix that mirrors the lazy-create path's cwd semantics; safe to merge.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-09T12:00:07Z",
+      "day": true,
+      "kind": "review",
+      "pr": 105926,
+      "text": "AI review: the reset-then-restore bracket is correct and covers all 7 mirrors; no production code touched.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-09T12:00:08Z",
+      "day": true,
+      "kind": "review",
+      "pr": 105891,
+      "text": "One-line behaviour fix with targeted tests: take the max of the chat and worker timestamps.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-09T12:00:09Z",
+      "day": true,
+      "kind": "close",
+      "pr": 87573,
+      "text": "Closed as superseded: main removed the parallel community index.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-09T12:00:10Z",
+      "day": true,
+      "kind": "close",
+      "pr": 67011,
+      "text": "Closed: its commits 0c47cd5260 and a96bad8e71 are already on main.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-09T18:57:15Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 67011,
+      "text": "Cherry-picked onto main by teknium1 on Aug 25, with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-09T18:59:02Z",
+      "kind": "push",
+      "pr": 35983,
+      "text": "fix(weixin): detect stale context_token when iLink returns \"rate limited\"",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-09T19:02:37Z",
+      "kind": "push",
+      "pr": 37587,
+      "text": "fix(cli): hermes mcp add accumulates repeated --env flags (#37501)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-09T19:03:08Z",
+      "kind": "push",
+      "pr": 37587,
+      "text": "fix(kanban): dashboard sorts lanes newest-first (#37472)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T06:44:42Z",
+      "kind": "push",
+      "pr": 68829,
+      "text": "fix(cli): honor excluded_providers in the TUI /model picker's unconfigured rows",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T07:15:15Z",
+      "kind": "push",
+      "pr": 65887,
+      "text": "fix(agent): survive context-files kwarg skew instead of crashing the backend (#65868)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T07:31:03Z",
+      "kind": "open",
+      "pr": 107163,
+      "text": "Opened: fix(tools): heal a stale local session-cwd record instead of bricking the terminal (fixes #107156)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T10:41:49Z",
+      "kind": "open",
+      "pr": 107280,
+      "text": "Opened: fix(memory): bound the external-drift refusal and stop duplicate .bak clutter (fixes #107270)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T10:46:19Z",
+      "kind": "open",
+      "pr": 107284,
+      "text": "Opened: fix(agent): don't attach a pre-API steer to a prior turn's tool result (fixes #107272)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 107592,
+      "text": "Flagged as a duplicate of #107556, opened earlier with the same mechanism.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-10T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 107584,
+      "text": "Duplicate of #107554 (open, earlier), which implements the same Option A.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-10T12:00:03Z",
+      "day": true,
+      "kind": "close",
+      "pr": 107584,
+      "text": "Closed in favour of #107554 by @KoNit-K, opened first with the same design.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 107284,
+      "text": "Duplicate of #107274, which landed first with an equivalent mechanism.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-10T12:00:05Z",
+      "day": true,
+      "kind": "close",
+      "pr": 107284,
+      "text": "Closed in favour of #107274 by @KoNit-K, opened about 7 minutes earlier.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 107280,
+      "text": "Closed in favour of #107278, which fixes the root cause; this only bounded the refusal loop.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 107280,
+      "text": "#107278 also fixes #107270 with a different mechanism; the two look complementary.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-10T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 107163,
+      "text": "Related to #107156 and competing with #100823; a maintainer should pick one.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-10T12:00:09Z",
+      "day": true,
+      "kind": "review",
+      "pr": 107163,
+      "text": "Independent verification: the new fallback receives a usable cwd on the gateway path.",
+      "who": "strzhao"
+    },
+    {
+      "at": "2026-09-10T12:00:10Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106034,
+      "text": "The PR still shows the stale pre-fix head; the pull ref hasn't picked up 09f0111f36.",
+      "who": "arbayzid"
+    },
+    {
+      "at": "2026-09-10T12:00:11Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106034,
+      "text": "Force-pushed a rebase; the PR now points at 0d77c36ac6 with the full fix and tests.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:12Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 72026,
+      "text": "Confirmed the gap and added memory query flattening for multimodal prefetch.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:13Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67250,
+      "text": "Rebased and re-implemented on the new _dispatch_connect structure.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:14Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 65887,
+      "text": "Rebased; the guard moved to the new _context_files_part location and tests pass.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:15Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63898,
+      "text": "Rebased after the file_tools.py restructuring; tests green on macOS.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:00:16Z",
+      "day": true,
+      "kind": "close",
+      "pr": 63084,
+      "text": "Closed as superseded: the upstream refactor maps it via env_unavailable.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:10:25Z",
+      "kind": "open",
+      "pr": 107335,
+      "text": "Opened: fix(file-safety): resolve HERMES_HOME/config per call so multiplex profiles don't poison the write guards (fixes #107327)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:42:53Z",
+      "kind": "push",
+      "pr": 63187,
+      "text": "fix(gateway): stop standing-goal loop after a failed provider turn (#63180)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T12:54:37Z",
+      "kind": "push",
+      "pr": 56497,
+      "text": "fix(tools): detect squashed multi-entry blobs as memory drift (#56464)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T14:00",
+      "day": true,
+      "kind": "review",
+      "pr": 107335,
+      "text": "\"The fallback reintroduces the same cross-profile authority bug on the exception path.\"",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-09-10T16:00",
+      "day": true,
+      "kind": "push",
+      "pr": 107335,
+      "text": "Bound the fallback to the active profile and added regression tests that force resolver failures.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T17:08:35Z",
+      "kind": "push",
+      "pr": 62267,
+      "text": "fix(providers): gate Gemini native discovery to native endpoints, redact errors",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T17:08:35Z",
+      "kind": "push",
+      "pr": 62267,
+      "text": "fix(providers): use native query-param auth for Gemini model discovery",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T17:42:43Z",
+      "kind": "push",
+      "pr": 107335,
+      "text": "fix(file-safety): resolve HERMES_HOME/config per call so multiplex profiles don't poison the write guards (#107327)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T17:45:00Z",
+      "kind": "push",
+      "pr": 107335,
+      "text": "fix(file-safety): bind the write-guard resolver fallback to the active profile",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T17:45:49Z",
+      "kind": "push",
+      "pr": 106034,
+      "text": "fix(gateway): treat a configured local terminal.cwd as a context workspace, not a launch artifact (#106012)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T17:45:50Z",
+      "kind": "push",
+      "pr": 106034,
+      "text": "fix(gateway): scope the terminal.cwd intent gate to the session's bound profile",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T18:20:09Z",
+      "kind": "open",
+      "pr": 107584,
+      "text": "Opened: fix(update): reuse the parent's pre-update backup in the Windows exe hand-off child (fixes #107543)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-10T18:26:21Z",
+      "kind": "open",
+      "pr": 107592,
+      "text": "Opened: fix(desktop): flag a rebuild when the installed app's commit is behind HEAD (fixes #107542)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-11T02:51:04Z",
+      "kind": "push",
+      "pr": 103480,
+      "text": "test(desktop): assert HERMES_HOME spawn env against the wrapped command (#103467)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-11T02:51:04Z",
+      "kind": "push",
+      "pr": 103480,
+      "text": "fix(desktop): pass HERMES_HOME for named-profile SSH serves so DB isolation holds (#103467)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-11T12:00",
+      "day": true,
+      "kind": "salvage",
+      "pr": 107335,
+      "text": "Landed on main via #108440 with both commits cherry-picked, authorship preserved.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-11T12:00:01Z",
+      "day": true,
+      "kind": "close",
+      "pr": 107592,
+      "text": "Closed in favour of #107556, a superset with extra validation.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-11T12:00:02Z",
+      "day": true,
+      "kind": "close",
+      "pr": 103480,
+      "text": "Closed: --profile re-homes the child before hermes_state is imported, so the HERMES_HOME export is redundant.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-12T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106034,
+      "text": "Confirmed the new head carries the session-scoped gate and tests; recommends a fresh CI run before merge.",
+      "who": "arbayzid"
+    },
+    {
+      "at": "2026-09-12T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 105882,
+      "text": "Root cause fixed in #109310: the heartbeat no longer contends on the fire fence.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-09-12T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 71947,
+      "text": "Production reproduction: the delegated marker persists and breaks parent Kanban guards.",
+      "who": "LucidPaths"
+    },
+    {
+      "at": "2026-09-16T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 84286,
+      "text": "Dropped the redundant caching commit now that upstream keys by hermes_home_key; one commit remains.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T12:00:06Z",
+      "day": true,
+      "kind": "close",
+      "pr": 68796,
+      "text": "Closed as superseded: main closed the staging gap via version_files_to_stage().",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68271,
+      "text": "Merge conflicts after upstream moved _wire_callbacks and renamed _block to _ask.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:18:50Z",
+      "kind": "push",
+      "pr": 106028,
+      "text": "fix(cli): bind --create-if-missing sessions to the launch cwd (#106016)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:20:20Z",
+      "day": true,
+      "kind": "close",
+      "pr": 87588,
+      "text": "Closed by the autoresolver: main already translates the Voice Echo Transcripts field.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:22:44Z",
+      "kind": "push",
+      "pr": 84286,
+      "text": "fix(tools): route config credential-file mounts through the master-store deny-list",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:38:30Z",
+      "day": true,
+      "kind": "close",
+      "pr": 78588,
+      "text": "Closed by the autoresolver: main already de-flakes this exact test (a70ea87).",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:39:17Z",
+      "kind": "push",
+      "pr": 68967,
+      "text": "fix(discord): retry post-connect slash-command sync while connected (#68963)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:40:25Z",
+      "kind": "push",
+      "pr": 68407,
+      "text": "fix(memory): honor write-isolation contract in the Mem0 provider",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:46:51Z",
+      "kind": "push",
+      "pr": 72026,
+      "text": "fix(agent): deliver pre_llm_call/memory context on multimodal turns (#71998)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:47:41Z",
+      "kind": "push",
+      "pr": 72026,
+      "text": "fix(agent): run memory prefetch on multimodal turns by flattening the query (#71998)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:49:12Z",
+      "kind": "push",
+      "pr": 74212,
+      "text": "test(web): assert Firecrawl scrape() receives forwarded headers",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:49:12Z",
+      "kind": "push",
+      "pr": 74212,
+      "text": "fix(sandbox): cover web_extract headers param in _TOOL_STUBS and tool docs",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:49:12Z",
+      "kind": "push",
+      "pr": 74212,
+      "text": "feat(web): forward custom request headers from web_extract to Firecrawl (#74177)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T13:55:44Z",
+      "day": true,
+      "kind": "close",
+      "pr": 69088,
+      "text": "Closed by the autoresolver: the update-check refactor on main handles this (6dfcf15685).",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-16T14:38:31Z",
+      "day": true,
+      "kind": "close",
+      "pr": 105882,
+      "text": "Closed by the autoresolver in favour of #109310: the fix belongs at the ownership-check source.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-17T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 107163,
+      "text": "Deliberately not widening the PR: it validates the stale record only, not the resolved cwd.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-17T12:00:02Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 71947,
+      "text": "Salvaged into #114312 with co-author credit.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-09-17T13:00",
+      "day": true,
+      "kind": "review",
+      "pr": 114250,
+      "text": "Verified independently: tests fail on base and pass with the fix, and all 489 nearby tests still pass.",
+      "who": "KeyArgo"
+    },
+    {
+      "at": "2026-09-17T15:00",
+      "day": true,
+      "kind": "push",
+      "pr": 114250,
+      "text": "Added a fourth test pinning the focused-dropdown exemption as intended behavior.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-17T15:45:27Z",
+      "kind": "push",
+      "pr": 62239,
+      "text": "fix(providers): unify local OpenAI-compatible provider aliases to custom (#62213)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-17T15:53:02Z",
+      "kind": "push",
+      "pr": 105891,
+      "text": "fix(desktop): roster age reflects the last worker run, not only the last chat (#105874)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-17T16:04:36Z",
+      "kind": "open",
+      "pr": 114250,
+      "text": "Opened: fix(desktop): keep the caret in a focused clarify/text field when the pointer moves (fixes #114245)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-17T16:43:59Z",
+      "kind": "open",
+      "pr": 114273,
+      "text": "Opened: docs(portal): shared token store refreshes a login, it does not seed one (fixes #114259)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-18T12:00",
+      "day": true,
+      "kind": "salvage",
+      "pr": 114250,
+      "text": "Salvaged into #114943 (cherry-picked, authorship preserved) and merged.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-18T12:00:01Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 114273,
+      "text": "Salvaged into #114896 and merged as b9d3c703.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-18T19:40:21Z",
+      "day": true,
+      "kind": "close",
+      "pr": 68407,
+      "text": "Memory providers are moving out of core; provider behaviour belongs in the provider's own repo.",
+      "who": "kshitijk4poor"
+    },
+    {
+      "at": "2026-09-19T09:46:23Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 67373,
+      "text": "Landed on main via #115671 with Co-authored-by credit.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-19T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87714,
+      "text": "Final version folds name[N] into path segments, composes with escaping and rejects out-of-range indices.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-19T14:07:53Z",
+      "kind": "push",
+      "pr": 62246,
+      "text": "fix(cli): don't reroute /model onto an unconfigured provider (#62240)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-19T14:30:51Z",
+      "kind": "push",
+      "pr": 74207,
+      "text": "fix(bedrock): don't persist the discovery fallback to the model cache (#74151)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-19T14:33:04Z",
+      "kind": "push",
+      "pr": 87571,
+      "text": "fix(update,plugins): stop MSYS stripping braces from stash@{N} selectors on Windows (#87542)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-19T16:46:01Z",
+      "day": true,
+      "kind": "close",
+      "pr": 35983,
+      "text": "Closed by the autoresolver: upstream main now implements the same mechanism.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-19T21:44:56Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 67336,
+      "text": "Landed on main via the Codex reasoning-only stall fix (656eb283).",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-19T21:45:09Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 67593,
+      "text": "The work in this PR landed on main via #115903.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-20T20:36:19Z",
+      "kind": "open",
+      "pr": 117517,
+      "text": "Opened: fix(plugin-guard): treat an env-var NAME literal as public, not a hardcoded secret (fixes #116221)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T06:39:43Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 67611,
+      "text": "Landed on main as a slim redo that re-applied the mechanism at the current seam (#118842).",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T12:00",
+      "day": true,
+      "kind": "close",
+      "pr": 117517,
+      "text": "Closed: main already fixed #116221 via #116875 with a pattern-level carve-out.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 119402,
+      "text": "Flagged a related competing implementation: #119400 changes recovery for every unrepairable payload, including finish_reason=\"length\".",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T12:00:02Z",
+      "day": true,
+      "kind": "close",
+      "pr": 105891,
+      "text": "Closed: the same change already reached main via #116912.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T12:00:03Z",
+      "day": true,
+      "kind": "close",
+      "pr": 88465,
+      "text": "Closed as superseded by #118843, which surfaces quoted providers in doctor and at startup.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T12:00:04Z",
+      "day": true,
+      "kind": "close",
+      "pr": 87571,
+      "text": "Superseded by #118838, which addresses stashes by SHA or index and avoids brace-stripping entirely.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 75549,
+      "text": "Two gaps: the status route loses base_url, and usage pairs provider and endpoint from different sources.",
+      "who": "oppih"
+    },
+    {
+      "at": "2026-09-22T12:00:06Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 72026,
+      "text": "Landed via #118911 with the persistence gap closed and authorship preserved.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 69215,
+      "text": "Rebased onto the new checkpoint hook, added a container-backend guard, resolves cwd via scope_terminal_cwd.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68059,
+      "text": "Moved the symlink-skip guard into hermes_constants.apply_secure_dir_policy for broader coverage.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T17:31:33Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 105891,
+      "text": "Cherry-picked onto main by teknium1 on Sep 20, with you kept as the commit author.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-09-22T17:36:47Z",
+      "kind": "push",
+      "pr": 87714,
+      "text": "fix(cli): resolve bracket-style list indices in config set/get/unset (#87689)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T17:38:17Z",
+      "kind": "push",
+      "pr": 87570,
+      "text": "fix(agent): canonicalize ALIASES providers in credential-pool mismatch guard (#87526)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T17:39:12Z",
+      "kind": "push",
+      "pr": 99445,
+      "text": "fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions (#99436)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:01:35Z",
+      "kind": "push",
+      "pr": 58201,
+      "text": "fix(bedrock): dedup profile-covered bare model IDs in /model picker",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:03:53Z",
+      "kind": "push",
+      "pr": 73482,
+      "text": "fix(tts): fall back to mp3 when an OpenAI-compatible backend rejects response_format (#73470)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:05:12Z",
+      "kind": "push",
+      "pr": 71816,
+      "text": "fix(tools): inject items into array schemas so Gemini accepts tool declarations",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:06:09Z",
+      "kind": "push",
+      "pr": 71816,
+      "text": "fix(tools): inject items into synthesized multi-type anyOf array branches",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:07:52Z",
+      "kind": "push",
+      "pr": 68059,
+      "text": "fix(config): skip symlinked HERMES_HOME subdirs in _secure_dir",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:16:49Z",
+      "kind": "push",
+      "pr": 69215,
+      "text": "fix(agent): checkpoint every terminal call, not just regex-matched ones",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-22T18:25:11Z",
+      "kind": "open",
+      "pr": 119402,
+      "text": "Opened: fix(streaming): retry unrepairable tool args on a terminal finish_reason (fixes #119389)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T12:00:01Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 87589,
+      "text": "Carried into #120696 with co-author credit, adding late-load and runtime language-switch handling.",
+      "who": "OutThisLife"
+    },
+    {
+      "at": "2026-09-23T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 87263,
+      "text": "Addressed all three: debug logging, an isinstance guard for non-string base_url, and a pinned contract test.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T12:00:03Z",
+      "day": true,
+      "kind": "review",
+      "pr": 85365,
+      "text": "Hostile-character round-trips and carry-forward idempotency still hold after the rebuild.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-23T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78491,
+      "text": "Confirms the root cause; min_len merges short CJK sentences, so suggests a per-head floor.",
+      "who": "gqwesleywang"
+    },
+    {
+      "at": "2026-09-23T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 78491,
+      "text": "Added a per-head CJK floor and explained why consuming closers would bring the bug back.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T12:00:06Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 75549,
+      "text": "Re-implemented on main, adopting oppih's fix and receipt tests; both gaps fixed.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T12:00:07Z",
+      "day": true,
+      "kind": "close",
+      "pr": 74207,
+      "text": "Closed as superseded by upstream's CuratedFallbackModels redesign with a 60-second TTL.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T13:53:04Z",
+      "kind": "push",
+      "pr": 75549,
+      "text": "fix(gateway): show the active fallback route in /status and /usage (#75535)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T14:11:21Z",
+      "kind": "push",
+      "pr": 71958,
+      "text": "feat(config): render web.backend/search_backend/extract_backend as Config Form selects (#71929)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T14:17:22Z",
+      "kind": "push",
+      "pr": 73127,
+      "text": "fix(desktop): make auto-project Hide from sidebar reversible via an Undo toast (#73091)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T14:28:38Z",
+      "kind": "open",
+      "pr": 120311,
+      "text": "Opened: fix(tools): coerce a blank string to {} for object-typed tool args (fixes #120269)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T14:46:56Z",
+      "kind": "open",
+      "pr": 120332,
+      "text": "Opened: fix(dashboard): run plugin API routes in the profile secret scope (fixes #120310)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-23T15:45:08Z",
+      "kind": "push",
+      "pr": 87263,
+      "text": "fix(providers): fail closed on non-string base_url in get_hostname",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-24T00:55:29Z",
+      "kind": "close",
+      "pr": 62267,
+      "text": "Labelled duplicate on GitHub: another PR already covered this issue.",
+      "who": "maintainer"
+    },
+    {
+      "at": "2026-09-24T12:00",
+      "day": true,
+      "kind": "review",
+      "pr": 120332,
+      "text": "Asked to delegate to _config_profile_scope instead of hand-building the scope.",
+      "who": "adevwithpurpose"
+    },
+    {
+      "at": "2026-09-24T12:00:01Z",
+      "day": true,
+      "kind": "approve",
+      "pr": 103422,
+      "text": "\"Looks good. Nothing blocking.\" Resume logic and retry semantics check out.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-25T09:00:00Z",
+      "day": true,
+      "kind": "review",
+      "pr": 107163,
+      "text": "Verified the fix against the field reproduction from #107156; the full targeted suite passes.",
+      "who": "gwyntel-git"
+    },
+    {
+      "at": "2026-09-25T10:00",
+      "day": true,
+      "kind": "push",
+      "pr": 120332,
+      "text": "Routed the dependency through the canonical profile scope so env-only launch credentials work.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:22:33Z",
+      "kind": "push",
+      "pr": 105926,
+      "text": "test(agent): isolate runtime-main state in auxiliary vision tests (#105888)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:25:26Z",
+      "kind": "push",
+      "pr": 69274,
+      "text": "fix(cron): build failure reason from metadata, not the agent's final_response (#69224)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:29:33Z",
+      "kind": "push",
+      "pr": 85403,
+      "text": "fix(whatsapp): route the pairing wizard through the reader's resolver and reject empty/truncated creds (#85391)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:33:12Z",
+      "kind": "push",
+      "pr": 85996,
+      "text": "feat(toolsets): add file_readonly toolset (read_file + search_files only)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:33:13Z",
+      "kind": "push",
+      "pr": 85996,
+      "text": "feat(toolsets): register file_readonly in the hermes tools picker",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:33:13Z",
+      "kind": "push",
+      "pr": 85996,
+      "text": "fix(setup): keep read-only subset toolsets out of blank-slate disabled_toolsets",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:35:51Z",
+      "kind": "push",
+      "pr": 103422,
+      "text": "fix(local-models): resume ranged model downloads per-worker instead of restarting from zero (#103416)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T11:55:09Z",
+      "kind": "push",
+      "pr": 89142,
+      "text": "fix(doctor): spell out diverging pip names in Required Packages hints",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:00:01Z",
+      "day": true,
+      "kind": "approve",
+      "pr": 107163,
+      "text": "Verified against the field reproduction; \"design correct on both halves\".",
+      "who": "gwyntel-git"
+    },
+    {
+      "at": "2026-09-25T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 105864,
+      "text": "Rebased; the apply path now covers the release_sha fetch variants.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 89142,
+      "text": "Rebased again; kept upstream's repair hint for required packages, install command for optional ones.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85403,
+      "text": "The wizard now resolves the session dir via the same get_hermes_dir call and the shared validator.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 85365,
+      "text": "Re-homed the fix after upstream refactored service-unit generation.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:00:06Z",
+      "day": true,
+      "kind": "review",
+      "pr": 85365,
+      "text": "Layout move verified; behaviour unchanged and the bug still reproduces on main.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-25T12:00:07Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68953,
+      "text": "Rebased onto the open-local-file.ts extraction; tests pass.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:00:08Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68180,
+      "text": "Rebased and trimmed to one concern: the Content-Length truncation guard.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:00:09Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 67250,
+      "text": "Rebased again and matched the test harness to upstream's WS-isolation hooks.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:04:54Z",
+      "kind": "push",
+      "pr": 68953,
+      "text": "fix(desktop): open macOS PDFs via Preview when the default handler is broken (#68937)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:09:24Z",
+      "kind": "push",
+      "pr": 68180,
+      "text": "fix(bootstrap): reject truncated install-script downloads via Content-Length (#68163)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:20:04Z",
+      "kind": "push",
+      "pr": 67250,
+      "text": "fix(feishu): repair Windows system SOCKS proxy for WS event channel",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:22:50Z",
+      "kind": "push",
+      "pr": 67250,
+      "text": "fix(feishu): log only proxy scheme, never the full URL, on WS SOCKS rewrite",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T12:58:13Z",
+      "kind": "open",
+      "pr": 122636,
+      "text": "Opened: fix(build): skip macOS Finder metadata in build freshness hashing (fixes #122632)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T13:10:00Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 122636,
+      "text": "Blocker: the junk-write test assertion fails; suggested seeding assets/ before buildWeb.",
+      "who": "kokhlo"
+    },
+    {
+      "at": "2026-09-25T13:12:53Z",
+      "kind": "open",
+      "pr": 122652,
+      "text": "Opened: feat(skills): exclude .stversions and _archive from skill discovery (fixes #122613)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T13:40:00Z",
+      "day": true,
+      "kind": "push",
+      "pr": 122636,
+      "text": "Seeded the assets/ input before the junk-write assertion, as kokhlo suggested.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T14:00:00Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 122636,
+      "text": "The Python layer needs matching macOS metadata exclusions to keep the two sets in parity.",
+      "who": "MwC-Trexx"
+    },
+    {
+      "at": "2026-09-25T14:02:34Z",
+      "kind": "push",
+      "pr": 85365,
+      "text": "fix(gateway): propagate HERMES_BUNDLED_* into launchd/systemd service units (#85357)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T14:10:16Z",
+      "kind": "open",
+      "pr": 122704,
+      "text": "Opened: fix(acp): archive dropped rows on non-owning-agent persist instead of hard-deleting (fixes #122699)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T14:30",
+      "day": true,
+      "kind": "comment",
+      "pr": 122652,
+      "text": "Flagged as a duplicate of #122646: identical exclusion-set change and regression test.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-09-25T14:47:34Z",
+      "kind": "push",
+      "pr": 122636,
+      "text": "test(build): seed assets/ input before the junk-write assertion (#122632)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T15:00",
+      "day": true,
+      "kind": "close",
+      "pr": 122652,
+      "text": "Closed as a duplicate of #122646, which was opened 6 minutes earlier with the same change.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-25T16:00",
+      "day": true,
+      "kind": "review",
+      "pr": 120332,
+      "text": "Core fix is correct, but blocked on test state leaks, an unverified production mount, a competing implementation, missing attribution and red CI.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-09-25T18:00",
+      "day": true,
+      "kind": "comment",
+      "pr": 120332,
+      "text": "Acknowledged the gaps and offered a follow-up test harness rather than more coverage in this PR.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T02:56:06Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 62239,
+      "text": "Cherry-picked onto main by OutThisLife on Sep 25, with you kept as the commit author.",
+      "who": "OutThisLife"
+    },
+    {
+      "at": "2026-09-26T02:57:25Z",
+      "kind": "push",
+      "pr": 73342,
+      "text": "fix(agent): add Kimi K2.x/K3 to reasoning stale-timeout allowlist (#73337)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T03:05:33Z",
+      "kind": "open",
+      "pr": 123378,
+      "text": "Opened: fix(desktop): list root-level personalities in the Settings dropdown (fixes #123297)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T03:12:13Z",
+      "kind": "push",
+      "pr": 119402,
+      "text": "fix(streaming): retry unrepairable tool args on a terminal finish_reason (#119389)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T03:16:28Z",
+      "kind": "push",
+      "pr": 120332,
+      "text": "fix(dashboard): run plugin API routes in the profile secret scope (#120310)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T03:16:29Z",
+      "kind": "push",
+      "pr": 120332,
+      "text": "fix(dashboard): resolve plugin route secrets via the canonical profile scope",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T03:17:22Z",
+      "kind": "push",
+      "pr": 120332,
+      "text": "test(dashboard): restore process-global launch state in the env-only scope test",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T08:20:29Z",
+      "kind": "push",
+      "pr": 78491,
+      "text": "fix(tts): split streaming sentences on CJK terminators (。！？…)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T08:21:08Z",
+      "kind": "push",
+      "pr": 78491,
+      "text": "fix(tts): keep CJK boundary zero-width so re.split preserves the terminator",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T08:21:53Z",
+      "kind": "push",
+      "pr": 78491,
+      "text": "fix(tts): apply a shorter CJK floor so a done short CJK sentence isn't merged",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T08:56:29Z",
+      "kind": "open",
+      "pr": 123749,
+      "text": "Opened: fix(kanban): degrade `kanban list` to a plain read in fenced child contexts",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T09:55:20Z",
+      "kind": "open",
+      "pr": 123791,
+      "text": "Opened: fix(computer-use): fix Windows cua-driver autostart readiness false-negative (fixes #123774)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T11:00",
+      "day": true,
+      "kind": "review",
+      "pr": 123749,
+      "text": "Automated review: \"a clean fix\", ready to merge. Asked whether --json with --assignee should also skip recompute_ready.",
+      "who": "kiramakes"
+    },
+    {
+      "at": "2026-09-26T12:00",
+      "day": true,
+      "kind": "comment",
+      "pr": 123749,
+      "text": "All list variants are covered: _cmd_list is the single entry point and the guard wraps its one recompute_ready call.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 99445,
+      "text": "This PR targets the current session_notifications.py; #99444 conflicts with the upstream refactor.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 68953,
+      "text": "Semantic conflict: this reopens the #53170 Windows re-download loop; a hybrid approach is needed.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T12:00:03Z",
+      "day": true,
+      "kind": "close",
+      "pr": 62239,
+      "text": "Closed: main already resolves #62213 via 7a5c715844 and 70f7fa05ca.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 55781,
+      "text": "Fixed single-word and punctuated forms; tile Stop now clears the per-session flag.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T12:00:05Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 55781,
+      "text": "Rebased: both original fixes merged independently, so this PR carries only the follow-ups.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T12:51:17Z",
+      "kind": "open",
+      "pr": 123950,
+      "text": "Opened: fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune (fixes #123935)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T12:56:16Z",
+      "kind": "open",
+      "pr": 123952,
+      "text": "Opened: fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install (fixes #123943)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T13:00",
+      "day": true,
+      "kind": "review",
+      "pr": 123950,
+      "text": "Automated review: ready to merge. Root cause is correct and the head bound decays to zero after the first compression, as intended.",
+      "who": "kiramakes"
+    },
+    {
+      "at": "2026-09-26T13:30:00Z",
+      "day": true,
+      "kind": "approve",
+      "pr": 123952,
+      "text": "Automated review: \"ready to merge\"; switching --locked to --frozen fixes the pip-mirror abort without weakening integrity.",
+      "who": "kiramakes"
+    },
+    {
+      "at": "2026-09-26T14:00",
+      "day": true,
+      "kind": "review",
+      "pr": 123378,
+      "text": "Requested tests for the new root-block read and direct array equality: \"Position matters here.\"",
+      "who": "DavidMetcalfe"
+    },
+    {
+      "at": "2026-09-26T14:58:21Z",
+      "kind": "open",
+      "pr": 124028,
+      "text": "Opened: fix(vision): apply the discovery-chain boundary to the aux vision auto-route (fixes #123998)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T15:00",
+      "day": true,
+      "kind": "push",
+      "pr": 123378,
+      "text": "Added enumOptionsFor tests for the root personalities block and switched to direct array equality.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T15:30:00Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 124028,
+      "text": "Boundary tests pass, but the new gate breaks the text-only main fall-through.",
+      "who": "kokhlo"
+    },
+    {
+      "at": "2026-09-26T16:00",
+      "day": true,
+      "kind": "review",
+      "pr": 120332,
+      "text": "New blocker: #123384 would overwrite the request profile scope if both land unchanged.",
+      "who": "andrexibiza"
+    },
+    {
+      "at": "2026-09-26T16:30:00Z",
+      "day": true,
+      "kind": "push",
+      "pr": 124028,
+      "text": "Kept the discovery boundary from gating text-only main by threading a main_vision_capable flag.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T17:00",
+      "day": true,
+      "kind": "push",
+      "pr": 120332,
+      "text": "Added a production-mount test that exercises the real discovery, mount and request path.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T17:46:28Z",
+      "kind": "push",
+      "pr": 124028,
+      "text": "fix(vision): keep the discovery boundary from gating a text-only main (#123998)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T17:54:51Z",
+      "kind": "push",
+      "pr": 120332,
+      "text": "test(dashboard): exercise the plugin secret scope through the production mount",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T18:00",
+      "day": true,
+      "kind": "review",
+      "pr": 123378,
+      "text": "Names are listed verbatim but the runtime folds case and whitespace, so some dropdown rows are unreachable.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-26T18:00:00Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 123791,
+      "text": "Verified on Windows 11 and found a UTF-16 BOM handling gap that needs another fix.",
+      "who": "triplemc97"
+    },
+    {
+      "at": "2026-09-26T19:00",
+      "day": true,
+      "kind": "push",
+      "pr": 123378,
+      "text": "Folded personality names with str(name).strip().lower() to match the runtime and filtered neutral names.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T20:00",
+      "day": true,
+      "kind": "review",
+      "pr": 120332,
+      "text": "Three findings: the multiplex gate discards ?profile=, the test doesn't pin gate behavior, and sync profile-scope work blocks the event loop.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-26T20:10:13Z",
+      "kind": "push",
+      "pr": 55781,
+      "text": "fix(desktop): de-dupe a single-word or punctuated leading action verb",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T20:10:13Z",
+      "kind": "push",
+      "pr": 55781,
+      "text": "fix(desktop): dismiss the compaction overlay from the tile Stop path too",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T21:00",
+      "day": true,
+      "kind": "comment",
+      "pr": 120332,
+      "text": "Explained the multiplex gate is a deliberate no-op when multiplexing is off, point by point.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-26T22:00",
+      "day": true,
+      "kind": "comment",
+      "pr": 120332,
+      "text": "Withdrew the gate concern: the production-mount test covers the seam and no blocking issues remain.",
+      "who": "Enough1122"
+    },
+    {
+      "at": "2026-09-27T04:37:44Z",
+      "kind": "push",
+      "pr": 94965,
+      "text": "docs(windows): correct gateway Scheduled Task name and launch mechanism (#94941)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:38:25Z",
+      "kind": "push",
+      "pr": 94965,
+      "text": "docs(windows): correct the Startup-folder fallback and clarify the spawn-flags scope",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:41:32Z",
+      "kind": "push",
+      "pr": 63898,
+      "text": "fix(tools): escalate repeated malformed patch calls instead of looping",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:44:00Z",
+      "kind": "push",
+      "pr": 107163,
+      "text": "fix(tools): heal a stale local session-cwd record instead of bricking the terminal (#107156)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T04:46:56Z",
+      "kind": "push",
+      "pr": 106088,
+      "text": "fix(tui): run quick-command skill aliases via command.dispatch on desktop/TUI",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T05:59:56Z",
+      "kind": "open",
+      "pr": 124851,
+      "text": "Opened: fix(copilot-acp): reap the launcher's native descendant on teardown (fixes #124835)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T06:04:25Z",
+      "kind": "open",
+      "pr": 124855,
+      "text": "Opened: fix(cron): stop an adopted external worker from re-exec'ing and losing its payload (fixes #124827)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T06:52:03Z",
+      "kind": "open",
+      "pr": 124891,
+      "text": "Opened: fix(agent): log the native cause before a refusal/invalid-response fallback (fixes #124874)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T07:00:00Z",
+      "day": true,
+      "kind": "push",
+      "pr": 123791,
+      "text": "Added a _decode_task_xml helper that handles UTF-16 BOM and console code-page payloads.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T07:54:34Z",
+      "kind": "push",
+      "pr": 123791,
+      "text": "fix(computer-use): make a UTF-16 BOM decisive when reading the autostart task (#123774)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T08:00:00Z",
+      "day": true,
+      "kind": "push",
+      "pr": 123952,
+      "text": "Force-pushed with a clearer commit message explaining the fix.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T08:41:58Z",
+      "kind": "push",
+      "pr": 105864,
+      "text": "fix(update): degrade past repo-scoped HTTP 429 with bounded retry (#105857)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T09:00:00Z",
+      "day": true,
+      "kind": "push",
+      "pr": 107163,
+      "text": "Force-pushed with a refined commit message.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T10:00",
+      "day": true,
+      "kind": "push",
+      "pr": 123950,
+      "text": "Rebased after upstream refactored the prune passes; the head shield now guards only the Pass 2 demote loop.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 106088,
+      "text": "Rebased onto current main and adapted to the tri-state skill helper; 70 tests pass.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 63898,
+      "text": "Narrowed scope: upstream now escalates; this closes the remaining empty-content gap.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:00:03Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 62246,
+      "text": "The runtime rollback exists separately; this is the complementary selection-layer guard.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:00:04Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 58201,
+      "text": "Added the apac. prefix with a regression test.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:43:20Z",
+      "kind": "push",
+      "pr": 123952,
+      "text": "fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install (#123943)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T12:49:50Z",
+      "kind": "open",
+      "pr": 125246,
+      "text": "Opened: fix(backup): exclude the win-arm64 build-tools vcpkg cache from HERMES_HOME backups (fixes #125237)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T13:54:10Z",
+      "kind": "push",
+      "pr": 123950,
+      "text": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune (#123935)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T14:15:52Z",
+      "kind": "open",
+      "pr": 125331,
+      "text": "Opened: fix(agent): decode sentinel-encoded multimodal turns before the alternation repair (fixes #125299)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:00",
+      "day": true,
+      "kind": "push",
+      "pr": 123378,
+      "text": "Fixed lint: braced conditionals and reordered imports.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:06:32Z",
+      "kind": "push",
+      "pr": 123378,
+      "text": "fix(desktop): list root-level personalities in the Settings dropdown (#123297)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:06:33Z",
+      "kind": "push",
+      "pr": 123378,
+      "text": "fix(desktop): fold personality names like the runtime so only resolvable rows are offered",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:06:33Z",
+      "kind": "push",
+      "pr": 123378,
+      "text": "test(desktop): cover personalityOptions' root read and pin GUI ordering",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T16:58:15Z",
+      "kind": "push",
+      "pr": 123378,
+      "text": "style(desktop): satisfy curly + import-sort lint on personality folding",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T17:08:29Z",
+      "kind": "push",
+      "pr": 58201,
+      "text": "fix(bedrock): include apac. inference-profile prefix in picker dedup (#58185)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-27T17:58",
+      "day": true,
+      "kind": "approve",
+      "pr": 123378,
+      "text": "Approved after confirming the \"behavioural test red on base and green with the fix.\"",
+      "who": "OutThisLife"
+    },
+    {
+      "at": "2026-09-27T17:59",
+      "day": true,
+      "kind": "merge",
+      "pr": 123378,
+      "text": "Merged into main with 30 checks passing.",
+      "who": "OutThisLife"
+    },
+    {
+      "at": "2026-09-28T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 105864,
+      "text": "Refactored to compose with fetch_with_partial_clone_recovery; retry handles transient 429s at each attempt.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-09-28T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 75702,
+      "text": "Still reproduces in build 0.21.5; asks for this to be merged or #75687 reopened.",
+      "who": "piskooooo"
+    }
+  ],
+  "month": "2026-09"
+}

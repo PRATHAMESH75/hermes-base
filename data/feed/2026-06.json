@@ -1,0 +1,160 @@
+{
+  "events": [
+    {
+      "at": "2026-06-02T18:03:13Z",
+      "kind": "open",
+      "pr": 37550,
+      "text": "Opened: fix(gateway): reap cgroup orphans via ExecStopPost to unblock restart",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-02T19:08:22Z",
+      "kind": "open",
+      "pr": 37587,
+      "text": "Opened: Fix/cli bugs batch 37501 37472",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-24T10:58:05Z",
+      "kind": "open",
+      "pr": 51849,
+      "text": "Opened: fix(desktop): render reasoning effort as a distinct badge in the model menu (fixes #51833)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-24T11:21:50Z",
+      "kind": "open",
+      "pr": 51856,
+      "text": "Opened: fix(agent): dispatch stale-stream pool cleanup by api_mode (fixes #51844)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-24T11:43:19Z",
+      "kind": "open",
+      "pr": 51863,
+      "text": "Opened: fix(session): auto-archive subagent + compressed-parent sessions (fixes #51855)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-24T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 51856,
+      "text": "#28240 and #51851 fix the same dispatch at all three streaming cleanup sites.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-06-24T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 51849,
+      "text": "Duplicate of #51845: both render reasoning effort as a separate badge.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-06-28T12:00:01Z",
+      "day": true,
+      "kind": "close",
+      "pr": 51856,
+      "text": "Closed in favour of #53926, now merged.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-06-28T12:00:02Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 37550,
+      "text": "Merged via #54090 with authorship preserved; praised the per-PID reaper.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-06-28T17:58:31Z",
+      "kind": "open",
+      "pr": 54367,
+      "text": "Opened: fix(checkpoint): share a logical workdir key across Docker bind-mount checkpoint create/rollback (fixes #54356)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-28T18:27:13Z",
+      "kind": "open",
+      "pr": 54378,
+      "text": "Opened: feat(desktop): remote-only mode to block local workstation file access (fixes #54363)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-29T03:45:08Z",
+      "kind": "open",
+      "pr": 54597,
+      "text": "Opened: fix(tools): transcode to OGG/Opus for OpenAI-compatible TTS backends without opus (fixes #54589)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-29T05:18:10Z",
+      "kind": "open",
+      "pr": 54645,
+      "text": "Opened: fix(desktop): stop clipping descenders in sidebar row labels (fixes #54634)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-29T07:00:56Z",
+      "kind": "open",
+      "pr": 54688,
+      "text": "Opened: feat(gateway): /platform reload — hot-reload messaging platform adapters (fixes #54681)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-29T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 54597,
+      "text": "Fix for #54589; complementary to #54488 and distinct from #37337.",
+      "who": "alt-glitch"
+    },
+    {
+      "at": "2026-06-29T12:00:02Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 54597,
+      "text": "The only failing check is the fork Docker build cache; required checks pass.",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-29T15:11:22Z",
+      "kind": "open",
+      "pr": 54973,
+      "text": "Opened: feat(feishu): add render_mode config to opt into native table rendering (fixes #54951)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-30T12:00:01Z",
+      "day": true,
+      "kind": "comment",
+      "pr": 55789,
+      "text": "\"Clean surgical fix\" closing the watchdog blind spot at the existing boundary.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-06-30T12:00:02Z",
+      "day": true,
+      "kind": "salvage",
+      "pr": 55789,
+      "text": "Merged via #55905 with the commit cherry-picked and authorship preserved.",
+      "who": "teknium1"
+    },
+    {
+      "at": "2026-06-30T17:13:04Z",
+      "kind": "open",
+      "pr": 55781,
+      "text": "Opened: fix(desktop): clear stuck compaction overlay and de-dupe terminal tool-title verb (fixes #55775)",
+      "who": "PRATHAMESH75"
+    },
+    {
+      "at": "2026-06-30T17:33:26Z",
+      "kind": "open",
+      "pr": 55789,
+      "text": "Opened: fix(telegram): recover when polling updater stops while process stays alive (fixes #55769)",
+      "who": "PRATHAMESH75"
+    }
+  ],
+  "month": "2026-06"
+}

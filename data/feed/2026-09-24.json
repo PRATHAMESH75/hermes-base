@@ -1,0 +1,12 @@
+{
+  "day": "2026-09-24",
+  "events": [
+    {
+      "at": "2026-09-24T00:55:29Z",
+      "kind": "close",
+      "pr": 62267,
+      "text": "Labelled duplicate on GitHub: another PR already covered this issue.",
+      "who": "PRATHAMESH75"
+    }
+  ]
+}
