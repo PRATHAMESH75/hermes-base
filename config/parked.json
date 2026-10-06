@@ -5,14 +5,30 @@
       "reason": "Refactor casualty: upstream reworked the CLI worktree path; re-implementing -w one-shot mode needs a design call.",
       "parkedAt": "2026-10-06T00:00:00Z",
       "by": "human",
-      "wake": { "onNewHumanComment": true, "after": "2026-10-20T00:00:00Z" }
+      "wake": {
+        "onNewHumanComment": true,
+        "after": "2026-10-20T00:00:00Z"
+      }
     },
     {
       "pr": 54367,
       "reason": "Refactor casualty: checkpoint workdir keying moved upstream; deferred as judgment-heavy, not superseded.",
       "parkedAt": "2026-10-06T00:00:00Z",
       "by": "human",
-      "wake": { "onNewHumanComment": true, "after": "2026-10-20T00:00:00Z" }
+      "wake": {
+        "onNewHumanComment": true,
+        "after": "2026-10-20T00:00:00Z"
+      }
+    },
+    {
+      "pr": 54688,
+      "reason": "Refactor casualty: upstream added /platform list|pause|resume and reworked gateway drain/status; grafting reload needs integration judgment (pause/resume state, config re-read vs adapter registry).",
+      "parkedAt": "2026-10-06T00:00:00Z",
+      "by": "human",
+      "wake": {
+        "onNewHumanComment": true,
+        "after": "2026-10-20T00:00:00Z"
+      }
     }
   ]
 }
