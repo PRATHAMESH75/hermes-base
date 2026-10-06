@@ -1,75 +1,23 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-06T13:45:34Z",
- "snapshotGeneratedAt": "2026-10-06T13:33:32Z",
+ "generatedAt": "2026-10-06T16:18:34Z",
+ "snapshotGeneratedAt": "2026-10-06T16:18:34Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "f16cbcde551d0cb0685755dbdf3077d928526045",
+ "upstreamMainSha": "02a802a7ef87f360fee0aa8d31e9232fc8800983",
  "capacity": {
-  "open": 73,
+  "open": 71,
   "cap": 73,
-  "free": 0
+  "free": 2
  },
  "counts": {
-  "actionable": 3,
-  "listed": 8,
-  "waiting": 63,
+  "actionable": 33,
+  "listed": 53,
+  "waiting": 16,
   "parked": 2,
   "needsHuman": 0
  },
  "items": [
-  {
-   "pr": 54688,
-   "title": "feat(gateway): /platform reload \u2014 hot-reload messaging platform adapters",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/54688",
-   "issue": 54681,
-   "headSha": "5de4bb6",
-   "updated": "2026-08-25T17:01:07Z",
-   "ageDays": 99,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": true
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 56497,
-   "title": "fix(tools): detect squashed multi-entry blobs as memory drift",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/56497",
-   "issue": 56464,
-   "headSha": "5c36d65",
-   "updated": "2026-09-10T12:54:43Z",
-   "ageDays": 96,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
   {
    "pr": 75702,
    "title": "fix(copilot): don't warn on classic PATs in shared GitHub env vars",
@@ -91,14 +39,1469 @@
      "at": "2026-09-28T13:45:05Z",
      "excerpt": "This still reproduces on current builds. Flagging because the issue that spawned this PR (75687) is closed as COMPLETED while the PR is still open, so the live thread is hard to find \u2014 I found a\u2026",
      "url": "https://github.com/NousResearch/hermes-agent/pull/75702#issuecomment-5871135868"
+    },
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
     }
    ],
    "evidence": {
-    "merge": "blocked",
+    "merge": "unknown",
     "failingChecks": [],
     "checksRan": true
    },
    "lastBotAction": null
+  },
+  {
+   "pr": 76735,
+   "title": "fix(desktop): count calendar days for the relative next-run label",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/76735",
+   "issue": 76725,
+   "headSha": "4d606e3",
+   "updated": "2026-08-12T03:56:51Z",
+   "ageDays": 65,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "74d004f",
+    "at": "2026-08-02T11:43:34Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/76735#issuecomment-5157607367"
+   }
+  },
+  {
+   "pr": 54688,
+   "title": "feat(gateway): /platform reload \u2014 hot-reload messaging platform adapters",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/54688",
+   "issue": 54681,
+   "headSha": "5de4bb6",
+   "updated": "2026-08-25T17:01:07Z",
+   "ageDays": 99,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 89148,
+   "title": "fix(gateway): allow persisted DM /resume across a flipped user_id namespace",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/89148",
+   "issue": 89123,
+   "headSha": "e7e6088",
+   "updated": "2026-09-05T03:08:53Z",
+   "ageDays": 49,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 87864,
+   "title": "fix(gateway): honor API_SERVER_ENABLED=false as an off switch",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/87864",
+   "issue": 87856,
+   "headSha": "9e3b444",
+   "updated": "2026-09-05T03:32:23Z",
+   "ageDays": 50,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 62826,
+   "title": "fix(cli): treat bool handler results as exit 0, not status 1",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/62826",
+   "issue": 62810,
+   "headSha": "96132a8",
+   "updated": "2026-09-05T11:37:22Z",
+   "ageDays": 86,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "f17bfb0",
+    "at": "2026-07-29T07:53:12Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/62826#issuecomment-5114721964"
+   }
+  },
+  {
+   "pr": 68823,
+   "title": "fix(telegram): parse ALLOW_ALL_USERS as boolean so an explicit false unblocks DM pairing",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/68823",
+   "issue": null,
+   "headSha": "1252d61",
+   "updated": "2026-09-05T11:50:14Z",
+   "ageDays": 76,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "b8874b8",
+    "at": "2026-08-02T07:52:56Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/68823#issuecomment-5156346132"
+   }
+  },
+  {
+   "pr": 71965,
+   "title": "fix(approval): keep self-termination gated under the container-backend bypass",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/71965",
+   "issue": 71957,
+   "headSha": "9d15fe2",
+   "updated": "2026-09-06T06:56:29Z",
+   "ageDays": 72,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "8596c62",
+    "at": "2026-08-02T10:43:52Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/71965#issuecomment-5157274560"
+   }
+  },
+  {
+   "pr": 73076,
+   "title": "fix(gateway): cancel the whole queue on /stop and /new, not just the head",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/73076",
+   "issue": null,
+   "headSha": "fdd4eb0",
+   "updated": "2026-09-06T17:24:13Z",
+   "ageDays": 70,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "5507509",
+    "at": "2026-08-02T02:45:54Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/73076#issuecomment-5154758316"
+   }
+  },
+  {
+   "pr": 69159,
+   "title": "fix(gateway): declare webhook sessions stateless so background delegations run inline",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/69159",
+   "issue": 69145,
+   "headSha": "e0ca3b5",
+   "updated": "2026-09-06T18:23:13Z",
+   "ageDays": 76,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 105933,
+   "title": "fix(wecom): give media uploads a generous, tunable timeout",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/105933",
+   "issue": 105900,
+   "headSha": "4dc6b24",
+   "updated": "2026-09-08T20:37:02Z",
+   "ageDays": 27,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "flaky-ci-note",
+    "sha": "d80efb6",
+    "at": "2026-09-08T18:37:07Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/105933#issuecomment-5590023993"
+   }
+  },
+  {
+   "pr": 37587,
+   "title": "Fix/cli bugs batch 37501 37472",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/37587",
+   "issue": null,
+   "headSha": "3d24409",
+   "updated": "2026-09-09T19:04:50Z",
+   "ageDays": 125,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "0e7aa64",
+    "at": "2026-07-29T15:53:30Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/37587#issuecomment-5120255883"
+   }
+  },
+  {
+   "pr": 63187,
+   "title": "fix(gateway): stop standing-goal loop after a failed provider turn",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/63187",
+   "issue": 63180,
+   "headSha": "5d3e04c",
+   "updated": "2026-09-10T12:43:27Z",
+   "ageDays": 86,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "3cb4030",
+    "at": "2026-08-17T01:08:16Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/63187#issuecomment-5310684892"
+   }
+  },
+  {
+   "pr": 56497,
+   "title": "fix(tools): detect squashed multi-entry blobs as memory drift",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/56497",
+   "issue": 56464,
+   "headSha": "5c36d65",
+   "updated": "2026-09-10T12:54:43Z",
+   "ageDays": 96,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 87714,
+   "title": "fix(cli): resolve bracket-style list indices in config set/get/unset",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/87714",
+   "issue": 87689,
+   "headSha": "00f63f7",
+   "updated": "2026-09-22T17:37:38Z",
+   "ageDays": 51,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "0f67cdf",
+    "at": "2026-09-03T14:58:53Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/87714#issuecomment-5527668819"
+   }
+  },
+  {
+   "pr": 87570,
+   "title": "fix(agent): canonicalize ALIASES providers in credential-pool mismatch guard",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/87570",
+   "issue": 87526,
+   "headSha": "0f564c1",
+   "updated": "2026-09-22T17:38:40Z",
+   "ageDays": 51,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "4630fd6",
+    "at": "2026-08-26T05:37:41Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/87570#issuecomment-5421084733"
+   }
+  },
+  {
+   "pr": 73482,
+   "title": "fix(tts): fall back to mp3 when an OpenAI-compatible backend rejects response_format",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/73482",
+   "issue": 73470,
+   "headSha": "e314f59",
+   "updated": "2026-09-22T18:04:11Z",
+   "ageDays": 69,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "47b1980",
+    "at": "2026-07-31T21:47:43Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/73482#issuecomment-5147750776"
+   }
+  },
+  {
+   "pr": 71816,
+   "title": "fix(tools): inject items into array tool schemas so Gemini accepts declarations",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/71816",
+   "issue": 71804,
+   "headSha": "81cfee0",
+   "updated": "2026-09-22T18:06:21Z",
+   "ageDays": 72,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "enhanced-pr",
+    "sha": "a630e43",
+    "at": "2026-08-03T13:44:29Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/71816#issuecomment-5167122789"
+   }
+  },
+  {
+   "pr": 71958,
+   "title": "feat(config): render web.backend/search_backend/extract_backend as Config Form selects",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/71958",
+   "issue": 71929,
+   "headSha": "2cf716e",
+   "updated": "2026-09-23T14:12:06Z",
+   "ageDays": 72,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "daca098",
+    "at": "2026-08-02T11:54:13Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/71958#issuecomment-5157664025"
+   }
+  },
+  {
+   "pr": 105926,
+   "title": "test(agent): isolate runtime-main state in auxiliary vision tests",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/105926",
+   "issue": 105888,
+   "headSha": "fa54ef5",
+   "updated": "2026-09-25T11:23:28Z",
+   "ageDays": 27,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 69274,
+   "title": "fix(cron): build failure reason from metadata, not the agent's final_response",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/69274",
+   "issue": 69224,
+   "headSha": "f486f66",
+   "updated": "2026-09-25T11:25:53Z",
+   "ageDays": 76,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "restored-rebased-pr",
+    "sha": "fa9a08b",
+    "at": "2026-07-31T16:46:15Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/69274#issuecomment-5145307531"
+   }
+  },
+  {
+   "pr": 85403,
+   "title": "fix(whatsapp): pair into the session dir the gateway reads, and reject empty creds",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/85403",
+   "issue": null,
+   "headSha": "0cb4970",
+   "updated": "2026-09-25T11:29:40Z",
+   "ageDays": 54,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "17679f7",
+    "at": "2026-09-05T09:50:26Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/85403#issuecomment-5550996851"
+   }
+  },
+  {
+   "pr": 85996,
+   "title": "feat(toolsets): add file_readonly toolset (read_file + search_files only)",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/85996",
+   "issue": null,
+   "headSha": "4d217eb",
+   "updated": "2026-09-25T11:33:37Z",
+   "ageDays": 53,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "a0fe8a1",
+    "at": "2026-08-26T02:24:14Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/85996#issuecomment-5419715116"
+   }
+  },
+  {
+   "pr": 73342,
+   "title": "fix(agent): add Kimi K2.x/K3 to reasoning stale-timeout allowlist",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/73342",
+   "issue": 73337,
+   "headSha": "c7f985b",
+   "updated": "2026-09-26T02:58:09Z",
+   "ageDays": 70,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 78491,
+   "title": "fix(tts): split streaming sentences on CJK terminators (\u3002\uff01\uff1f\u2026)",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/78491",
+   "issue": 78477,
+   "headSha": "b97e714",
+   "updated": "2026-09-26T08:23:46Z",
+   "ageDays": 63,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "e12f280",
+    "at": "2026-09-23T18:56:47Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/78491#issuecomment-5800998440"
+   }
+  },
+  {
+   "pr": 94965,
+   "title": "docs(windows): correct gateway Scheduled Task name and launch mechanism",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/94965",
+   "issue": 94941,
+   "headSha": "d56dfa8",
+   "updated": "2026-09-27T04:39:30Z",
+   "ageDays": 41,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "2ae12b3",
+    "at": "2026-08-26T06:46:19Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/94965#issuecomment-5421627118"
+   }
+  },
+  {
+   "pr": 73127,
+   "title": "fix(desktop): make auto-project Hide from sidebar reversible via an Undo toast",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/73127",
+   "issue": 73091,
+   "headSha": "db4d89e",
+   "updated": "2026-10-02T14:42:43Z",
+   "ageDays": 70,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 85365,
+   "title": "fix(gateway): propagate HERMES_BUNDLED_* into launchd/systemd units",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/85365",
+   "issue": null,
+   "headSha": "4c66d06",
+   "updated": "2026-10-04T04:01:30Z",
+   "ageDays": 54,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "9fad2b7",
+    "at": "2026-09-25T14:01:36Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/85365#issuecomment-5833683234"
+   }
+  },
+  {
+   "pr": 68967,
+   "title": "fix(discord): retry post-connect slash-command sync while connected",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/68967",
+   "issue": 68963,
+   "headSha": "cc8dd2b",
+   "updated": "2026-10-04T04:50:17Z",
+   "ageDays": 76,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "df789e5",
+    "at": "2026-07-31T16:59:49Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/68967#issuecomment-5145438779"
+   }
+  },
+  {
+   "pr": 63899,
+   "title": "fix(delegate): surface child's resolved toolsets in async completion block",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/63899",
+   "issue": 63887,
+   "headSha": "e6c1cf8",
+   "updated": "2026-10-04T04:58:40Z",
+   "ageDays": 84,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "dc0b0d2",
+    "at": "2026-08-02T08:00:30Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/63899#issuecomment-5156389712"
+   }
+  },
+  {
+   "pr": 69068,
+   "title": "fix(agent): strip inherited Authorization header in Gemini native client (Bug 1 of #69031)",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/69068",
+   "issue": null,
+   "headSha": "dd7b1ba",
+   "updated": "2026-10-06T06:42:59Z",
+   "ageDays": 76,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 74212,
+   "title": "feat(web): forward custom request headers from web_extract to Firecrawl",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/74212",
+   "issue": 74177,
+   "headSha": "b2932e6",
+   "updated": "2026-10-06T10:42:09Z",
+   "ageDays": 68,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "cdb062a",
+    "at": "2026-08-26T03:11:00Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/74212#issuecomment-5420036573"
+   }
+  },
+  {
+   "pr": 105864,
+   "title": "fix(update): degrade past repo-scoped HTTP 429 with bounded retry",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/105864",
+   "issue": 105857,
+   "headSha": "44393a1",
+   "updated": "2026-10-06T12:00:06Z",
+   "ageDays": 28,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "0c27f04",
+    "at": "2026-10-04T04:37:41Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/105864#issuecomment-5976627169"
+   }
+  },
+  {
+   "pr": 76496,
+   "title": "fix(agent): drop client web_search on OpenRouter xAI :online requests",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/76496",
+   "issue": 76481,
+   "headSha": "5c9565d",
+   "updated": "2026-09-04T19:09:15Z",
+   "ageDays": 65,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "5c9565d",
+    "at": "2026-09-04T19:09:15Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/76496#issuecomment-5545285610"
+   }
+  },
+  {
+   "pr": 78504,
+   "title": "fix(gateway): tolerate sub-2s start-time drift in PID-reuse liveness guard",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/78504",
+   "issue": 78498,
+   "headSha": "e7c9dc6",
+   "updated": "2026-09-05T03:26:44Z",
+   "ageDays": 63,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "e7c9dc6",
+    "at": "2026-09-05T03:26:43Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/78504#issuecomment-5549037217"
+   }
+  },
+  {
+   "pr": 86285,
+   "title": "fix(slack): drop non-Slack thread ids in standalone delivery instead of failing",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/86285",
+   "issue": 86264,
+   "headSha": "b50122b",
+   "updated": "2026-09-05T03:31:16Z",
+   "ageDays": 52,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "b50122b",
+    "at": "2026-09-05T03:31:16Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/86285#issuecomment-5549059902"
+   }
+  },
+  {
+   "pr": 84286,
+   "title": "fix(tools): route config credential-file mounts through the master-store deny-list",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/84286",
+   "issue": 84270,
+   "headSha": "bc71d65",
+   "updated": "2026-09-16T13:24:37Z",
+   "ageDays": 55,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "bc71d65",
+    "at": "2026-09-16T13:24:37Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/84286#issuecomment-5698197753"
+   }
+  },
+  {
+   "pr": 68059,
+   "title": "fix(config): skip symlinked HERMES_HOME subdirs in _secure_dir",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/68059",
+   "issue": 68055,
+   "headSha": "0a2ce2c",
+   "updated": "2026-09-22T18:13:37Z",
+   "ageDays": 78,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "0a2ce2c",
+    "at": "2026-09-22T18:08:32Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/68059#issuecomment-5781532728"
+   }
+  },
+  {
+   "pr": 69215,
+   "title": "fix(agent): checkpoint every terminal call, not just regex-matched ones",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/69215",
+   "issue": 69171,
+   "headSha": "4c3e938",
+   "updated": "2026-09-22T18:24:10Z",
+   "ageDays": 76,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "4c3e938",
+    "at": "2026-09-22T18:17:25Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/69215#issuecomment-5781650418"
+   }
+  },
+  {
+   "pr": 75549,
+   "title": "fix(gateway): show the active fallback route in /status and /usage",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/75549",
+   "issue": 75535,
+   "headSha": "b4bf42d",
+   "updated": "2026-09-23T13:55:01Z",
+   "ageDays": 66,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "b4bf42d",
+    "at": "2026-09-23T13:55:01Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/75549#issuecomment-5796133727"
+   }
+  },
+  {
+   "pr": 87263,
+   "title": "fix(providers): fail closed on malformed base URL in get_hostname",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/87263",
+   "issue": null,
+   "headSha": "03259d3",
+   "updated": "2026-09-23T15:45:34Z",
+   "ageDays": 51,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "03259d3",
+    "at": "2026-09-23T15:45:33Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/87263#issuecomment-5797947407"
+   }
+  },
+  {
+   "pr": 89142,
+   "title": "fix(doctor): show install command for not-installed optional packages",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/89142",
+   "issue": 89121,
+   "headSha": "bd28e7e",
+   "updated": "2026-09-25T11:55:49Z",
+   "ageDays": 49,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "bd28e7e",
+    "at": "2026-09-25T11:55:49Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/89142#issuecomment-5831959829"
+   }
+  },
+  {
+   "pr": 68180,
+   "title": "fix(bootstrap): reject truncated install-script downloads via Content-Length",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/68180",
+   "issue": 68163,
+   "headSha": "57b9de8",
+   "updated": "2026-09-25T12:09:54Z",
+   "ageDays": 77,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "57b9de8",
+    "at": "2026-09-25T12:09:53Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/68180#issuecomment-5832128298"
+   }
+  },
+  {
+   "pr": 67250,
+   "title": "fix(feishu): repair Windows system SOCKS proxy for WS event channel",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/67250",
+   "issue": 67244,
+   "headSha": "6e167d6",
+   "updated": "2026-09-25T12:22:57Z",
+   "ageDays": 79,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "6e167d6",
+    "at": "2026-09-25T12:22:57Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/67250#issuecomment-5832294252"
+   }
+  },
+  {
+   "pr": 63898,
+   "title": "fix(tools): escalate repeated malformed patch calls instead of looping",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/63898",
+   "issue": 63880,
+   "headSha": "6952379",
+   "updated": "2026-09-27T04:42:39Z",
+   "ageDays": 84,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "6952379",
+    "at": "2026-09-27T04:42:39Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/63898#issuecomment-5852697384"
+   }
+  },
+  {
+   "pr": 58201,
+   "title": "fix(bedrock): dedup profile-covered bare model IDs in /model picker",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/58201",
+   "issue": 58185,
+   "headSha": "c57ceb9",
+   "updated": "2026-09-27T17:08:48Z",
+   "ageDays": 94,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "c57ceb9",
+    "at": "2026-09-27T17:08:48Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/58201#issuecomment-5857963218"
+   }
+  },
+  {
+   "pr": 62246,
+   "title": "fix(cli): don't reroute /model onto an unconfigured provider",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/62246",
+   "issue": 62240,
+   "headSha": "134618e",
+   "updated": "2026-09-27T17:13:05Z",
+   "ageDays": 87,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "134618e",
+    "at": "2026-09-27T17:13:05Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/62246#issuecomment-5857996497"
+   }
+  },
+  {
+   "pr": 99445,
+   "title": "fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/99445",
+   "issue": 99436,
+   "headSha": "c85d263",
+   "updated": "2026-10-04T10:53:48Z",
+   "ageDays": 36,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    },
+    {
+     "kind": "ai_note",
+     "who": "alt-glitch",
+     "trust": "noise",
+     "at": "2026-10-04T10:43:39Z",
+     "excerpt": "This was generated by AI during triage. Re-triage correction: 99445 targets current tui_gateway/session_notifications.py and is mergeable, while 99444 still edits the retired server.py location;\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-5979129678"
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "c85d263",
+    "at": "2026-10-04T10:04:16Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-5978824050"
+   }
+  },
+  {
+   "pr": 68151,
+   "title": "fix(agent): count reasoning reported on top of completion_tokens in usage and cost",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/68151",
+   "issue": 68081,
+   "headSha": "42a5d9d",
+   "updated": "2026-10-06T06:51:48Z",
+   "ageDays": 77,
+   "state": "merge_unknown",
+   "priority": 2,
+   "suggestedAction": "recheck_merge",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "merge_unknown",
+     "detail": "GitHub has not computed mergeability yet."
+    }
+   ],
+   "evidence": {
+    "merge": "unknown",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "42a5d9d",
+    "at": "2026-10-06T06:51:42Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/68151#issuecomment-6011015842"
+   }
   },
   {
    "pr": 123952,
@@ -219,41 +1622,6 @@
     "checksRan": false
    },
    "lastBotAction": null
-  },
-  {
-   "pr": 99445,
-   "title": "fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/99445",
-   "issue": 99436,
-   "headSha": "c85d263",
-   "updated": "2026-10-04T10:53:48Z",
-   "ageDays": 35,
-   "state": "ai_note",
-   "priority": 4,
-   "suggestedAction": "none",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "ai_note",
-     "who": "alt-glitch",
-     "trust": "noise",
-     "at": "2026-10-04T10:43:39Z",
-     "excerpt": "This was generated by AI during triage. Re-triage correction: 99445 targets current tui_gateway/session_notifications.py and is mergeable, while 99444 still edits the retired server.py location;\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-5979129678"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-addressed",
-    "sha": "c85d263",
-    "at": "2026-10-04T10:04:16Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-5978824050"
-   }
   }
  ],
  "parked": [
@@ -267,7 +1635,7 @@
     "after": "2026-10-20T00:00:00Z"
    },
    "wokenBy": null,
-   "state": "conflicting"
+   "state": "merge_unknown"
   },
   {
    "pr": 54367,
@@ -279,7 +1647,7 @@
     "after": "2026-10-20T00:00:00Z"
    },
    "wokenBy": null,
-   "state": "conflicting"
+   "state": "merge_unknown"
   }
  ],
  "needsHuman": []
