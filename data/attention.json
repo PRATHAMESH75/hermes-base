@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-06T18:09:07Z",
- "snapshotGeneratedAt": "2026-10-06T18:09:07Z",
+ "generatedAt": "2026-10-06T18:55:36Z",
+ "snapshotGeneratedAt": "2026-10-06T18:55:36Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "950ea4d51eb5667d0258dbead49cc8be82a6e7bf",
+ "upstreamMainSha": "9dcab1e440cdc482320af002e44036b947d6d709",
  "capacity": {
   "open": 70,
   "cap": 73,
   "free": 3
  },
  "counts": {
-  "actionable": 2,
-  "listed": 7,
-  "waiting": 60,
+  "actionable": 3,
+  "listed": 8,
+  "waiting": 59,
   "parked": 3,
   "needsHuman": 0
  },
@@ -43,6 +43,37 @@
     "checksRan": false
    },
    "lastBotAction": null
+  },
+  {
+   "pr": 105864,
+   "title": "fix(update): degrade past repo-scoped HTTP 429 with bounded retry",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/105864",
+   "issue": 105857,
+   "headSha": "44393a1",
+   "updated": "2026-10-06T12:00:06Z",
+   "ageDays": 28,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "0c27f04",
+    "at": "2026-10-04T04:37:41Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/105864#issuecomment-5976627169"
+   }
   },
   {
    "pr": 75702,
@@ -141,7 +172,7 @@
    "issue": 125578,
    "headSha": "8ec57c4",
    "updated": "2026-09-27T23:15:45Z",
-   "ageDays": 8,
+   "ageDays": 9,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
