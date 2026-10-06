@@ -75,6 +75,30 @@ def _gh(path: str, **params) -> object:
     raise RuntimeError(f"gh api {path} failed: {res.stderr.strip()}")
 
 
+def merge_states_graphql(repo: str, numbers: list[int]) -> dict[int, str]:
+    """mergeStateStatus for many PRs in one GraphQL call each 40, lower-cased like REST's mergeable_state.
+
+    A REST read from the workflow token does not seem to start GitHub's lazy mergeability job on
+    another owner's repo, so PRs whose cached state went stale stay "unknown"; GraphQL is the
+    second way in.
+    """
+    owner, name = repo.split("/", 1)
+    out: dict[int, str] = {}
+    for i in range(0, len(numbers), 40):
+        chunk = numbers[i:i + 40]
+        fields = " ".join(f"p{n}: pullRequest(number: {n}) {{ mergeStateStatus }}" for n in chunk)
+        query = f'query {{ repository(owner: "{owner}", name: "{name}") {{ {fields} }} }}'
+        res = subprocess.run(["gh", "api", "graphql", "-f", f"query={query}"], capture_output=True, text=True)
+        if res.returncode != 0:
+            continue
+        data = ((json.loads(res.stdout or "{}").get("data") or {}).get("repository") or {})
+        for n in chunk:
+            state = ((data.get(f"p{n}") or {}).get("mergeStateStatus") or "UNKNOWN").lower()
+            if state != "unknown":
+                out[n] = state
+    return out
+
+
 def clean(body: str | None, limit: int = 240) -> str:
     text = FOOTER_RE.sub("", body or "")
     text = re.sub(r"```.*?```", " [code] ", text, flags=re.S)
@@ -308,13 +332,17 @@ def main() -> int:
     for p in prs:
         if p["state"] == "open":
             read_merge(p)
-    for wait in (15, 20, 30, 45):
+    for wait in (0, 15, 20, 30, 45):
         unknown = [p for p in prs if p.get("merge") == "unknown"]
         if not unknown:
             break
         time.sleep(wait)
+        settled = merge_states_graphql(args.repo, [p["n"] for p in unknown])
         for p in unknown:
-            read_merge(p, fresh=True)
+            if p["n"] in settled:
+                p["merge"] = settled[p["n"]]
+            elif wait:
+                read_merge(p, fresh=True)
 
     prior = load_prior(args.prior)
     closed = [p for p in prs if p["state"] == "closed"]

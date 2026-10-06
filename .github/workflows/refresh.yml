@@ -30,7 +30,9 @@ jobs:
         if: github.event_name != 'push'
         continue-on-error: true
         env:
-          GH_TOKEN: ${{ github.token }}
+          # Optional read-only personal token: reads with it make GitHub compute merge states that
+          # the workflow token leaves "unknown". Falls back to the workflow token when unset.
+          GH_TOKEN: ${{ secrets.HERMES_BASE_READ_TOKEN || github.token }}
         run: python3 refresh_snapshot.py --out data/snapshot.json --feed-dir data/feed
 
       - name: Commit refreshed data

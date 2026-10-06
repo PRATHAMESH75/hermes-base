@@ -62,7 +62,10 @@ Live page: https://prathamesh75.github.io/hermes-base/
   file or directory paths on upstream `main`, no globs, checked for commits since `parkedAt`).
 
 GitHub computes merge states lazily (often 20 s or more), so PRs that first read as `unknown` are
-re-read in up to four rounds, about two minutes at most. Nudging quiet, mergeable PRs is off by default (`nudge.enabled`).
+re-read in rounds over about two minutes, through GraphQL and then REST. Reads with the workflow
+token may not start that computation on another owner's repo. If many states stay unknown, add a
+read-only fine-grained token (public repositories, no extra permissions) as the
+`HERMES_BASE_READ_TOKEN` repository secret; the workflow uses it when present. Nudging quiet, mergeable PRs is off by default (`nudge.enabled`).
 
 ## Refreshing the data
 
