@@ -1,0 +1,286 @@
+{
+ "schemaVersion": 1,
+ "generatedAt": "2026-10-06T13:45:34Z",
+ "snapshotGeneratedAt": "2026-10-06T13:33:32Z",
+ "repo": "NousResearch/hermes-agent",
+ "author": "PRATHAMESH75",
+ "upstreamMainSha": "f16cbcde551d0cb0685755dbdf3077d928526045",
+ "capacity": {
+  "open": 73,
+  "cap": 73,
+  "free": 0
+ },
+ "counts": {
+  "actionable": 3,
+  "listed": 8,
+  "waiting": 63,
+  "parked": 2,
+  "needsHuman": 0
+ },
+ "items": [
+  {
+   "pr": 54688,
+   "title": "feat(gateway): /platform reload \u2014 hot-reload messaging platform adapters",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/54688",
+   "issue": 54681,
+   "headSha": "5de4bb6",
+   "updated": "2026-08-25T17:01:07Z",
+   "ageDays": 99,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 56497,
+   "title": "fix(tools): detect squashed multi-entry blobs as memory drift",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/56497",
+   "issue": 56464,
+   "headSha": "5c36d65",
+   "updated": "2026-09-10T12:54:43Z",
+   "ageDays": 96,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 75702,
+   "title": "fix(copilot): don't warn on classic PATs in shared GitHub env vars",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/75702",
+   "issue": 75687,
+   "headSha": "e5075b6",
+   "updated": "2026-09-28T13:45:05Z",
+   "ageDays": 66,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "piskooooo",
+     "trust": "substantive",
+     "at": "2026-09-28T13:45:05Z",
+     "excerpt": "This still reproduces on current builds. Flagging because the issue that spawned this PR (75687) is closed as COMPLETED while the PR is still open, so the live thread is hard to find \u2014 I found a\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/75702#issuecomment-5871135868"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 123952,
+   "title": "fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/123952",
+   "issue": 123943,
+   "headSha": "aa50387",
+   "updated": "2026-09-27T20:13:09Z",
+   "ageDays": 10,
+   "state": "ai_note",
+   "priority": 4,
+   "suggestedAction": "none",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "ai_note",
+     "who": "Enough1122",
+     "trust": "noise",
+     "at": "2026-09-27T20:13:09Z",
+     "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. This PR drops locked=True from PM runtime staging in pm/runtime_stage.py, so pm/environment.py:353 now emits uv sync --frozen\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/123952#issuecomment-5859439184"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 124855,
+   "title": "fix(cron): stop an adopted external worker from re-exec'ing and losing its payload",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/124855",
+   "issue": 124827,
+   "headSha": "7b700cb",
+   "updated": "2026-09-27T20:19:29Z",
+   "ageDays": 9,
+   "state": "ai_note",
+   "priority": 4,
+   "suggestedAction": "none",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "ai_note",
+     "who": "Enough1122",
+     "trust": "noise",
+     "at": "2026-09-27T20:19:29Z",
+     "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. Setting HERMES_DISABLE_LAZY_INSTALLS=1 on the worker env (cron/scheduler.py:3569) does stop the fatal re-exec. I loaded the real\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/124855#issuecomment-5859487328"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 125594,
+   "title": "fix(cli): keep an explicit custom-provider pin over an inferred vendor prefix at startup",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/125594",
+   "issue": 125578,
+   "headSha": "8ec57c4",
+   "updated": "2026-09-27T23:15:45Z",
+   "ageDays": 8,
+   "state": "ai_note",
+   "priority": 4,
+   "suggestedAction": "none",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "ai_note",
+     "who": "Enough1122",
+     "trust": "noise",
+     "at": "2026-09-27T23:15:45Z",
+     "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. resolve_startup_model_route now returns None instead of letting a bare vendor prefix (hf:) outrank an explicitly configured\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/125594#issuecomment-5860740430"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 125957,
+   "title": "fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/125957",
+   "issue": 125940,
+   "headSha": "5aaa2e5",
+   "updated": "2026-10-02T19:59:31Z",
+   "ageDays": 8,
+   "state": "fyi",
+   "priority": 4,
+   "suggestedAction": "none",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "fyi",
+     "who": "eabase",
+     "trust": "substantive",
+     "at": "2026-10-02T19:59:31Z",
+     "excerpt": "@alt-glitch Please review and merge",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/125957#issuecomment-5960419428"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 99445,
+   "title": "fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/99445",
+   "issue": 99436,
+   "headSha": "c85d263",
+   "updated": "2026-10-04T10:53:48Z",
+   "ageDays": 35,
+   "state": "ai_note",
+   "priority": 4,
+   "suggestedAction": "none",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "ai_note",
+     "who": "alt-glitch",
+     "trust": "noise",
+     "at": "2026-10-04T10:43:39Z",
+     "excerpt": "This was generated by AI during triage. Re-triage correction: 99445 targets current tui_gateway/session_notifications.py and is mergeable, while 99444 still edits the retired server.py location;\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-5979129678"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-addressed",
+    "sha": "c85d263",
+    "at": "2026-10-04T10:04:16Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-5978824050"
+   }
+  }
+ ],
+ "parked": [
+  {
+   "pr": 67471,
+   "reason": "Refactor casualty: upstream reworked the CLI worktree path; re-implementing -w one-shot mode needs a design call.",
+   "parkedAt": "2026-10-06T00:00:00Z",
+   "by": "human",
+   "wake": {
+    "onNewHumanComment": true,
+    "after": "2026-10-20T00:00:00Z"
+   },
+   "wokenBy": null,
+   "state": "conflicting"
+  },
+  {
+   "pr": 54367,
+   "reason": "Refactor casualty: checkpoint workdir keying moved upstream; deferred as judgment-heavy, not superseded.",
+   "parkedAt": "2026-10-06T00:00:00Z",
+   "by": "human",
+   "wake": {
+    "onNewHumanComment": true,
+    "after": "2026-10-20T00:00:00Z"
+   },
+   "wokenBy": null,
+   "state": "conflicting"
+  }
+ ],
+ "needsHuman": []
+}

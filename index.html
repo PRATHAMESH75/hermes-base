@@ -379,7 +379,7 @@ function initials(n){ const p = n.replace(/[^A-Za-z0-9]+/g, " ").trim().split(" 
 function hue(n){ let h = 0; for (const c of n) h = (h * 31 + c.charCodeAt(0)) % 360; return `hsl(${h} 45% 42%)`; }
 
 /* ---------- state ---------- */
-let SNAP = null;
+let SNAP = null, ATT = null;
 let ARCHIVE = [], FEED = [], logLimit = 120;
 let stats = {};
 let selected = "core", pinned = false, logFilter = "all", ledgerFilter = "all", ledgerQuery = "";
@@ -893,7 +893,36 @@ function weeklyChart(){
 }
 
 /* ---------- needs attention ---------- */
+// data/attention.json (written by the refresh, worked by Zeus) is the source of truth;
+// the feed-derived queue below is the fallback while that file is missing.
+const ATT_STATE = {
+  changes_requested: { label:"Changes requested", cls:"m-dirty" },
+  conflicting:       { label:"Conflicting",       cls:"m-dirty" },
+  checks_failing:    { label:"Checks failing",    cls:"m-unstable" },
+  reply_owed:        { label:"Reply owed",        cls:"m-unstable" },
+  merge_unknown:     { label:"Merge unknown",     cls:"m-unknown" },
+  ready_stale:       { label:"Ready, quiet",      cls:"m-clean" },
+  fyi:               { label:"FYI",               cls:"m-blocked" },
+  ai_note:           { label:"AI note",           cls:"m-blocked" },
+};
+function attReason(r){
+  const s = ATT_STATE[r.kind] || { label: r.kind, cls: "m-unknown" };
+  const why = r.who ? `${esc(r.who)} ${r.kind === "changes_requested" ? "requested changes" : "spoke last"} ${ago(r.at)}: “${esc(r.excerpt || "")}”`
+    : esc(r.detail || "");
+  return { tag: `<span class="tag ${s.cls}">${s.label}</span>`, why };
+}
+function attentionFromFile(){
+  const byN = Object.fromEntries(SNAP.prs.map(p => [p.n, p]));
+  return ATT.items.map(i => {
+    const p = byN[i.pr] || { n: i.pr, title: i.title, updated: i.updated, state: "open" };
+    const reasons = i.reasons.map(attReason);
+    if (i.needsHuman) reasons.unshift({ tag: `<span class="tag t-decide">Needs you</span>`, why: "" });
+    if (i.wokenBy) reasons.push({ tag: "", why: `Unparked: ${esc(i.wokenBy)}.` });
+    return { p, reasons, rank: i.priority, item: i };
+  });
+}
 function attentionItems(){
+  if (ATT && ATT.schemaVersion === 1 && Array.isArray(ATT.items)) return attentionFromFile();
   const waiting = awaitingReply();
   const items = [];
   SNAP.prs.filter(p => p.state === "open").forEach(p => {
@@ -918,13 +947,15 @@ function renderQueue(){
   $("queueSum").innerHTML = known ? ["dirty","unstable","behind","blocked","clean","draft","unknown"].filter(k => count(k))
     .map(k => `<span class="chip" style="padding-left:10px"><span class="tag m-${k}">${MERGE[k].label}</span><span class="n">${count(k)}</span></span>`).join("")
     : `<span class="chip" style="padding-left:10px">Merge states arrive with the next refresh</span>`;
-  $("queueNote").textContent = items.length ? `${items.length} of ${open.length} open PRs need a push or a reply` : "open PRs that need a push or a reply";
+  $("queueNote").textContent = ATT && ATT.counts
+    ? `${ATT.counts.actionable} actionable · ${ATT.counts.listed} listed · ${ATT.counts.parked} parked · ${ATT.counts.needsHuman} need you · queue ${ago(ATT.generatedAt)}`
+    : items.length ? `${items.length} of ${open.length} open PRs need a push or a reply` : "open PRs that need a push or a reply";
   const shown = items.slice(0, 12);
-  $("queue").innerHTML = items.length ? shown.map(({ p, reasons }) => `<div class="aq-row">
+  $("queue").innerHTML = items.length ? shown.map(({ p, reasons, item }) => `<div class="aq-row"${item && !item.actionable ? ' style="opacity:.72"' : ""}>
       <span class="mono">#${p.n}</span>
       <a href="${prUrl(p)}" target="_blank" rel="noopener">${esc(p.title)}</a>
       <span style="display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end">${reasons.map(r => r.tag).join("")}</span>
-      <div class="why">${reasons.map(r => r.why).join(" ")} · updated ${ago(p.updated)}</div></div>`).join("")
+      <div class="why">${reasons.map(r => r.why).filter(Boolean).join(" ")} · updated ${ago(p.updated)}${item && item.lastBotAction ? ` · bot last ${esc(item.lastBotAction.action)} ${ago(item.lastBotAction.at)}` : ""}</div></div>`).join("")
       + (items.length > shown.length ? `<button class="btn" id="queueAll" style="justify-self:start">Show all ${items.length} in the ledger</button>` : "")
     : `<div class="aq-empty">Nothing needs action: no open PR conflicts, fails checks or waits on a reply.</div>`;
   const b = $("queueAll");
@@ -1018,6 +1049,10 @@ getJSON("data/snapshot.json").then(data => {
   SNAP = data;
   mergeFeed(); renderAll();
 }).catch(err => showBanner("Couldn't load the snapshot: " + err.message + ". Reload to try again."));
+getJSON("data/attention.json").then(data => {
+  ATT = data;
+  if (SNAP) renderAll();
+}).catch(() => {});
 getJSON("data/feed/index.json")
   .then(files => Promise.all(files.map(f => getJSON("data/feed/" + f).catch(() => null))))
   .then(docs => {
