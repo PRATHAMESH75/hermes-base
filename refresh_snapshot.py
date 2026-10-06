@@ -294,7 +294,7 @@ def main() -> int:
 
     # Merge state for open PRs (dirty = conflicting, unstable = failing checks, blocked = awaiting
     # review). GitHub computes it lazily: the first read of a stale PR says "unknown" and starts
-    # the computation, so those PRs are read once more after a short wait.
+    # the computation (often 20 s or more on a busy repo), so those PRs are re-read in a few rounds.
     pulls: dict[int, dict] = {}
 
     def read_merge(p: dict, fresh: bool = False) -> None:
@@ -308,9 +308,11 @@ def main() -> int:
     for p in prs:
         if p["state"] == "open":
             read_merge(p)
-    unknown = [p for p in prs if p.get("merge") == "unknown"]
-    if unknown:
-        time.sleep(8)
+    for wait in (15, 20, 30, 45):
+        unknown = [p for p in prs if p.get("merge") == "unknown"]
+        if not unknown:
+            break
+        time.sleep(wait)
         for p in unknown:
             read_merge(p, fresh=True)
 

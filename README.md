@@ -61,8 +61,8 @@ Live page: https://prathamesh75.github.io/hermes-base/
   conditions fires: `onNewHumanComment` (default true), `after` (an ISO date) or `paths` (exact
   file or directory paths on upstream `main`, no globs, checked for commits since `parkedAt`).
 
-GitHub computes merge states lazily, so PRs that first read as `unknown` are read once more after
-a short wait. Nudging quiet, mergeable PRs is off by default (`nudge.enabled`).
+GitHub computes merge states lazily (often 20 s or more), so PRs that first read as `unknown` are
+re-read in up to four rounds, about two minutes at most. Nudging quiet, mergeable PRs is off by default (`nudge.enabled`).
 
 ## Refreshing the data
 
