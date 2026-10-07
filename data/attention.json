@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-07T00:49:43Z",
- "snapshotGeneratedAt": "2026-10-07T00:49:43Z",
+ "generatedAt": "2026-10-07T03:33:49Z",
+ "snapshotGeneratedAt": "2026-10-07T03:33:49Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "cbffbeecf4ebb7f24e17241f8738923bfa069fd2",
+ "upstreamMainSha": "0e37a439bda15ef3c28a4d20593964d7c6a527a6",
  "capacity": {
   "open": 70,
   "cap": 73,
   "free": 3
  },
  "counts": {
-  "actionable": 3,
-  "listed": 9,
-  "waiting": 58,
+  "actionable": 4,
+  "listed": 10,
+  "waiting": 57,
   "parked": 3,
   "needsHuman": 0
  },
@@ -82,7 +82,7 @@
    "issue": 125928,
    "headSha": "e044c4c",
    "updated": "2026-09-28T17:57:53Z",
-   "ageDays": 8,
+   "ageDays": 9,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -135,6 +135,41 @@
     "checksRan": true
    },
    "lastBotAction": null
+  },
+  {
+   "pr": 68967,
+   "title": "fix(discord): retry post-connect slash-command sync while connected",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/68967",
+   "issue": 68963,
+   "headSha": "cc8dd2b",
+   "updated": "2026-10-07T02:38:50Z",
+   "ageDays": 77,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "tynamite",
+     "trust": "substantive",
+     "at": "2026-10-07T02:38:50Z",
+     "excerpt": "Codex review of head cc8dd2b830706fdb8eb5d4bb22fd745b694dd3cd: I found no blocking correctness issue in the retry change. The connection-owned loop retries Discord 429s using the returned cooldown,\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/68967#pullrequestreview-5436975979"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "df789e5",
+    "at": "2026-07-31T16:59:49Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/68967#issuecomment-5145438779"
+   }
   },
   {
    "pr": 123952,
@@ -233,7 +268,7 @@
    "issue": 125940,
    "headSha": "5aaa2e5",
    "updated": "2026-10-02T19:59:31Z",
-   "ageDays": 8,
+   "ageDays": 9,
    "state": "fyi",
    "priority": 4,
    "suggestedAction": "none",
