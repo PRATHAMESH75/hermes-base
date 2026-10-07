@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-06T20:28:45Z",
- "snapshotGeneratedAt": "2026-10-06T20:28:45Z",
+ "generatedAt": "2026-10-07T00:49:43Z",
+ "snapshotGeneratedAt": "2026-10-07T00:49:43Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "2c542f7948a0467a1f6c05da0485338634ae4c46",
+ "upstreamMainSha": "cbffbeecf4ebb7f24e17241f8738923bfa069fd2",
  "capacity": {
   "open": 70,
   "cap": 73,
@@ -12,8 +12,8 @@
  },
  "counts": {
   "actionable": 3,
-  "listed": 8,
-  "waiting": 59,
+  "listed": 9,
+  "waiting": 58,
   "parked": 3,
   "needsHuman": 0
  },
@@ -76,13 +76,44 @@
    }
   },
   {
+   "pr": 125943,
+   "title": "fix(plugins): let `plugins update --force` accept a caution scan verdict",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/125943",
+   "issue": 125928,
+   "headSha": "e044c4c",
+   "updated": "2026-09-28T17:57:53Z",
+   "ageDays": 8,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-acknowledged",
+    "sha": null,
+    "at": "2026-09-28T17:57:53Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125943#issuecomment-5875610167"
+   }
+  },
+  {
    "pr": 75702,
    "title": "fix(copilot): don't warn on classic PATs in shared GitHub env vars",
    "url": "https://github.com/NousResearch/hermes-agent/pull/75702",
    "issue": 75687,
    "headSha": "e5075b6",
    "updated": "2026-09-28T13:45:05Z",
-   "ageDays": 66,
+   "ageDays": 67,
    "state": "reply_owed",
    "priority": 1,
    "suggestedAction": "reply",
