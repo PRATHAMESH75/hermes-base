@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-07T07:22:40Z",
- "snapshotGeneratedAt": "2026-10-07T07:22:40Z",
+ "generatedAt": "2026-10-07T15:40:42Z",
+ "snapshotGeneratedAt": "2026-10-07T15:40:42Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "05eecbcd972c8737ebc7722ea08aab47fb538043",
+ "upstreamMainSha": "489c1ac298f8ed13ccd688c97e4097f161046c0b",
  "capacity": {
-  "open": 70,
+  "open": 69,
   "cap": 73,
-  "free": 3
+  "free": 4
  },
  "counts": {
-  "actionable": 4,
+  "actionable": 5,
   "listed": 10,
-  "waiting": 57,
+  "waiting": 56,
   "parked": 3,
   "needsHuman": 0
  },
@@ -50,7 +50,7 @@
    "url": "https://github.com/NousResearch/hermes-agent/pull/105864",
    "issue": 105857,
    "headSha": "44393a1",
-   "updated": "2026-10-06T12:00:06Z",
+   "updated": "2026-10-07T13:38:44Z",
    "ageDays": 28,
    "state": "conflicting",
    "priority": 0,
@@ -172,13 +172,48 @@
    }
   },
   {
+   "pr": 123950,
+   "title": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/123950",
+   "issue": 123935,
+   "headSha": "992a776",
+   "updated": "2026-10-07T13:56:28Z",
+   "ageDays": 11,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "ehz0ah",
+     "trust": "substantive",
+     "at": "2026-10-07T13:56:28Z",
+     "excerpt": "Approval conclusion (GitHub does not grant this account approval authority) Reviewed current head 992a776d0ba646b83dc2f921645d8a4ca72cc0c7 against P2 issue 123935 and current main at\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/123950#pullrequestreview-5443400184"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-replied",
+    "sha": "f9d9f8b",
+    "at": "2026-09-28T16:35:02Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/123950#issuecomment-5874333011"
+   }
+  },
+  {
    "pr": 123952,
    "title": "fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install",
    "url": "https://github.com/NousResearch/hermes-agent/pull/123952",
    "issue": 123943,
    "headSha": "aa50387",
    "updated": "2026-09-27T20:13:09Z",
-   "ageDays": 10,
+   "ageDays": 11,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
@@ -192,36 +227,6 @@
      "at": "2026-09-27T20:13:09Z",
      "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. This PR drops locked=True from PM runtime staging in pm/runtime_stage.py, so pm/environment.py:353 now emits uv sync --frozen\u2026",
      "url": "https://github.com/NousResearch/hermes-agent/pull/123952#issuecomment-5859439184"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 124855,
-   "title": "fix(cron): stop an adopted external worker from re-exec'ing and losing its payload",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/124855",
-   "issue": 124827,
-   "headSha": "7b700cb",
-   "updated": "2026-09-27T20:19:29Z",
-   "ageDays": 10,
-   "state": "ai_note",
-   "priority": 4,
-   "suggestedAction": "none",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "ai_note",
-     "who": "Enough1122",
-     "trust": "noise",
-     "at": "2026-09-27T20:19:29Z",
-     "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. Setting HERMES_DISABLE_LAZY_INSTALLS=1 on the worker env (cron/scheduler.py:3569) does stop the fatal re-exec. I loaded the real\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/124855#issuecomment-5859487328"
     }
    ],
    "evidence": {
@@ -298,7 +303,7 @@
    "issue": 99436,
    "headSha": "c85d263",
    "updated": "2026-10-04T10:53:48Z",
-   "ageDays": 36,
+   "ageDays": 37,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
