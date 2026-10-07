@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-07T20:00:47Z",
- "snapshotGeneratedAt": "2026-10-07T20:00:47Z",
+ "generatedAt": "2026-10-07T20:48:52Z",
+ "snapshotGeneratedAt": "2026-10-07T20:48:52Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "865ba906c1a8d93de65839ee7af487204d42e873",
+ "upstreamMainSha": "3090ef7731177154ab74aacd80b2f0d7e803dd14",
  "capacity": {
   "open": 69,
   "cap": 73,
   "free": 4
  },
  "counts": {
-  "actionable": 5,
-  "listed": 10,
-  "waiting": 56,
+  "actionable": 6,
+  "listed": 11,
+  "waiting": 55,
   "parked": 3,
   "needsHuman": 0
  },
@@ -26,6 +26,32 @@
    "headSha": "5c36d65",
    "updated": "2026-09-10T12:54:43Z",
    "ageDays": 98,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
+   "pr": 73127,
+   "title": "fix(desktop): make auto-project Hide from sidebar reversible via an Undo toast",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/73127",
+   "issue": 73091,
+   "headSha": "6f0f743",
+   "updated": "2026-10-06T16:40:48Z",
+   "ageDays": 71,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
