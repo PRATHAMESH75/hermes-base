@@ -31,19 +31,6 @@
       }
     },
     {
-      "pr": 78491,
-      "reason": "Upstream added configurable tts.streaming.min_len (SentenceChunker.from_config) overlapping the PR's hardcoded cjk_min_len=6; a configured min_len<6 would be overridden upward for CJK, so merging the two floors needs a design call.",
-      "parkedAt": "2026-10-08T18:55:00Z",
-      "by": "zeus",
-      "wake": {
-        "paths": [
-          "tools/tts_streaming.py"
-        ],
-        "onNewHumanComment": true,
-        "after": "2026-10-22T00:00:00Z"
-      }
-    },
-    {
       "pr": 56497,
       "reason": "Conflicts with teknium's deliberate memory drift-guard narrowing (8079fd01f4); rebasing means choosing between behaviors.",
       "parkedAt": "2026-10-08T18:55:00Z",
