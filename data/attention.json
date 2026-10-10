@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-10T03:45:30Z",
- "snapshotGeneratedAt": "2026-10-10T03:45:30Z",
+ "generatedAt": "2026-10-10T08:38:16Z",
+ "snapshotGeneratedAt": "2026-10-10T08:38:16Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
  "upstreamMainSha": "dce1e9b37581dd62e480a9064dc04a709c2940d3",
@@ -11,137 +11,13 @@
   "free": 5
  },
  "counts": {
-  "actionable": 2,
-  "listed": 9,
-  "waiting": 55,
+  "actionable": 1,
+  "listed": 5,
+  "waiting": 59,
   "parked": 4,
   "needsHuman": 0
  },
  "items": [
-  {
-   "pr": 63898,
-   "title": "fix(tools): escalate repeated malformed patch calls instead of looping",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/63898",
-   "issue": 63880,
-   "headSha": "6952379",
-   "updated": "2026-09-27T04:42:39Z",
-   "ageDays": 88,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "salvaged-pr",
-    "sha": "6952379",
-    "at": "2026-09-27T04:42:39Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/63898#issuecomment-5852697384"
-   }
-  },
-  {
-   "pr": 124028,
-   "title": "fix(vision): apply the discovery-chain boundary to the aux vision auto-route",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/124028",
-   "issue": 123998,
-   "headSha": "de8242d",
-   "updated": "2026-09-26T17:47:00Z",
-   "ageDays": 13,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-addressed",
-    "sha": "de8242d",
-    "at": "2026-09-26T17:47:00Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/124028#issuecomment-5848449813"
-   }
-  },
-  {
-   "pr": 58201,
-   "title": "fix(bedrock): dedup profile-covered bare model IDs in /model picker",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/58201",
-   "issue": 58185,
-   "headSha": "c57ceb9",
-   "updated": "2026-09-27T17:08:48Z",
-   "ageDays": 97,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-addressed",
-    "sha": "c57ceb9",
-    "at": "2026-09-27T17:08:48Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/58201#issuecomment-5857963218"
-   }
-  },
-  {
-   "pr": 125943,
-   "title": "fix(plugins): let `plugins update --force` accept a caution scan verdict",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/125943",
-   "issue": 125928,
-   "headSha": "e044c4c",
-   "updated": "2026-09-28T17:57:53Z",
-   "ageDays": 12,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-acknowledged",
-    "sha": null,
-    "at": "2026-09-28T17:57:53Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125943#issuecomment-5875610167"
-   }
-  },
   {
    "pr": 124891,
    "title": "fix(agent): log the native cause before a refusal/invalid-response fallback",
@@ -149,7 +25,7 @@
    "issue": 124874,
    "headSha": "757914d",
    "updated": "2026-10-09T15:00:44Z",
-   "ageDays": 12,
+   "ageDays": 13,
    "state": "reply_owed",
    "priority": 1,
    "suggestedAction": "reply",
@@ -314,7 +190,7 @@
     "after": "2026-10-20T00:00:00Z"
    },
    "wokenBy": null,
-   "state": "conflicting"
+   "state": null
   },
   {
    "pr": 56497,
