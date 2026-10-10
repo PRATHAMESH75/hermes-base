@@ -32,19 +32,6 @@
     },
     {
       "pr": 56497,
-      "reason": "Conflicts with teknium's deliberate memory drift-guard narrowing (8079fd01f4); rebasing means choosing between behaviors.",
-      "parkedAt": "2026-10-08T18:55:00Z",
-      "by": "zeus",
-      "wake": {
-        "paths": [
-          "tools/memory_tool_store.py"
-        ],
-        "onNewHumanComment": true,
-        "after": "2026-10-22T00:00:00Z"
-      }
-    },
-    {
-      "pr": 56497,
       "reason": "Conflicts with upstream 8079fd01f4 (teknium) which deliberately narrowed _detect_external_drift; re-adding a squashed-blob refusal signal fights that design and needs a maintainer call.",
       "parkedAt": "2026-10-10T02:30:00Z",
       "by": "zeus",

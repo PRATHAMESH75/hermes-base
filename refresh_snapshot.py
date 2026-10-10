@@ -51,8 +51,10 @@ MAX_DOC_BYTES = 240_000
 _CACHE: dict[tuple, object] = {}
 
 
-def gh(path: str, _fresh: bool = False, **params) -> object:
-    """GET a GitHub API path. Reads are cached for the run; `_fresh` skips the cache."""
+def gh(path: str, /, _fresh: bool = False, **params) -> object:
+    """GET a GitHub API path. Reads are cached for the run; `_fresh` skips the cache.
+
+    `path` is positional-only so query params may themselves be named `path` (commits?path=...)."""
     key = (path, tuple(sorted(params.items())))
     if not _fresh and key in _CACHE:
         return _CACHE[key]
@@ -60,7 +62,7 @@ def gh(path: str, _fresh: bool = False, **params) -> object:
     return _CACHE[key]
 
 
-def _gh(path: str, **params) -> object:
+def _gh(path: str, /, **params) -> object:
     cmd = ["gh", "api", "-X", "GET", path]
     for k, v in params.items():
         cmd += ["-f", f"{k}={v}"]
