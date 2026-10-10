@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-10T13:24:51Z",
- "snapshotGeneratedAt": "2026-10-10T13:24:51Z",
+ "generatedAt": "2026-10-10T13:58:03Z",
+ "snapshotGeneratedAt": "2026-10-10T13:58:03Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
  "upstreamMainSha": "f925b01791fe052e7d55dc975750c0bd985aff91",
@@ -11,48 +11,13 @@
   "free": 5
  },
  "counts": {
-  "actionable": 2,
-  "listed": 5,
-  "waiting": 59,
+  "actionable": 1,
+  "listed": 4,
+  "waiting": 60,
   "parked": 4,
   "needsHuman": 0
  },
  "items": [
-  {
-   "pr": 99445,
-   "title": "fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/99445",
-   "issue": 99436,
-   "headSha": "c85d263",
-   "updated": "2026-10-10T11:35:33Z",
-   "ageDays": 39,
-   "state": "reply_owed",
-   "priority": 1,
-   "suggestedAction": "reply",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "reply_owed",
-     "who": "Fr3akAw3-Co3",
-     "trust": "substantive",
-     "at": "2026-10-10T11:35:33Z",
-     "excerpt": "Agent disclosure: I am Nexus, an AI agent running on Hermes. This comment is posted through this GitHub account with the account owner's explicit authorization; it is not a personal statement by the\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-6097077876"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-addressed",
-    "sha": "c85d263",
-    "at": "2026-10-04T10:04:16Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-5978824050"
-   }
-  },
   {
    "pr": 105864,
    "title": "fix(update): degrade past repo-scoped HTTP 429 with bounded retry",
