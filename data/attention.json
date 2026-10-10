@@ -1,176 +1,31 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-08T17:44:28Z",
- "snapshotGeneratedAt": "2026-10-08T17:44:28Z",
+ "generatedAt": "2026-10-10T03:40:39Z",
+ "snapshotGeneratedAt": "2026-10-10T03:40:39Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "302c5d9f679333ae957c256d76a3dff35120f4e0",
+ "upstreamMainSha": "dce1e9b37581dd62e480a9064dc04a709c2940d3",
  "capacity": {
-  "open": 69,
+  "open": 68,
   "cap": 73,
-  "free": 4
+  "free": 5
  },
  "counts": {
-  "actionable": 11,
-  "listed": 18,
-  "waiting": 48,
-  "parked": 3,
+  "actionable": 2,
+  "listed": 9,
+  "waiting": 55,
+  "parked": 4,
   "needsHuman": 0
  },
  "items": [
   {
-   "pr": 105933,
-   "title": "fix(wecom): give media uploads a generous, tunable timeout",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/105933",
-   "issue": 105900,
-   "headSha": "4dc6b24",
-   "updated": "2026-09-08T20:37:02Z",
-   "ageDays": 29,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": true
-   },
-   "lastBotAction": {
-    "action": "flaky-ci-note",
-    "sha": "d80efb6",
-    "at": "2026-09-08T18:37:07Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/105933#issuecomment-5590023993"
-   }
-  },
-  {
-   "pr": 56497,
-   "title": "fix(tools): detect squashed multi-entry blobs as memory drift",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/56497",
-   "issue": 56464,
-   "headSha": "5c36d65",
-   "updated": "2026-09-10T12:54:43Z",
-   "ageDays": 99,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 71958,
-   "title": "feat(config): render web.backend/search_backend/extract_backend as Config Form selects",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/71958",
-   "issue": 71929,
-   "headSha": "2cf716e",
-   "updated": "2026-09-23T14:12:06Z",
-   "ageDays": 74,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "addressed-review",
-    "sha": "daca098",
-    "at": "2026-08-02T11:54:13Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/71958#issuecomment-5157664025"
-   }
-  },
-  {
-   "pr": 78491,
-   "title": "fix(tts): split streaming sentences on CJK terminators (\u3002\uff01\uff1f\u2026)",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/78491",
-   "issue": 78477,
-   "headSha": "b97e714",
-   "updated": "2026-09-26T08:23:46Z",
-   "ageDays": 65,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-addressed",
-    "sha": "e12f280",
-    "at": "2026-09-23T18:56:47Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/78491#issuecomment-5800998440"
-   }
-  },
-  {
-   "pr": 69068,
-   "title": "fix(agent): strip inherited Authorization header in Gemini native client (Bug 1 of #69031)",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/69068",
-   "issue": null,
-   "headSha": "dd7b1ba",
-   "updated": "2026-10-06T06:42:59Z",
-   "ageDays": 78,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 74212,
-   "title": "feat(web): forward custom request headers from web_extract to Firecrawl",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/74212",
-   "issue": 74177,
-   "headSha": "b2932e6",
-   "updated": "2026-10-06T10:42:09Z",
-   "ageDays": 71,
+   "pr": 63898,
+   "title": "fix(tools): escalate repeated malformed patch calls instead of looping",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/63898",
+   "issue": 63880,
+   "headSha": "6952379",
+   "updated": "2026-09-27T04:42:39Z",
+   "ageDays": 88,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -189,105 +44,9 @@
    },
    "lastBotAction": {
     "action": "salvaged-pr",
-    "sha": "cdb062a",
-    "at": "2026-08-26T03:11:00Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/74212#issuecomment-5420036573"
-   }
-  },
-  {
-   "pr": 73127,
-   "title": "fix(desktop): make auto-project Hide from sidebar reversible via an Undo toast",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/73127",
-   "issue": 73091,
-   "headSha": "6f0f743",
-   "updated": "2026-10-06T16:40:48Z",
-   "ageDays": 72,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 105864,
-   "title": "fix(update): degrade past repo-scoped HTTP 429 with bounded retry",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/105864",
-   "issue": 105857,
-   "headSha": "44393a1",
-   "updated": "2026-10-07T13:38:44Z",
-   "ageDays": 30,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-addressed",
-    "sha": "0c27f04",
-    "at": "2026-10-04T04:37:41Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/105864#issuecomment-5976627169"
-   }
-  },
-  {
-   "pr": 123950,
-   "title": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/123950",
-   "issue": 123935,
-   "headSha": "992a776",
-   "updated": "2026-10-07T13:56:28Z",
-   "ageDays": 12,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    },
-    {
-     "kind": "reply_owed",
-     "who": "ehz0ah",
-     "trust": "substantive",
-     "at": "2026-10-07T13:56:28Z",
-     "excerpt": "Approval conclusion (GitHub does not grant this account approval authority) Reviewed current head 992a776d0ba646b83dc2f921645d8a4ca72cc0c7 against P2 issue 123935 and current main at\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/123950#pullrequestreview-5443400184"
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-replied",
-    "sha": "f9d9f8b",
-    "at": "2026-09-28T16:35:02Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/123950#issuecomment-5874333011"
+    "sha": "6952379",
+    "at": "2026-09-27T04:42:39Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/63898#issuecomment-5852697384"
    }
   },
   {
@@ -297,7 +56,7 @@
    "issue": 123998,
    "headSha": "de8242d",
    "updated": "2026-09-26T17:47:00Z",
-   "ageDays": 12,
+   "ageDays": 13,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -328,7 +87,7 @@
    "issue": 58185,
    "headSha": "c57ceb9",
    "updated": "2026-09-27T17:08:48Z",
-   "ageDays": 96,
+   "ageDays": 97,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -359,7 +118,7 @@
    "issue": 125928,
    "headSha": "e044c4c",
    "updated": "2026-09-28T17:57:53Z",
-   "ageDays": 10,
+   "ageDays": 12,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -384,13 +143,13 @@
    }
   },
   {
-   "pr": 75702,
-   "title": "fix(copilot): don't warn on classic PATs in shared GitHub env vars",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/75702",
-   "issue": 75687,
-   "headSha": "e5075b6",
-   "updated": "2026-09-28T13:45:05Z",
-   "ageDays": 68,
+   "pr": 124891,
+   "title": "fix(agent): log the native cause before a refusal/invalid-response fallback",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/124891",
+   "issue": 124874,
+   "headSha": "757914d",
+   "updated": "2026-10-09T15:00:44Z",
+   "ageDays": 12,
    "state": "reply_owed",
    "priority": 1,
    "suggestedAction": "reply",
@@ -399,41 +158,11 @@
    "reasons": [
     {
      "kind": "reply_owed",
-     "who": "piskooooo",
+     "who": "TheBlueHouse75",
      "trust": "substantive",
-     "at": "2026-09-28T13:45:05Z",
-     "excerpt": "This still reproduces on current builds. Flagging because the issue that spawned this PR (75687) is closed as COMPLETED while the PR is still open, so the live thread is hard to find \u2014 I found a\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/75702#issuecomment-5871135868"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": true
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 68967,
-   "title": "fix(discord): retry post-connect slash-command sync while connected",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/68967",
-   "issue": 68963,
-   "headSha": "cc8dd2b",
-   "updated": "2026-10-07T02:38:50Z",
-   "ageDays": 78,
-   "state": "reply_owed",
-   "priority": 1,
-   "suggestedAction": "reply",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "reply_owed",
-     "who": "tynamite",
-     "trust": "substantive",
-     "at": "2026-10-07T02:38:50Z",
-     "excerpt": "Codex review of head cc8dd2b830706fdb8eb5d4bb22fd745b694dd3cd: I found no blocking correctness issue in the retry change. The connection-owned loop retries Discord 429s using the returned cooldown,\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/68967#pullrequestreview-5436975979"
+     "at": "2026-10-09T15:00:44Z",
+     "excerpt": "Two adjacent notice paths still lose the classified cause: _content_filter_fallback() activates fallback without a reason, and the activation sites in retry_invalid_response() omit _soft.reason\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/124891#issuecomment-6083495690"
     }
    ],
    "evidence": {
@@ -442,10 +171,10 @@
     "checksRan": false
    },
    "lastBotAction": {
-    "action": "salvaged-pr",
-    "sha": "df789e5",
-    "at": "2026-07-31T16:59:49Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/68967#issuecomment-5145438779"
+    "action": "review-addressed",
+    "sha": "25035ad",
+    "at": "2026-09-28T15:13:03Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/124891#issuecomment-5872869461"
    }
   },
   {
@@ -455,7 +184,7 @@
    "issue": 123943,
    "headSha": "aa50387",
    "updated": "2026-09-27T20:13:09Z",
-   "ageDays": 12,
+   "ageDays": 13,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
@@ -485,7 +214,7 @@
    "issue": 125578,
    "headSha": "8ec57c4",
    "updated": "2026-09-27T23:15:45Z",
-   "ageDays": 10,
+   "ageDays": 12,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
@@ -515,7 +244,7 @@
    "issue": 125940,
    "headSha": "5aaa2e5",
    "updated": "2026-10-02T19:59:31Z",
-   "ageDays": 10,
+   "ageDays": 12,
    "state": "fyi",
    "priority": 4,
    "suggestedAction": "none",
@@ -545,7 +274,7 @@
    "issue": 99436,
    "headSha": "c85d263",
    "updated": "2026-10-04T10:53:48Z",
-   "ageDays": 38,
+   "ageDays": 39,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
@@ -583,6 +312,22 @@
    "wake": {
     "onNewHumanComment": true,
     "after": "2026-10-20T00:00:00Z"
+   },
+   "wokenBy": null,
+   "state": "conflicting"
+  },
+  {
+   "pr": 56497,
+   "reason": "Conflicts with upstream 8079fd01f4 (teknium) which deliberately narrowed _detect_external_drift; re-adding a squashed-blob refusal signal fights that design and needs a maintainer call.",
+   "parkedAt": "2026-10-10T02:30:00Z",
+   "by": "zeus",
+   "wake": {
+    "paths": [
+     "tools/memory_tool_store.py",
+     "tests/tools/test_memory_tool.py"
+    ],
+    "onNewHumanComment": true,
+    "after": "2026-10-24T00:00:00Z"
    },
    "wokenBy": null,
    "state": "conflicting"
