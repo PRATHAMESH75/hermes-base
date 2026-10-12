@@ -1,17 +1,17 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-12T09:33:23Z",
- "snapshotGeneratedAt": "2026-10-12T09:33:23Z",
+ "generatedAt": "2026-10-12T12:15:53Z",
+ "snapshotGeneratedAt": "2026-10-12T12:15:53Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "3569e8461ea721623fa16e6f01fb636157989fe6",
+ "upstreamMainSha": "3f2abce7f468cf194bb7f9ff9c6a033b075d834c",
  "capacity": {
   "open": 68,
   "cap": 73,
   "free": 5
  },
  "counts": {
-  "actionable": 0,
+  "actionable": 1,
   "listed": 5,
   "waiting": 59,
   "parked": 4,
@@ -19,13 +19,47 @@
  },
  "items": [
   {
+   "pr": 125957,
+   "title": "fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/125957",
+   "issue": 125940,
+   "headSha": "5aaa2e5",
+   "updated": "2026-10-02T19:59:31Z",
+   "ageDays": 14,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    },
+    {
+     "kind": "fyi",
+     "who": "eabase",
+     "trust": "substantive",
+     "at": "2026-10-02T19:59:31Z",
+     "excerpt": "@alt-glitch Please review and merge",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/125957#issuecomment-5960419428"
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
    "pr": 123791,
    "title": "fix(computer-use): fix Windows cua-driver autostart readiness false-negative",
    "url": "https://github.com/NousResearch/hermes-agent/pull/123791",
    "issue": 123774,
    "headSha": "0b9aa48",
    "updated": "2026-10-02T14:19:16Z",
-   "ageDays": 15,
+   "ageDays": 16,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -131,36 +165,6 @@
      "at": "2026-09-27T23:15:45Z",
      "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. resolve_startup_model_route now returns None instead of letting a bare vendor prefix (hf:) outrank an explicitly configured\u2026",
      "url": "https://github.com/NousResearch/hermes-agent/pull/125594#issuecomment-5860740430"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 125957,
-   "title": "fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/125957",
-   "issue": 125940,
-   "headSha": "5aaa2e5",
-   "updated": "2026-10-02T19:59:31Z",
-   "ageDays": 14,
-   "state": "fyi",
-   "priority": 4,
-   "suggestedAction": "none",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "fyi",
-     "who": "eabase",
-     "trust": "substantive",
-     "at": "2026-10-02T19:59:31Z",
-     "excerpt": "@alt-glitch Please review and merge",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/125957#issuecomment-5960419428"
     }
    ],
    "evidence": {
