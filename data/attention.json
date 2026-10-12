@@ -1,57 +1,23 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-12T12:15:53Z",
- "snapshotGeneratedAt": "2026-10-12T12:15:53Z",
+ "generatedAt": "2026-10-12T13:13:50Z",
+ "snapshotGeneratedAt": "2026-10-12T13:13:50Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "3f2abce7f468cf194bb7f9ff9c6a033b075d834c",
+ "upstreamMainSha": "eefdfe0692207a7520b3a8c764fe510024f552a1",
  "capacity": {
   "open": 68,
   "cap": 73,
   "free": 5
  },
  "counts": {
-  "actionable": 1,
-  "listed": 5,
-  "waiting": 59,
+  "actionable": 0,
+  "listed": 4,
+  "waiting": 60,
   "parked": 4,
   "needsHuman": 0
  },
  "items": [
-  {
-   "pr": 125957,
-   "title": "fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/125957",
-   "issue": 125940,
-   "headSha": "5aaa2e5",
-   "updated": "2026-10-02T19:59:31Z",
-   "ageDays": 14,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    },
-    {
-     "kind": "fyi",
-     "who": "eabase",
-     "trust": "substantive",
-     "at": "2026-10-02T19:59:31Z",
-     "excerpt": "@alt-glitch Please review and merge",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/125957#issuecomment-5960419428"
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
   {
    "pr": 123791,
    "title": "fix(computer-use): fix Windows cua-driver autostart readiness false-negative",
@@ -121,7 +87,7 @@
    "issue": 123943,
    "headSha": "aa50387",
    "updated": "2026-09-27T20:13:09Z",
-   "ageDays": 15,
+   "ageDays": 16,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
