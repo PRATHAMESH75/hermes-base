@@ -1,23 +1,50 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-13T02:07:49Z",
- "snapshotGeneratedAt": "2026-10-13T02:07:49Z",
+ "generatedAt": "2026-10-13T09:36:03Z",
+ "snapshotGeneratedAt": "2026-10-13T09:36:03Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "427d605d4985c2d49a795493ef6c5d66413057d1",
+ "upstreamMainSha": "ae3f9f9cb149a828ae61625bb9c84b7bae837a0f",
  "capacity": {
   "open": 72,
   "cap": 73,
   "free": 1
  },
  "counts": {
-  "actionable": 0,
-  "listed": 4,
+  "actionable": 1,
+  "listed": 5,
   "waiting": 60,
-  "parked": 4,
+  "parked": 3,
   "needsHuman": 0
  },
  "items": [
+  {
+   "pr": 56497,
+   "title": "fix(tools): detect squashed multi-entry blobs as memory drift",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/56497",
+   "issue": 56464,
+   "headSha": "5c36d65",
+   "updated": "2026-09-10T12:54:43Z",
+   "ageDays": 103,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null,
+   "wokenBy": "upstream main touched tools/memory_tool_store.py (cf2ffb3cbf)"
+  },
   {
    "pr": 123791,
    "title": "fix(computer-use): fix Windows cua-driver autostart readiness false-negative",
@@ -56,7 +83,7 @@
    "issue": 125928,
    "headSha": "0128007",
    "updated": "2026-10-10T03:49:02Z",
-   "ageDays": 14,
+   "ageDays": 15,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -153,22 +180,6 @@
    },
    "wokenBy": null,
    "state": null
-  },
-  {
-   "pr": 56497,
-   "reason": "Conflicts with upstream 8079fd01f4 (teknium) which deliberately narrowed _detect_external_drift; re-adding a squashed-blob refusal signal fights that design and needs a maintainer call.",
-   "parkedAt": "2026-10-10T02:30:00Z",
-   "by": "zeus",
-   "wake": {
-    "paths": [
-     "tools/memory_tool_store.py",
-     "tests/tools/test_memory_tool.py"
-    ],
-    "onNewHumanComment": true,
-    "after": "2026-10-24T00:00:00Z"
-   },
-   "wokenBy": null,
-   "state": "conflicting"
   },
   {
    "pr": 54688,
