@@ -1,0 +1,1 @@
+{"day": "2026-10-15", "events": [{"at": "2026-10-15T04:18:07Z", "who": "teknium1", "pr": 107163, "kind": "comment", "text": "Cross-link: #138827 fixes the same deleted-cwd wedge for the local backend at the single choke point, BaseEnvironment.execute(), which every foreground and file-op command passes through. It resolves the effective cwd (explicit\u2026"}]}

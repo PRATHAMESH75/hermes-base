@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-15T01:36:50Z",
- "snapshotGeneratedAt": "2026-10-15T01:36:50Z",
+ "generatedAt": "2026-10-15T05:03:23Z",
+ "snapshotGeneratedAt": "2026-10-15T05:03:23Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "ca069e12239a2c8d13887ac9f983557d00bdcfd2",
+ "upstreamMainSha": "7bda2a3368024f7ae1c70cef16583e7c2c891674",
  "capacity": {
   "open": 78,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 1,
-  "listed": 5,
-  "waiting": 59,
+  "actionable": 2,
+  "listed": 6,
+  "waiting": 58,
   "parked": 4,
   "needsHuman": 0
  },
@@ -82,7 +82,7 @@
    "issue": 125928,
    "headSha": "0128007",
    "updated": "2026-10-10T03:49:02Z",
-   "ageDays": 16,
+   "ageDays": 17,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -104,6 +104,41 @@
     "sha": null,
     "at": "2026-09-28T17:57:53Z",
     "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125943#issuecomment-5875610167"
+   }
+  },
+  {
+   "pr": 107163,
+   "title": "fix(tools): heal a stale local session-cwd record instead of bricking the terminal",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/107163",
+   "issue": 107156,
+   "headSha": "a302377",
+   "updated": "2026-10-15T04:18:07Z",
+   "ageDays": 34,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "teknium1",
+     "trust": "maintainer",
+     "at": "2026-10-15T04:18:07Z",
+     "excerpt": "Cross-link: 138827 fixes the same deleted-cwd wedge for the local backend at the single choke point, BaseEnvironment.execute(), which every foreground and file-op command passes through. It resolves\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/107163#issuecomment-6184301829"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "15b6396",
+    "at": "2026-09-17T15:58:26Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/107163#issuecomment-5717381246"
    }
   },
   {
