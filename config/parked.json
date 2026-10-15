@@ -32,7 +32,7 @@
     },
     {
       "pr": 56497,
-      "reason": "Upstream narrowed drift guard (8079fd01f4) then dropped 'replace' for span-scoped 'patch' (cf2ffb3cbf); squashed-blob refusal fights both designs \u2014 likely close, needs Prathamesh's call.",
+      "reason": "Upstream narrowed drift guard (8079fd01f4) then dropped 'replace' for span-scoped 'patch' (cf2ffb3cbf); squashed-blob refusal fights both designs — likely close, needs Prathamesh's call.",
       "parkedAt": "2026-10-13T12:45:00Z",
       "by": "zeus",
       "wake": {
@@ -41,6 +41,20 @@
         ],
         "onNewHumanComment": true,
         "after": "2026-10-27T00:00:00Z"
+      }
+    },
+    {
+      "pr": 106028,
+      "reason": "Refactor casualty: --create-if-missing now creates via gateway session.create, and upstream create_titled_session deliberately pins row_cwd=\"\" for parity with main; stamping cwd (#106016, still open) contradicts that choice and needs Prathamesh/maintainer call.",
+      "parkedAt": "2026-10-15T05:18:46Z",
+      "by": "zeus",
+      "wake": {
+        "paths": [
+          "hermes_cli/gateway_session_store.py",
+          "hermes_cli/main.py"
+        ],
+        "onNewHumanComment": true,
+        "after": "2026-10-29T00:00:00Z"
       }
     }
   ]
