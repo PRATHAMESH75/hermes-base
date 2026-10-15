@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-15T18:24:11Z",
- "snapshotGeneratedAt": "2026-10-15T18:24:11Z",
+ "generatedAt": "2026-10-15T22:29:28Z",
+ "snapshotGeneratedAt": "2026-10-15T22:29:28Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "046094df28b712f62a5e3c728a9e59da05dcbf1e",
+ "upstreamMainSha": "acc3cada0da86c81efc8aa6c5a291989549ca900",
  "capacity": {
   "open": 82,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 1,
-  "listed": 5,
-  "waiting": 58,
+  "actionable": 0,
+  "listed": 4,
+  "waiting": 59,
   "parked": 5,
   "needsHuman": 0
  },
@@ -81,36 +81,6 @@
    }
   },
   {
-   "pr": 69159,
-   "title": "fix(gateway): declare webhook sessions stateless so background delegations run inline",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/69159",
-   "issue": 69145,
-   "headSha": "e0ca3b5",
-   "updated": "2026-10-15T18:15:42Z",
-   "ageDays": 85,
-   "state": "reply_owed",
-   "priority": 1,
-   "suggestedAction": "reply",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "reply_owed",
-     "who": "platform-biai",
-     "trust": "substantive",
-     "at": "2026-10-15T18:15:42Z",
-     "excerpt": "Supporting this fix with an independently verified one-shot webhook workflow. On upstream base 7318e666c236aa8fffc3506c705d1c00a4821441, we reproduced a continuity failure: a completed child's\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/69159#issuecomment-6199106801"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": true
-   },
-   "lastBotAction": null
-  },
-  {
    "pr": 123952,
    "title": "fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install",
    "url": "https://github.com/NousResearch/hermes-agent/pull/123952",
@@ -147,7 +117,7 @@
    "issue": 125578,
    "headSha": "8ec57c4",
    "updated": "2026-09-27T23:15:45Z",
-   "ageDays": 17,
+   "ageDays": 18,
    "state": "ai_note",
    "priority": 4,
    "suggestedAction": "none",
