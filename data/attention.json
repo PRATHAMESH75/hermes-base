@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-16T13:43:45Z",
- "snapshotGeneratedAt": "2026-10-16T13:43:45Z",
+ "generatedAt": "2026-10-16T14:16:09Z",
+ "snapshotGeneratedAt": "2026-10-16T14:16:09Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "e6899c8090da3bd48c829893e4103ce989d3482d",
+ "upstreamMainSha": "9c002cb941de1e1708294d0cd58e060b6a417b5e",
  "capacity": {
   "open": 84,
   "cap": 73,
@@ -12,74 +12,12 @@
  },
  "counts": {
   "actionable": 0,
-  "listed": 4,
-  "waiting": 59,
+  "listed": 2,
+  "waiting": 61,
   "parked": 5,
   "needsHuman": 0
  },
  "items": [
-  {
-   "pr": 123791,
-   "title": "fix(computer-use): fix Windows cua-driver autostart readiness false-negative",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/123791",
-   "issue": 123774,
-   "headSha": "0b9aa48",
-   "updated": "2026-10-02T14:19:16Z",
-   "ageDays": 20,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "addressed-review",
-    "sha": "0b9aa48",
-    "at": "2026-10-02T14:19:16Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/123791#issuecomment-5954498682"
-   }
-  },
-  {
-   "pr": 125943,
-   "title": "fix(plugins): let `plugins update --force` accept a caution scan verdict",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/125943",
-   "issue": 125928,
-   "headSha": "0128007",
-   "updated": "2026-10-10T03:49:02Z",
-   "ageDays": 18,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "review-acknowledged",
-    "sha": null,
-    "at": "2026-09-28T17:57:53Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125943#issuecomment-5875610167"
-   }
-  },
   {
    "pr": 123952,
    "title": "fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install",
