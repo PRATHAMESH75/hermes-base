@@ -1,50 +1,23 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-16T03:41:42Z",
- "snapshotGeneratedAt": "2026-10-16T03:41:42Z",
+ "generatedAt": "2026-10-16T04:03:12Z",
+ "snapshotGeneratedAt": "2026-10-16T04:03:12Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "8b9ac5773ea07189f23aa9dfcdba1e59fd759c21",
+ "upstreamMainSha": "4e59ac2b883b4133ea8a2d299abac45189781c09",
  "capacity": {
   "open": 82,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 1,
-  "listed": 5,
+  "actionable": 0,
+  "listed": 4,
   "waiting": 59,
-  "parked": 4,
+  "parked": 5,
   "needsHuman": 0
  },
  "items": [
-  {
-   "pr": 106028,
-   "title": "fix(cli): bind --create-if-missing sessions to the launch cwd",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/106028",
-   "issue": 106016,
-   "headSha": "11fce0d",
-   "updated": "2026-09-16T13:19:09Z",
-   "ageDays": 37,
-   "state": "conflicting",
-   "priority": 0,
-   "suggestedAction": "rebase",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "conflicting",
-     "detail": "Conflicts with main; rebase it."
-    }
-   ],
-   "evidence": {
-    "merge": "dirty",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null,
-   "wokenBy": "upstream main touched hermes_cli/main.py (29f98a6e1a)"
-  },
   {
    "pr": 123791,
    "title": "fix(computer-use): fix Windows cua-driver autostart readiness false-negative",
@@ -169,6 +142,23 @@
   }
  ],
  "parked": [
+  {
+   "pr": 106028,
+   "reason": "Refactor casualty: upstream moved classic `-c NAME --create-if-missing` to gateway session.create (ef899e9359/4334dddded) and deliberately pins row_cwd=\"\" for main parity; stamping cwd now means changing that gateway contract, not a mechanical rebase.",
+   "parkedAt": "2026-10-16T03:58:57Z",
+   "by": "zeus",
+   "wake": {
+    "paths": [
+     "hermes_cli/gateway_session_store.py",
+     "hermes_cli/gateway_chat.py",
+     "hermes_cli/main.py"
+    ],
+    "onNewHumanComment": true,
+    "after": "2026-10-30T00:00:00Z"
+   },
+   "wokenBy": null,
+   "state": "conflicting"
+  },
   {
    "pr": 67471,
    "reason": "Refactor casualty: upstream reworked the CLI worktree path; re-implementing -w one-shot mode needs a design call.",
