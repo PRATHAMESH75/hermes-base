@@ -45,8 +45,8 @@
     },
     {
       "pr": 106028,
-      "reason": "Refactor casualty: upstream moved classic `-c NAME --create-if-missing` to gateway session.create (ef899e9359/4334dddded) and deliberately pins row_cwd=\"\" for main parity; stamping cwd now means changing that gateway contract, not a mechanical rebase.",
-      "parkedAt": "2026-10-16T03:58:57Z",
+      "reason": "Refactor casualty: upstream moved classic `-c NAME --create-if-missing` to gateway session.create (ef899e9359/4334dddded) and still deliberately pins row_cwd=\"\" (gateway_session_store.py create path, re-checked at f37e164850); stamping cwd means changing that gateway contract, not a mechanical rebase.",
+      "parkedAt": "2026-10-16T05:11:59Z",
       "by": "zeus",
       "wake": {
         "paths": [
