@@ -1,23 +1,50 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-16T01:29:53Z",
- "snapshotGeneratedAt": "2026-10-16T01:29:53Z",
+ "generatedAt": "2026-10-16T03:41:42Z",
+ "snapshotGeneratedAt": "2026-10-16T03:41:42Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "acc3cada0da86c81efc8aa6c5a291989549ca900",
+ "upstreamMainSha": "8b9ac5773ea07189f23aa9dfcdba1e59fd759c21",
  "capacity": {
   "open": 82,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 0,
-  "listed": 4,
+  "actionable": 1,
+  "listed": 5,
   "waiting": 59,
-  "parked": 5,
+  "parked": 4,
   "needsHuman": 0
  },
  "items": [
+  {
+   "pr": 106028,
+   "title": "fix(cli): bind --create-if-missing sessions to the launch cwd",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/106028",
+   "issue": 106016,
+   "headSha": "11fce0d",
+   "updated": "2026-09-16T13:19:09Z",
+   "ageDays": 37,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null,
+   "wokenBy": "upstream main touched hermes_cli/main.py (29f98a6e1a)"
+  },
   {
    "pr": 123791,
    "title": "fix(computer-use): fix Windows cua-driver autostart readiness false-negative",
@@ -56,7 +83,7 @@
    "issue": 125928,
    "headSha": "0128007",
    "updated": "2026-10-10T03:49:02Z",
-   "ageDays": 17,
+   "ageDays": 18,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -142,22 +169,6 @@
   }
  ],
  "parked": [
-  {
-   "pr": 106028,
-   "reason": "Refactor casualty: --create-if-missing now creates via gateway session.create, and upstream create_titled_session deliberately pins row_cwd=\"\" for parity with main; stamping cwd (#106016, still open) contradicts that choice and needs Prathamesh/maintainer call.",
-   "parkedAt": "2026-10-15T05:18:46Z",
-   "by": "zeus",
-   "wake": {
-    "paths": [
-     "hermes_cli/gateway_session_store.py",
-     "hermes_cli/main.py"
-    ],
-    "onNewHumanComment": true,
-    "after": "2026-10-29T00:00:00Z"
-   },
-   "wokenBy": null,
-   "state": "conflicting"
-  },
   {
    "pr": 67471,
    "reason": "Refactor casualty: upstream reworked the CLI worktree path; re-implementing -w one-shot mode needs a design call.",
