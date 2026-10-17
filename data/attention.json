@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-17T00:37:06Z",
- "snapshotGeneratedAt": "2026-10-17T00:37:06Z",
+ "generatedAt": "2026-10-17T01:36:28Z",
+ "snapshotGeneratedAt": "2026-10-17T01:36:28Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
  "upstreamMainSha": "e31c674f7c523070f48f3baad0650c2fdd7ef6e5",
@@ -12,8 +12,8 @@
  },
  "counts": {
   "actionable": 0,
-  "listed": 2,
-  "waiting": 62,
+  "listed": 3,
+  "waiting": 61,
   "parked": 4,
   "needsHuman": 0
  },
@@ -77,6 +77,41 @@
     "checksRan": false
    },
    "lastBotAction": null
+  },
+  {
+   "pr": 124891,
+   "title": "fix(agent): log the native cause before a refusal/invalid-response fallback",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/124891",
+   "issue": 124874,
+   "headSha": "757914d",
+   "updated": "2026-10-17T00:50:55Z",
+   "ageDays": 19,
+   "state": "fyi",
+   "priority": 4,
+   "suggestedAction": "none",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "fyi",
+     "who": "cresslank",
+     "trust": "substantive",
+     "at": "2026-10-17T00:47:47Z",
+     "excerpt": "Disclosure: drafted and posted by Hermes on behalf of @cresslank, with their explicit authorization. Evidence comes from local logs, state.db and OTel spans. Another occurrence, on v0.22.1\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/124891#issuecomment-6227555904"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "replied",
+    "sha": "757914d",
+    "at": "2026-10-10T09:11:29Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/124891#issuecomment-6095997248"
+   }
   }
  ],
  "parked": [
