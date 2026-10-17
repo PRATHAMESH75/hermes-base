@@ -1,132 +1,24 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-17T14:19:29Z",
- "snapshotGeneratedAt": "2026-10-17T14:19:29Z",
+ "generatedAt": "2026-10-17T17:21:37Z",
+ "snapshotGeneratedAt": "2026-10-17T17:21:37Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "337f374426da3b663f40e2414201dd32fb3f6e31",
+ "upstreamMainSha": "8ce2a4f876e03565ef9980adfc918696a2306dcf",
  "capacity": {
-  "open": 84,
+  "open": 79,
   "cap": 73,
   "free": 0
  },
  "counts": {
   "actionable": 0,
-  "listed": 3,
-  "waiting": 61,
-  "parked": 4,
+  "listed": 0,
+  "waiting": 62,
+  "parked": 3,
   "needsHuman": 0
  },
- "items": [
-  {
-   "pr": 123952,
-   "title": "fix(pm): stage the PM runtime with --frozen so a pip mirror doesn't abort the install",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/123952",
-   "issue": 123943,
-   "headSha": "aa50387",
-   "updated": "2026-09-27T20:13:09Z",
-   "ageDays": 21,
-   "state": "ai_note",
-   "priority": 4,
-   "suggestedAction": "none",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "ai_note",
-     "who": "Enough1122",
-     "trust": "noise",
-     "at": "2026-09-27T20:13:09Z",
-     "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. This PR drops locked=True from PM runtime staging in pm/runtime_stage.py, so pm/environment.py:353 now emits uv sync --frozen\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/123952#issuecomment-5859439184"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 125594,
-   "title": "fix(cli): keep an explicit custom-provider pin over an inferred vendor prefix at startup",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/125594",
-   "issue": 125578,
-   "headSha": "8ec57c4",
-   "updated": "2026-09-27T23:15:45Z",
-   "ageDays": 19,
-   "state": "ai_note",
-   "priority": 4,
-   "suggestedAction": "none",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "ai_note",
-     "who": "Enough1122",
-     "trust": "noise",
-     "at": "2026-09-27T23:15:45Z",
-     "excerpt": "AI code review \u2014 automated follow-up for reference; not a maintainer. resolve_startup_model_route now returns None instead of letting a bare vendor prefix (hf:) outrank an explicitly configured\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/125594#issuecomment-5860740430"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
-  {
-   "pr": 124891,
-   "title": "fix(agent): log the native cause before a refusal/invalid-response fallback",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/124891",
-   "issue": 124874,
-   "headSha": "757914d",
-   "updated": "2026-10-17T00:50:55Z",
-   "ageDays": 20,
-   "state": "fyi",
-   "priority": 4,
-   "suggestedAction": "none",
-   "actionable": false,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "fyi",
-     "who": "cresslank",
-     "trust": "substantive",
-     "at": "2026-10-17T00:47:47Z",
-     "excerpt": "Disclosure: drafted and posted by Hermes on behalf of @cresslank, with their explicit authorization. Evidence comes from local logs, state.db and OTel spans. Another occurrence, on v0.22.1\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/124891#issuecomment-6227555904"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": {
-    "action": "replied",
-    "sha": "757914d",
-    "at": "2026-10-10T09:11:29Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/124891#issuecomment-6095997248"
-   }
-  }
- ],
+ "items": [],
  "parked": [
-  {
-   "pr": 67471,
-   "reason": "Refactor casualty: upstream reworked the CLI worktree path; re-implementing -w one-shot mode needs a design call.",
-   "parkedAt": "2026-10-06T00:00:00Z",
-   "by": "human",
-   "wake": {
-    "onNewHumanComment": true,
-    "after": "2026-10-20T00:00:00Z"
-   },
-   "wokenBy": null,
-   "state": "conflicting"
-  },
   {
    "pr": 56497,
    "reason": "Upstream narrowed drift guard (8079fd01f4) then dropped 'replace' for span-scoped 'patch' (cf2ffb3cbf); squashed-blob refusal fights both designs \u2014 likely close, needs Prathamesh's call.",
