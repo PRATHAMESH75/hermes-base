@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-18T23:23:07Z",
- "snapshotGeneratedAt": "2026-10-18T23:23:07Z",
+ "generatedAt": "2026-10-19T04:54:52Z",
+ "snapshotGeneratedAt": "2026-10-19T04:54:52Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "38d55b90dab7b37d7f26f0450b61851463fb1329",
+ "upstreamMainSha": "5fc490e2b34123212d73ef316086f939567a725a",
  "capacity": {
   "open": 79,
   "cap": 73,
@@ -12,12 +12,44 @@
  },
  "counts": {
   "actionable": 0,
-  "listed": 0,
-  "waiting": 62,
+  "listed": 1,
+  "waiting": 61,
   "parked": 3,
   "needsHuman": 0
  },
- "items": [],
+ "items": [
+  {
+   "pr": 123950,
+   "title": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/123950",
+   "issue": 123935,
+   "headSha": "7451567",
+   "updated": "2026-10-09T04:17:47Z",
+   "ageDays": 22,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "7451567",
+    "at": "2026-10-09T04:17:47Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/123950#issuecomment-6074161575"
+   }
+  }
+ ],
  "parked": [
   {
    "pr": 56497,
