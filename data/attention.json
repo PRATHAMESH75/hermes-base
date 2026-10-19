@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-19T10:57:39Z",
- "snapshotGeneratedAt": "2026-10-19T10:57:39Z",
+ "generatedAt": "2026-10-19T17:37:08Z",
+ "snapshotGeneratedAt": "2026-10-19T17:37:08Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "8f5693af418256b89da17ddda18a9242f113dcf6",
+ "upstreamMainSha": "86fa9e6ca1de7ee71132d2be0103f3e37d1fa872",
  "capacity": {
   "open": 79,
   "cap": 73,
@@ -12,8 +12,8 @@
  },
  "counts": {
   "actionable": 0,
-  "listed": 1,
-  "waiting": 61,
+  "listed": 2,
+  "waiting": 60,
   "parked": 3,
   "needsHuman": 0
  },
@@ -25,7 +25,7 @@
    "issue": 123935,
    "headSha": "7451567",
    "updated": "2026-10-09T04:17:47Z",
-   "ageDays": 22,
+   "ageDays": 23,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -47,6 +47,37 @@
     "sha": "7451567",
     "at": "2026-10-09T04:17:47Z",
     "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/123950#issuecomment-6074161575"
+   }
+  },
+  {
+   "pr": 125943,
+   "title": "fix(plugins): let `plugins update --force` accept a caution scan verdict",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/125943",
+   "issue": 125928,
+   "headSha": "447d10b",
+   "updated": "2026-10-16T13:54:32Z",
+   "ageDays": 21,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": false,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "review-acknowledged",
+    "sha": null,
+    "at": "2026-09-28T17:57:53Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125943#issuecomment-5875610167"
    }
   }
  ],
