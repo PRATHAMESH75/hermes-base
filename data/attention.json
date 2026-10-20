@@ -1,7 +1,7 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-19T22:30:37Z",
- "snapshotGeneratedAt": "2026-10-19T22:30:37Z",
+ "generatedAt": "2026-10-20T01:56:29Z",
+ "snapshotGeneratedAt": "2026-10-20T01:56:29Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
  "upstreamMainSha": "9cb34e9e285dadd0c6d2463e9b094052530fc365",
@@ -11,13 +11,72 @@
   "free": 0
  },
  "counts": {
-  "actionable": 0,
-  "listed": 2,
+  "actionable": 2,
+  "listed": 4,
   "waiting": 60,
-  "parked": 3,
+  "parked": 1,
   "needsHuman": 0
  },
  "items": [
+  {
+   "pr": 54688,
+   "title": "feat(gateway): /platform reload \u2014 hot-reload messaging platform adapters",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/54688",
+   "issue": 54681,
+   "headSha": "5de4bb6",
+   "updated": "2026-08-25T17:01:07Z",
+   "ageDays": 112,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": null,
+   "wokenBy": "date 2026-10-20 reached"
+  },
+  {
+   "pr": 54367,
+   "title": "fix(checkpoint): share a logical workdir key across Docker bind-mount checkpoint create/rollback",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/54367",
+   "issue": 54356,
+   "headSha": "85fe3e4",
+   "updated": "2026-08-30T18:45:07Z",
+   "ageDays": 113,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "71bd82d",
+    "at": "2026-07-29T15:13:10Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/54367#issuecomment-5119771484"
+   },
+   "wokenBy": "date 2026-10-20 reached"
+  },
   {
    "pr": 123950,
    "title": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune",
@@ -93,30 +152,6 @@
     ],
     "onNewHumanComment": true,
     "after": "2026-10-27T00:00:00Z"
-   },
-   "wokenBy": null,
-   "state": "conflicting"
-  },
-  {
-   "pr": 54688,
-   "reason": "Refactor casualty: upstream added /platform list|pause|resume and reworked gateway drain/status; grafting reload needs integration judgment (pause/resume state, config re-read vs adapter registry).",
-   "parkedAt": "2026-10-06T00:00:00Z",
-   "by": "human",
-   "wake": {
-    "onNewHumanComment": true,
-    "after": "2026-10-20T00:00:00Z"
-   },
-   "wokenBy": null,
-   "state": "conflicting"
-  },
-  {
-   "pr": 54367,
-   "reason": "Refactor casualty: checkpoint workdir keying moved upstream; deferred as judgment-heavy, not superseded.",
-   "parkedAt": "2026-10-06T00:00:00Z",
-   "by": "human",
-   "wake": {
-    "onNewHumanComment": true,
-    "after": "2026-10-20T00:00:00Z"
    },
    "wokenBy": null,
    "state": "conflicting"
