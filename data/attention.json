@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-22T13:57:26Z",
- "snapshotGeneratedAt": "2026-10-22T13:57:26Z",
+ "generatedAt": "2026-10-22T18:42:14Z",
+ "snapshotGeneratedAt": "2026-10-22T18:42:14Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "8237c7f8ec179c88857f24a174509d985af704b7",
+ "upstreamMainSha": "c73cbcc4cbbdbfc7371a86287db1ff729f23837b",
  "capacity": {
   "open": 79,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 3,
-  "listed": 5,
-  "waiting": 59,
+  "actionable": 5,
+  "listed": 7,
+  "waiting": 57,
   "parked": 1,
   "needsHuman": 0
  },
@@ -52,7 +52,7 @@
    "issue": 54356,
    "headSha": "85fe3e4",
    "updated": "2026-08-30T18:45:07Z",
-   "ageDays": 115,
+   "ageDays": 116,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -106,6 +106,68 @@
     "sha": "8596c62",
     "at": "2026-08-02T10:43:52Z",
     "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/71965#issuecomment-5157274560"
+   }
+  },
+  {
+   "pr": 63187,
+   "title": "fix(gateway): stop standing-goal loop after a failed provider turn",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/63187",
+   "issue": 63180,
+   "headSha": "5d3e04c",
+   "updated": "2026-09-10T12:43:27Z",
+   "ageDays": 102,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "3cb4030",
+    "at": "2026-08-17T01:08:16Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/63187#issuecomment-5310684892"
+   }
+  },
+  {
+   "pr": 125957,
+   "title": "fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/125957",
+   "issue": 125940,
+   "headSha": "8fcc3ad",
+   "updated": "2026-10-12T13:09:10Z",
+   "ageDays": 24,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "rebased",
+    "sha": "8fcc3ad",
+    "at": "2026-10-12T13:09:10Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125957#issuecomment-6124922875"
    }
   },
   {
