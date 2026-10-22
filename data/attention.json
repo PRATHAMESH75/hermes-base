@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-22T07:46:06Z",
- "snapshotGeneratedAt": "2026-10-22T07:46:06Z",
+ "generatedAt": "2026-10-22T13:57:26Z",
+ "snapshotGeneratedAt": "2026-10-22T13:57:26Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "81a55437f3f31a9f12a30c53b6c5d49d420898aa",
+ "upstreamMainSha": "8237c7f8ec179c88857f24a174509d985af704b7",
  "capacity": {
   "open": 79,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 2,
-  "listed": 4,
-  "waiting": 60,
+  "actionable": 3,
+  "listed": 5,
+  "waiting": 59,
   "parked": 1,
   "needsHuman": 0
  },
@@ -78,13 +78,44 @@
    "wokenBy": "date 2026-10-20 reached"
   },
   {
+   "pr": 71965,
+   "title": "fix(approval): keep self-termination gated under the container-backend bypass",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/71965",
+   "issue": 71957,
+   "headSha": "9d15fe2",
+   "updated": "2026-09-06T06:56:29Z",
+   "ageDays": 88,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": true
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "8596c62",
+    "at": "2026-08-02T10:43:52Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/71965#issuecomment-5157274560"
+   }
+  },
+  {
    "pr": 123950,
    "title": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune",
    "url": "https://github.com/NousResearch/hermes-agent/pull/123950",
    "issue": 123935,
    "headSha": "7451567",
    "updated": "2026-10-09T04:17:47Z",
-   "ageDays": 25,
+   "ageDays": 26,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
