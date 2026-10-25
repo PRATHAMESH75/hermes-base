@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-25T09:56:06Z",
- "snapshotGeneratedAt": "2026-10-25T09:56:06Z",
+ "generatedAt": "2026-10-25T14:29:38Z",
+ "snapshotGeneratedAt": "2026-10-25T14:29:38Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "4ea8d23cc9f527332ccb1d55359b27741b6ea51b",
+ "upstreamMainSha": "930e5ed557edb25b4b0b8ca3f51679dde3c92eb6",
  "capacity": {
   "open": 79,
   "cap": 73,
@@ -84,7 +84,7 @@
    "issue": 71957,
    "headSha": "9d15fe2",
    "updated": "2026-09-06T06:56:29Z",
-   "ageDays": 90,
+   "ageDays": 91,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -115,7 +115,7 @@
    "issue": 63180,
    "headSha": "5d3e04c",
    "updated": "2026-09-10T12:43:27Z",
-   "ageDays": 104,
+   "ageDays": 105,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -195,7 +195,7 @@
     "checksRan": false
    },
    "lastBotAction": null,
-   "wokenBy": "upstream main touched tools/memory_tool_store.py (b044f7cf28)"
+   "wokenBy": "upstream main touched tools/memory_tool_store.py (26e8e3f4d5)"
   },
   {
    "pr": 123950,
@@ -204,7 +204,7 @@
    "issue": 123935,
    "headSha": "7451567",
    "updated": "2026-10-09T04:17:47Z",
-   "ageDays": 28,
+   "ageDays": 29,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
