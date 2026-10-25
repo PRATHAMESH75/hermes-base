@@ -1,20 +1,20 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-24T23:24:34Z",
- "snapshotGeneratedAt": "2026-10-24T23:24:34Z",
+ "generatedAt": "2026-10-25T04:53:49Z",
+ "snapshotGeneratedAt": "2026-10-25T04:53:49Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "a480a27e76dcad8da7665408e54c6ec270c10f14",
+ "upstreamMainSha": "4ea8d23cc9f527332ccb1d55359b27741b6ea51b",
  "capacity": {
   "open": 79,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 5,
-  "listed": 7,
+  "actionable": 6,
+  "listed": 8,
   "waiting": 57,
-  "parked": 1,
+  "parked": 0,
   "needsHuman": 0
  },
  "items": [
@@ -146,7 +146,7 @@
    "issue": 125940,
    "headSha": "8fcc3ad",
    "updated": "2026-10-12T13:09:10Z",
-   "ageDays": 26,
+   "ageDays": 27,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -169,6 +169,33 @@
     "at": "2026-10-12T13:09:10Z",
     "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125957#issuecomment-6124922875"
    }
+  },
+  {
+   "pr": 56497,
+   "title": "fix(tools): detect squashed multi-entry blobs as memory drift",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/56497",
+   "issue": 56464,
+   "headSha": "5c36d65",
+   "updated": "2026-10-17T09:35:12Z",
+   "ageDays": 115,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null,
+   "wokenBy": "upstream main touched tools/memory_tool_store.py (b044f7cf28)"
   },
   {
    "pr": 123950,
@@ -208,7 +235,7 @@
    "issue": 125928,
    "headSha": "447d10b",
    "updated": "2026-10-16T13:54:32Z",
-   "ageDays": 26,
+   "ageDays": 27,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -233,22 +260,6 @@
    }
   }
  ],
- "parked": [
-  {
-   "pr": 56497,
-   "reason": "Upstream narrowed drift guard (8079fd01f4) then dropped 'replace' for span-scoped 'patch' (cf2ffb3cbf); squashed-blob refusal fights both designs \u2014 likely close, needs Prathamesh's call.",
-   "parkedAt": "2026-10-13T12:45:00Z",
-   "by": "zeus",
-   "wake": {
-    "paths": [
-     "tools/memory_tool_store.py"
-    ],
-    "onNewHumanComment": true,
-    "after": "2026-10-27T00:00:00Z"
-   },
-   "wokenBy": null,
-   "state": "conflicting"
-  }
- ],
+ "parked": [],
  "needsHuman": []
 }
