@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-26T06:25:23Z",
- "snapshotGeneratedAt": "2026-10-26T06:25:23Z",
+ "generatedAt": "2026-10-26T14:27:37Z",
+ "snapshotGeneratedAt": "2026-10-26T14:27:37Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "df5dbc2acca7a9d29050f9f37bacb4500d03eb92",
+ "upstreamMainSha": "5712ae891c14063411e90c1294f1a53058d6a541",
  "capacity": {
-  "open": 79,
+  "open": 78,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 7,
-  "listed": 9,
-  "waiting": 56,
+  "actionable": 8,
+  "listed": 10,
+  "waiting": 54,
   "parked": 0,
   "needsHuman": 0
  },
@@ -25,7 +25,7 @@
    "issue": 54681,
    "headSha": "5de4bb6",
    "updated": "2026-08-25T17:01:07Z",
-   "ageDays": 118,
+   "ageDays": 119,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -84,7 +84,7 @@
    "issue": 71957,
    "headSha": "9d15fe2",
    "updated": "2026-09-06T06:56:29Z",
-   "ageDays": 91,
+   "ageDays": 92,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -115,7 +115,7 @@
    "issue": 63180,
    "headSha": "5d3e04c",
    "updated": "2026-09-10T12:43:27Z",
-   "ageDays": 105,
+   "ageDays": 106,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -224,13 +224,47 @@
    "wokenBy": "upstream main touched tools/memory_tool_store.py (26e8e3f4d5)"
   },
   {
+   "pr": 124851,
+   "title": "fix(copilot-acp): reap the launcher's native descendant on teardown",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/124851",
+   "issue": 124835,
+   "headSha": "eabf4e9",
+   "updated": "2026-10-26T09:27:57Z",
+   "ageDays": 29,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    },
+    {
+     "kind": "reply_owed",
+     "who": "teknium1",
+     "trust": "maintainer",
+     "at": "2026-10-26T09:27:57Z",
+     "excerpt": "Heads-up: since 144788 ([0591b66](https://github.com/NousResearch/hermes-agent/commit/0591b66fca66b14e7c6a7ad1b75c399b4b9a6663)) the ACP client this PR edits is the generic ACPClient in\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/124851#issuecomment-6412644729"
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
    "pr": 123950,
    "title": "fix(agent): shield the protect_first_n head from the Phase-1 tool-result prune",
    "url": "https://github.com/NousResearch/hermes-agent/pull/123950",
    "issue": 123935,
    "headSha": "7451567",
    "updated": "2026-10-09T04:17:47Z",
-   "ageDays": 29,
+   "ageDays": 30,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
