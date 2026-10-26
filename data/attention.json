@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-26T00:30:25Z",
- "snapshotGeneratedAt": "2026-10-26T00:30:25Z",
+ "generatedAt": "2026-10-26T06:25:23Z",
+ "snapshotGeneratedAt": "2026-10-26T06:25:23Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "ff294849385e433dd40a993b4f07673abb95c6f5",
+ "upstreamMainSha": "df5dbc2acca7a9d29050f9f37bacb4500d03eb92",
  "capacity": {
   "open": 79,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 6,
-  "listed": 8,
-  "waiting": 57,
+  "actionable": 7,
+  "listed": 9,
+  "waiting": 56,
   "parked": 0,
   "needsHuman": 0
  },
@@ -140,13 +140,39 @@
    }
   },
   {
+   "pr": 69068,
+   "title": "fix(agent): strip inherited Authorization header in Gemini native client (Bug 1 of #69031)",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/69068",
+   "issue": null,
+   "headSha": "673abb0",
+   "updated": "2026-10-08T18:39:16Z",
+   "ageDays": 96,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  },
+  {
    "pr": 125957,
    "title": "fix(deps): raise pillow-heif floor to 1.8.0 for the libheif CVE fix",
    "url": "https://github.com/NousResearch/hermes-agent/pull/125957",
    "issue": 125940,
    "headSha": "8fcc3ad",
    "updated": "2026-10-12T13:09:10Z",
-   "ageDays": 27,
+   "ageDays": 28,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -235,7 +261,7 @@
    "issue": 125928,
    "headSha": "447d10b",
    "updated": "2026-10-16T13:54:32Z",
-   "ageDays": 27,
+   "ageDays": 28,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
