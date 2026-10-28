@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-28T18:58:20Z",
- "snapshotGeneratedAt": "2026-10-28T18:58:20Z",
+ "generatedAt": "2026-10-28T23:19:37Z",
+ "snapshotGeneratedAt": "2026-10-28T23:19:37Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "780d5a3313d7e1f64c0a0f3ec6b644d50f156e90",
+ "upstreamMainSha": "0c74cc682dc81bf78b78a1737b3ee77a820ccb79",
  "capacity": {
   "open": 78,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 8,
-  "listed": 10,
-  "waiting": 54,
+  "actionable": 9,
+  "listed": 11,
+  "waiting": 53,
   "parked": 0,
   "needsHuman": 0
  },
@@ -164,6 +164,37 @@
     "checksRan": false
    },
    "lastBotAction": null
+  },
+  {
+   "pr": 74212,
+   "title": "feat(web): forward custom request headers from web_extract to Firecrawl",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/74212",
+   "issue": 74177,
+   "headSha": "a96b85d",
+   "updated": "2026-10-09T03:30:12Z",
+   "ageDays": 91,
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
+    }
+   ],
+   "evidence": {
+    "merge": "dirty",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "salvaged-pr",
+    "sha": "cdb062a",
+    "at": "2026-08-26T03:11:00Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/74212#issuecomment-5420036573"
+   }
   },
   {
    "pr": 125957,
