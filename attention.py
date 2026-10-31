@@ -48,7 +48,7 @@ DEFAULT_CONFIG = {
     "reviewers": {"maintainer": [], "substantive": [], "noise": [], "default": "substantive"},
     "expectedFailures": [],
     "nudge": {"enabled": False, "afterDays": 14, "everyDays": 30},
-    "openCap": 73,
+    "openCap": 5,
 }
 
 
