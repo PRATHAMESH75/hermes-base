@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-10-31T07:05:59Z",
- "snapshotGeneratedAt": "2026-10-31T07:05:59Z",
+ "generatedAt": "2026-10-31T13:44:07Z",
+ "snapshotGeneratedAt": "2026-10-31T13:44:07Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "adecc4024456b387b1518813b90bd60c82b51287",
+ "upstreamMainSha": "c419cf7c864ac0ee511dbd9f7091a8bba0b567ee",
  "capacity": {
   "open": 78,
   "cap": 73,
   "free": 0
  },
  "counts": {
-  "actionable": 9,
-  "listed": 11,
-  "waiting": 53,
+  "actionable": 10,
+  "listed": 12,
+  "waiting": 52,
   "parked": 0,
   "needsHuman": 0
  },
@@ -84,7 +84,7 @@
    "issue": 71957,
    "headSha": "9d15fe2",
    "updated": "2026-09-06T06:56:29Z",
-   "ageDays": 96,
+   "ageDays": 97,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -115,7 +115,7 @@
    "issue": 63180,
    "headSha": "5d3e04c",
    "updated": "2026-09-10T12:43:27Z",
-   "ageDays": 110,
+   "ageDays": 111,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -295,7 +295,7 @@
    "issue": 123935,
    "headSha": "7451567",
    "updated": "2026-10-09T04:17:47Z",
-   "ageDays": 34,
+   "ageDays": 35,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
@@ -348,6 +348,41 @@
     "sha": null,
     "at": "2026-09-28T17:57:53Z",
     "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/125943#issuecomment-5875610167"
+   }
+  },
+  {
+   "pr": 99445,
+   "title": "fix(desktop): deliver kanban review-lifecycle events to TUI/desktop sessions",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/99445",
+   "issue": 99436,
+   "headSha": "5c4504f",
+   "updated": "2026-10-31T10:40:23Z",
+   "ageDays": 60,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "AbdullahPesteli",
+     "trust": "substantive",
+     "at": "2026-10-31T10:40:23Z",
+     "excerpt": "Bounded, executed evidence for this PR's Desktop/TUI event coverage. This is a pinned-snapshot result from a stdlib extracted-source contract harness, not the repository suite and not a native\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-6542340710"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": {
+    "action": "addressed-review",
+    "sha": "5c4504f",
+    "at": "2026-10-10T13:49:28Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/99445#issuecomment-6098165529"
    }
   }
  ],
