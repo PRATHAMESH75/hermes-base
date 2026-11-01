@@ -1,54 +1,23 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-01T17:55:33Z",
- "snapshotGeneratedAt": "2026-11-01T17:55:33Z",
+ "generatedAt": "2026-11-01T18:17:41Z",
+ "snapshotGeneratedAt": "2026-11-01T18:17:41Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "c7c7e0fa92f40c8f526e4a52c0966c128245ffd3",
+ "upstreamMainSha": "d1a82ffff37a62de6fbdfabb496d1d2d0bc22822",
  "capacity": {
   "open": 5,
   "cap": 5,
   "free": 0
  },
  "counts": {
-  "actionable": 1,
-  "listed": 1,
-  "waiting": 4,
+  "actionable": 0,
+  "listed": 0,
+  "waiting": 5,
   "parked": 0,
   "needsHuman": 0
  },
- "items": [
-  {
-   "pr": 147256,
-   "title": "fix(build): skip npm PATH entries that stop resolving mid-scan",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/147256",
-   "issue": null,
-   "headSha": "f6b61c2",
-   "updated": "2026-11-01T17:44:35Z",
-   "ageDays": 1,
-   "state": "reply_owed",
-   "priority": 1,
-   "suggestedAction": "reply",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "reply_owed",
-     "who": "whyyagswhy",
-     "trust": "substantive",
-     "at": "2026-11-01T17:44:35Z",
-     "excerpt": "Verified at head f6b61c2b (f6b61c2b904afa14d86454a368be08c96a38cb3b; fetched to refs/review/147256, matches gh pr view headRefOid). Tests on omarchy (fresh npm install --workspaces=false +\u2026",
-     "url": "https://github.com/NousResearch/hermes-agent/pull/147256#issuecomment-6561562733"
-    }
-   ],
-   "evidence": {
-    "merge": "blocked",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  }
- ],
+ "items": [],
  "parked": [],
  "needsHuman": []
 }
