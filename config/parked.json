@@ -57,6 +57,19 @@
         "onNewHumanComment": true,
         "after": "2026-10-30T00:00:00Z"
       }
+    },
+    {
+      "pr": 147480,
+      "reason": "Nothing owed: whyyagswhy's latest comment only reports independent verification at 86c2ae9 (no question or change request); PR is mergeable and awaits maintainer CI approval/review.",
+      "parkedAt": "2026-11-02T16:46:33Z",
+      "by": "zeus",
+      "wake": {
+        "paths": [
+          "gateway/run_api.py"
+        ],
+        "onNewHumanComment": true,
+        "after": "2026-11-16T00:00:00Z"
+      }
     }
   ]
 }
