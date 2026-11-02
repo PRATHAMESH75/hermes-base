@@ -1,23 +1,54 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-02T03:00:12Z",
- "snapshotGeneratedAt": "2026-11-02T03:00:12Z",
+ "generatedAt": "2026-11-02T04:00:49Z",
+ "snapshotGeneratedAt": "2026-11-02T04:00:49Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "e8639fd4312e5102d6f10c76b56406cb01c19092",
+ "upstreamMainSha": "06433066f46a01f921a5df09fdf89c2a1c8cdb65",
  "capacity": {
   "open": 5,
   "cap": 5,
   "free": 0
  },
  "counts": {
-  "actionable": 0,
-  "listed": 0,
-  "waiting": 5,
+  "actionable": 1,
+  "listed": 1,
+  "waiting": 4,
   "parked": 0,
   "needsHuman": 0
  },
- "items": [],
+ "items": [
+  {
+   "pr": 147480,
+   "title": "fix(gateway): let remote Origin-less ticket dials reach the Webapp gate",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/147480",
+   "issue": null,
+   "headSha": "86c2ae9",
+   "updated": "2026-11-02T03:49:39Z",
+   "ageDays": 0,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "whyyagswhy",
+     "trust": "substantive",
+     "at": "2026-11-02T03:49:39Z",
+     "excerpt": "Verified at head 86c2ae9076: its own test file passes via scripts/run_tests.sh (4 passed, 0 failed), and the blocking lint lane is clean \u2014 merged into current main, python scripts/check --only\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/147480#issuecomment-6568593530"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
+  }
+ ],
  "parked": [],
  "needsHuman": []
 }
