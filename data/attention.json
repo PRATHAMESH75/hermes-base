@@ -1,39 +1,23 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-03T23:31:33Z",
- "snapshotGeneratedAt": "2026-11-03T23:31:33Z",
+ "generatedAt": "2026-11-04T06:37:49Z",
+ "snapshotGeneratedAt": "2026-11-04T06:37:49Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "9302ba9e212c63ba24cdf1f47f26b47bcd3b042e",
+ "upstreamMainSha": "71736c9f32597bbca9d89cede5aa136e55946b2f",
  "capacity": {
-  "open": 5,
+  "open": 4,
   "cap": 5,
-  "free": 0
+  "free": 1
  },
  "counts": {
   "actionable": 0,
   "listed": 0,
   "waiting": 4,
-  "parked": 1,
+  "parked": 0,
   "needsHuman": 0
  },
  "items": [],
- "parked": [
-  {
-   "pr": 147480,
-   "reason": "Nothing owed: whyyagswhy's latest comment only reports independent verification at 86c2ae9 (no question or change request); PR is mergeable and awaits maintainer CI approval/review.",
-   "parkedAt": "2026-11-02T16:46:33Z",
-   "by": "zeus",
-   "wake": {
-    "paths": [
-     "gateway/run_api.py"
-    ],
-    "onNewHumanComment": true,
-    "after": "2026-11-16T00:00:00Z"
-   },
-   "wokenBy": null,
-   "state": "reply_owed"
-  }
- ],
+ "parked": [],
  "needsHuman": []
 }
