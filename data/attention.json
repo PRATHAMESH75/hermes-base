@@ -1,49 +1,23 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-14T21:36:48Z",
- "snapshotGeneratedAt": "2026-11-14T21:36:48Z",
+ "generatedAt": "2026-11-15T01:59:40Z",
+ "snapshotGeneratedAt": "2026-11-15T01:59:40Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "336cb40c46b2c1459c5db90eafda761be80593f4",
+ "upstreamMainSha": "f578714e0ee122179ec28fecb9af989583b71baf",
  "capacity": {
   "open": 4,
   "cap": 5,
   "free": 1
  },
  "counts": {
-  "actionable": 1,
-  "listed": 2,
-  "waiting": 2,
+  "actionable": 0,
+  "listed": 1,
+  "waiting": 3,
   "parked": 0,
   "needsHuman": 0
  },
  "items": [
-  {
-   "pr": 138885,
-   "title": "fix(memory-setup): keep structured schema defaults typed when accepted",
-   "url": "https://github.com/NousResearch/hermes-agent/pull/138885",
-   "issue": null,
-   "headSha": "5c609ca",
-   "updated": "2026-10-31T17:50:05Z",
-   "ageDays": 30,
-   "state": "merge_unknown",
-   "priority": 2,
-   "suggestedAction": "recheck_merge",
-   "actionable": true,
-   "needsHuman": false,
-   "reasons": [
-    {
-     "kind": "merge_unknown",
-     "detail": "GitHub has not computed mergeability yet."
-    }
-   ],
-   "evidence": {
-    "merge": "unknown",
-    "failingChecks": [],
-    "checksRan": false
-   },
-   "lastBotAction": null
-  },
   {
    "pr": 147256,
    "title": "fix(build): skip npm PATH entries that stop resolving mid-scan",
@@ -52,19 +26,19 @@
    "headSha": "f6b61c2",
    "updated": "2026-11-01T23:17:23Z",
    "ageDays": 14,
-   "state": "merge_unknown",
-   "priority": 2,
-   "suggestedAction": "recheck_merge",
+   "state": "conflicting",
+   "priority": 0,
+   "suggestedAction": "rebase",
    "actionable": false,
    "needsHuman": false,
    "reasons": [
     {
-     "kind": "merge_unknown",
-     "detail": "GitHub has not computed mergeability yet."
+     "kind": "conflicting",
+     "detail": "Conflicts with main; rebase it."
     }
    ],
    "evidence": {
-    "merge": "unknown",
+    "merge": "dirty",
     "failingChecks": [],
     "checksRan": false
    },
