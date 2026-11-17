@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-17T13:35:24Z",
- "snapshotGeneratedAt": "2026-11-17T13:35:24Z",
+ "generatedAt": "2026-11-17T22:29:39Z",
+ "snapshotGeneratedAt": "2026-11-17T22:29:39Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "27e389359263b7294e2788fee048953fc34b82d1",
+ "upstreamMainSha": "3f5a11f624c8c3c7d0e99ddd8b4b7da97fcb7940",
  "capacity": {
   "open": 4,
   "cap": 5,
@@ -25,7 +25,7 @@
    "issue": null,
    "headSha": "f6b61c2",
    "updated": "2026-11-01T23:17:23Z",
-   "ageDays": 16,
+   "ageDays": 17,
    "state": "conflicting",
    "priority": 0,
    "suggestedAction": "rebase",
