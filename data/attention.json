@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-19T03:38:07Z",
- "snapshotGeneratedAt": "2026-11-19T03:38:07Z",
+ "generatedAt": "2026-11-19T13:23:53Z",
+ "snapshotGeneratedAt": "2026-11-19T13:23:53Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "3371c03df62106a4c93a545787a471e328883d08",
+ "upstreamMainSha": "c152cfceecd5e27682ce1957ca13305dad15d0ec",
  "capacity": {
   "open": 4,
   "cap": 5,
