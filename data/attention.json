@@ -1,19 +1,19 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-24T01:00:17Z",
- "snapshotGeneratedAt": "2026-11-24T01:00:17Z",
+ "generatedAt": "2026-11-24T11:05:45Z",
+ "snapshotGeneratedAt": "2026-11-24T11:05:45Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "a15b9710395aa1c4858fb6dd9e4c5014c5ced4e9",
+ "upstreamMainSha": "62d550277e040f8d983871f0fb89621e0ab7f86c",
  "capacity": {
   "open": 4,
   "cap": 5,
   "free": 1
  },
  "counts": {
-  "actionable": 0,
-  "listed": 1,
-  "waiting": 3,
+  "actionable": 1,
+  "listed": 2,
+  "waiting": 2,
   "parked": 0,
   "needsHuman": 0
  },
@@ -48,6 +48,36 @@
     "at": "2026-11-01T18:14:53Z",
     "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/147256#issuecomment-6561914771"
    }
+  },
+  {
+   "pr": 139090,
+   "title": "fix(bedrock): strip top-level oneOf/allOf/anyOf from Converse tool inputSchema",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/139090",
+   "issue": null,
+   "headSha": "606548c",
+   "updated": "2026-11-24T08:03:21Z",
+   "ageDays": 39,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "JiaDe-Wu",
+     "trust": "substantive",
+     "at": "2026-11-24T08:03:20Z",
+     "excerpt": "Independent check on current main (b9b36c93, 2026-11-23); not a design review. The diff applies cleanly. Ran scripts/run_tests.sh tests/agent/test_bedrock_adapter.py on Linux (Ubuntu 22.04) with the\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/139090#issuecomment-7125672240"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
+   },
+   "lastBotAction": null
   }
  ],
  "parked": [],
