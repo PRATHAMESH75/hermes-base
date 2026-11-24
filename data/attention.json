@@ -1,10 +1,10 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-24T11:05:45Z",
- "snapshotGeneratedAt": "2026-11-24T11:05:45Z",
+ "generatedAt": "2026-11-24T15:39:50Z",
+ "snapshotGeneratedAt": "2026-11-24T15:39:50Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "62d550277e040f8d983871f0fb89621e0ab7f86c",
+ "upstreamMainSha": "4c84e78629cf1cdfcb79bea3b39aa4a49003c829",
  "capacity": {
   "open": 4,
   "cap": 5,
@@ -43,10 +43,10 @@
     "checksRan": false
    },
    "lastBotAction": {
-    "action": "replied",
-    "sha": "f6b61c2",
-    "at": "2026-11-01T18:14:53Z",
-    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/147256#issuecomment-6561914771"
+    "action": "closed-solved",
+    "sha": null,
+    "at": "2026-11-24T15:37:39Z",
+    "commentUrl": "https://github.com/NousResearch/hermes-agent/pull/147256#issuecomment-7136344206"
    }
   },
   {
@@ -56,7 +56,7 @@
    "issue": null,
    "headSha": "606548c",
    "updated": "2026-11-24T08:03:21Z",
-   "ageDays": 39,
+   "ageDays": 40,
    "state": "reply_owed",
    "priority": 1,
    "suggestedAction": "reply",
