@@ -1,40 +1,55 @@
 {
  "schemaVersion": 1,
- "generatedAt": "2026-11-25T15:44:48Z",
- "snapshotGeneratedAt": "2026-11-25T15:44:48Z",
+ "generatedAt": "2026-11-26T00:30:46Z",
+ "snapshotGeneratedAt": "2026-11-26T00:30:46Z",
  "repo": "NousResearch/hermes-agent",
  "author": "PRATHAMESH75",
- "upstreamMainSha": "873e50b59c7abb34ea9b91ee55c56edd44fe4898",
+ "upstreamMainSha": "6e447b2c2f01c12c4a6544e2e92c5de4944743f1",
  "capacity": {
   "open": 5,
   "cap": 5,
   "free": 0
  },
  "counts": {
-  "actionable": 0,
-  "listed": 0,
+  "actionable": 1,
+  "listed": 1,
   "waiting": 4,
-  "parked": 1,
+  "parked": 0,
   "needsHuman": 0
  },
- "items": [],
- "parked": [
+ "items": [
   {
    "pr": 139090,
-   "reason": "Overlaps #139101 (PRELVAS94, opened 9 min later): JiaDe-Wu verified both and noted one is enough; #139101 reuses tools.schema_sanitizer._strip_top_level_combinators, so consolidating or yielding is the author's call, not a review fix.",
-   "parkedAt": "2026-11-24T15:40:55Z",
-   "by": "zeus",
-   "wake": {
-    "paths": [
-     "agent/bedrock_adapter.py",
-     "tools/schema_sanitizer.py"
-    ],
-    "onNewHumanComment": true,
-    "after": "2026-12-08T00:00:00Z"
+   "title": "fix(bedrock): strip top-level oneOf/allOf/anyOf from Converse tool inputSchema",
+   "url": "https://github.com/NousResearch/hermes-agent/pull/139090",
+   "issue": null,
+   "headSha": "606548c",
+   "updated": "2026-11-24T08:03:21Z",
+   "ageDays": 41,
+   "state": "reply_owed",
+   "priority": 1,
+   "suggestedAction": "reply",
+   "actionable": true,
+   "needsHuman": false,
+   "reasons": [
+    {
+     "kind": "reply_owed",
+     "who": "JiaDe-Wu",
+     "trust": "substantive",
+     "at": "2026-11-24T08:03:20Z",
+     "excerpt": "Independent check on current main (b9b36c93, 2026-11-23); not a design review. The diff applies cleanly. Ran scripts/run_tests.sh tests/agent/test_bedrock_adapter.py on Linux (Ubuntu 22.04) with the\u2026",
+     "url": "https://github.com/NousResearch/hermes-agent/pull/139090#issuecomment-7125672240"
+    }
+   ],
+   "evidence": {
+    "merge": "blocked",
+    "failingChecks": [],
+    "checksRan": false
    },
-   "wokenBy": null,
-   "state": "reply_owed"
+   "lastBotAction": null,
+   "wokenBy": "upstream main touched tools/schema_sanitizer.py (231617ea5a)"
   }
  ],
+ "parked": [],
  "needsHuman": []
 }
